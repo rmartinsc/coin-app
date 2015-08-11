@@ -1,0 +1,11 @@
+<div>
+    <h1><a href="/">ITLP Coin Stories</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.storyTitle }}</a></h1>
+        <p>{{ post.storyText|linebreaks }}</p>
+    </div>
+{% endfor %}

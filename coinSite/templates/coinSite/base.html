@@ -5,14 +5,20 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static "css/coinStory.css" %}">
-    <link href="{% static "fonts/GEInspiraSans-Regular-v01.otf" %}" rel="stylesheet" type="text/css">
     </head>
     
-    <body>
+<body>
     <div class="page-header">
-        <h1><a href="/">ITLP Coin Stories</a></h1>
-    </div>
-    <div class="content container">
+        {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+        <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
+        {% else %}
+        <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+        {% endif %}
+    <h1><a href="{% url 'coinSite.views.post_list' %}">ITLP Beliefs Coin</a></h1>
+</div>
+    <div class="content">
         <div class="row">
             <div class="col-md-8">
             {% block content %}

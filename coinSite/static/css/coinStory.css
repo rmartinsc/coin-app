@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'GE Inspira';
+  src: url('../fonts/GEInspBd.ttf');
+}
+
+
 .page-header {
     background-color: #005CB9;
     margin-top: 0;

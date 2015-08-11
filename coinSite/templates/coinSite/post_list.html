@@ -1,11 +1,13 @@
-<div>
-    <h1><a href="/">ITLP Coin Stories</a></h1>
-</div>
+{% extends "coinSite/base.html" %}
 
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.storyTitle }}</a></h1>
-        <p>{{ post.storyText|linebreaks }}</p>
-    </div>
-{% endfor %}
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="{% url "post_detail" pk=post.pk %}">{{ post.storyTitle }}</a></h1>
+            <p>{{ post.storyText|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}

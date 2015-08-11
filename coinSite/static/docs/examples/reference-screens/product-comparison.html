@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Application Example: GE Product Comparison</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../components/brandkit/favicon/favicon-144px.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../components/brandkit/favicon/favicon-114px.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../components/brandkit/favicon/favicon-72px.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../../components/brandkit/favicon/favicon.png">
+
+    <link href="../../../css/mds.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="../../../css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    
+    <script src="../../../components/modernizr/modernizr.js"></script>
+  </head>
+  <!-- end head element -->
+  <!-- start body content -->
+  <body>
+    <!-- start sticky footer structure, note class is applied to the body's child container! -->
+    <div class="sticky-footer">
+      <header class="header">
+          <nav class="navbar
+            
+            
+                navbar-static-top
+            
+            navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="ge-logo"></span>
+                <span class="primary-brand">GE Software</span>
+                <span class="secondary-brand"></span>
+            </a>
+        </div>
+
+        
+        <div class="toolbar-container pull-right">
+            
+                <div class="btn-toolbar pull-left">
+                    <button class="btn btn-primary">Get in Touch</button>
+                </div>
+            
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <!-- search form -->
+            <form class="navbar-search inverse pull-right">
+                <div class="input-group input-prepend" style="width: 210px;">
+                    <input type="search" placeholder="Search" class="form-control search-query" data-toggle="dropdown" data-target=".navbar-search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-icon"><i class="icon-ico_search_lg"></i></button>
+                    </span>
+                </div>
+                <div class="typeahead typeahead-faceted dropdown-menu pull-right">
+                    <ul class="list-unstyled">
+                        <li class="facet">
+                            <div class="facet-name">Top Result</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">States</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                                <li><a href="#"><strong>Ma</strong>ryland</a></li>
+                                <li><a href="#"><strong>Ma</strong>ssachusetts</a></li>
+                                <li><a href="#">Alaba<strong>ma</strong></a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">Cities</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>bleton, GA</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedon, NY</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedonia, OH</a></li>
+                                <li><a href="#"><strong>Ma</strong>chesney Park, IL</a></li>
+                                <li><a href="#"><strong>Ma</strong>comb, IL</a></li>
+                            </ul>
+                        </li>
+                        <li class="last"><a href="#">View All Results</a></li>
+                    </ul>
+                </div>
+            </form>
+
+        
+        
+    
+
+    </div>
+    </div>
+
+    <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+
+                
+
+                    
+
+                                <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Your City</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Your Business</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Your Home</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li class="open">
+              <a href="#">Home Innovation</a>
+              <ul class="unstyled">
+                <li><a href="#">WattStation</a></li>
+                <li><a href="#">Wall Mount</a></li>
+                <li><a href="#">DuraStation</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Efficiency</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Find a Station</a>
+          <ul class="dropdown-menu">
+            <li class="open">
+              <a href="#">Category</a>
+              <ul class="unstyled">
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+              </ul>
+            </li>
+            <li class="open">
+              <a href="#">Category</a>
+              <ul class="unstyled">
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+              </ul>
+            </li>
+            <li class="open">
+              <a href="#">Category</a>
+              <ul class="unstyled">
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+                    
+
+                
+
+            </ul>
+        </div>
+    </div>
+</nav><!-- /navbar -->
+
+      </header>
+
+      <div class="fill-wrapper content">
+
+        <section class="mds-container product-comparison">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block">
+                <h1>Meet the GE WattStation Family</h1>
+                <h5>Lorem ipsum dolor sit amet felsar e pluribus unum consectat.</h5>
+              </div>
+              <table class="table">
+                <tr class="image-full-bleed">
+                  <td>
+                    <div class="media">
+                      <img src="../../assets/images/pc_watt_hero.jpg">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="media">
+                      <img src="../../assets/images/pc_watt_wall_mount.jpg">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="media">
+                      <img src="../../assets/images/pc_watt_durastation.jpg">
+                    </div>
+                  </td>
+                </tr>
+                <tbody class="product-comparison-tbody">
+                  <tr>
+                    <td class="black-separator">
+                      <b>WattStation</b>
+                    </td>
+                    <td class="black-separator">
+                      <b>WattStation Wall Mount</b>
+                    </td>
+                    <td class="black-separator">
+                      <b>DuraStation</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4>Smart With Style</h4>
+                      Lorem ipsum dolor sit amet, consectetur<br>
+                      adipisicing elit, sed do eiusmod tempor<br>
+                      incididunt ut labore et dolore magna aliqua.<br><br>
+                      <button class="btn btn-primary">Buy Now</button>
+                      <button class="btn btn-ratings" data-toggle="button"><i class="icon-ico_starempty_lg"></i><span class="ratings-counter">154</span></button>
+                    </td>
+                    <td>
+                      <h4>Space-Saving Efficiency</h4>
+                      Lorem ipsum dolor sit amet, consectetur<br>
+                      adipisicing elit, sed do eiusmod tempor<br>
+                      incididunt ut labore et dolore magna aliqua.<br><br>
+                      <button class="btn btn-primary">Buy Now</button>
+                      <button class="btn btn-ratings" data-toggle="button"><i class="icon-ico_starempty_lg"></i><span class="ratings-counter">154</span></button>
+                    </td>
+                    <td>
+                      <h4>Rugged Flexibility</h4>
+                      Lorem ipsum dolor sit amet, consectetur<br>
+                      adipisicing elit, sed do eiusmod tempor<br>
+                      incididunt ut labore et dolore magna aliqua.<br><br>
+                      <button class="btn btn-primary">Buy Now</button>
+                      <button class="btn btn-ratings" data-toggle="button"><i class="icon-ico_starempty_lg"></i><span class="ratings-counter">154</span></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Feature One</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                    <td>
+                      <b>Feature One</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                    <td>
+                      <b>Feature One</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Feature Two</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                    <td>
+                      <b>Feature Two</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                    <td>
+                      <b>Feature Two</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Feature Three</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                    <td>
+                      <b>Feature Three</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                    <td>
+                      <b>Feature Three</b><br>
+                      Lorem ipsum dolor sit amet felsar e pluribus unum<br>
+                      consectat golum turpis comet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+
+      <footer>
+        <div class="footer large">
+  <div class="footer-inner">
+    <div class="container">
+
+      <div class="row footer-header">
+        <div class="col-md-12">
+          <div class="brand"><span class="ge-logo"></span>Imagination at work</div>
+        </div>
+      </div><!-- /row -->
+
+      <hr/>
+
+      <div class="row footer-body">
+        <div class="col-md-5 col-sm-4">
+          <div class="block">
+            <h6>About</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="block">
+            <h6>Contact Us</h6>
+            <p>With the launch of the WattStation, GE  continues a century lorem ipsum.</p>
+            <p>1 (800) 727-9268<br/>
+            <a class="contact-email" href="#">info@ge-energy.com</a></p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <div class="block">
+            <h6>Sections</h6>
+            <ul>
+              <li><a href="#">Your City</a></li>
+              <li><a href="#">Your Business</a></li>
+              <li><a href="#">Your Home</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Find a Station</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="block">
+            <h6>Connect</h6>
+            <ul class="list-icon">
+              <li><a href="#"><i class="icon-ico_googleplus_sq_lg"></i><span>Google+</span></a></li>
+              <li><a href="#"><i class="icon-ico_pinterest_sq_lg"></i><span>Pintrest</span></a></li>
+              <li><a href="#"><i class="icon-ico_instagram_lg"></i><span>Instagram</span></a></li>
+              <li><a href="#"><i class="icon-ico_twitter_sq_lg"></i><span>Titter</span></a></li>
+              <li><a href="#"><i class="icon-ico_linkedin_sq_lg"></i><span>Linkedin</span></a></li>
+              <li><a href="#"><i class="icon-ico_youtube_lg"></i><span>You Tube</span></a></li>
+              <li><a href="#"><i class="icon-ico_facebook_sq_lg"></i><span>Facebook</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /row -->
+
+      <hr/>
+
+      <div class="row footer-footer">
+        <div class="col-md-12">
+
+          <div class="block colophon">
+            <ul>
+              <li><a href="#" target="_blank">Privacy</a></li>
+              <li><a href="#" target="_blank">Terms</a></li>
+              <li><a href="#" target="_blank">Contact</a></li>
+              <li><a href="#" target="_blank">Accessibility</a></li>
+              <li><a href="#" target="_blank">Cookies</a></li>
+              <li>&copy; 2014 General Electric</li>
+            </ul>
+          </div>
+
+        </div>
+      </div><!-- /row -->
+
+    </div>
+  </div>
+</div><!-- /footer -->
+
+      </footer>
+    </div>
+    <!-- end sticky footer structure -->
+
+    <!-- start scripts -->
+    <script src="../../../components/respond/respond.min.js"></script>
+    <script src="../../../components/requirejs/require.js"></script>
+    <script src="../../../js/require.config.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: '../../../'
+      });
+      require(['mds', 'jquery']);
+    </script>
+    <!-- end scripts -->
+
+  </body>
+  <!-- end body content -->
+</html>

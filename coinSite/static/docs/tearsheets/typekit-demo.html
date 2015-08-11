@@ -1,0 +1,1628 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MDS Documentation: Components</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../components/brandkit/favicon/favicon-144px.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../components/brandkit/favicon/favicon-114px.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../components/brandkit/favicon/favicon-72px.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../components/brandkit/favicon/favicon.png">
+
+    <link rel="icon" href="../../components/brandkit/favicon/favicon.ico">
+
+    <link href="../assets/css/documentation.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="../../css/mds-nofonts.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="//use.typekit.net/ico2obo.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+
+    <link href="../../css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <script src="../../components/requirejs/require.js"></script>
+    <script src="../../js/require.config.js"></script>
+    <script type="text/javascript">
+      require.config({ baseUrl: '../../' });
+    </script>
+
+    
+
+    <script src="../../components/modernizr/modernizr.js"></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<nav class="navbar
+             navbar-small 
+            
+                navbar-fixed-top
+            
+            navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="ge-logo"></span>
+                <span class="primary-brand"></span>
+                <span class="secondary-brand">GE Software</span>
+            </a>
+        </div>
+
+        
+        <div class="toolbar-container pull-right">
+            
+                <div class="btn-toolbar pull-left">
+                    <button class="btn btn-primary">Get in Touch</button>
+                </div>
+            
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <!-- search form -->
+            <form class="navbar-search inverse pull-right">
+                <div class="input-group input-prepend" style="width: 210px;">
+                    <input type="search" placeholder="Search" class="form-control search-query" data-toggle="dropdown" data-target=".navbar-search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-icon"><i class="icon-ico_search_lg"></i></button>
+                    </span>
+                </div>
+                <div class="typeahead typeahead-faceted dropdown-menu pull-right">
+                    <ul class="list-unstyled">
+                        <li class="facet">
+                            <div class="facet-name">Top Result</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">States</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                                <li><a href="#"><strong>Ma</strong>ryland</a></li>
+                                <li><a href="#"><strong>Ma</strong>ssachusetts</a></li>
+                                <li><a href="#">Alaba<strong>ma</strong></a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">Cities</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>bleton, GA</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedon, NY</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedonia, OH</a></li>
+                                <li><a href="#"><strong>Ma</strong>chesney Park, IL</a></li>
+                                <li><a href="#"><strong>Ma</strong>comb, IL</a></li>
+                            </ul>
+                        </li>
+                        <li class="last"><a href="#">View All Results</a></li>
+                    </ul>
+                </div>
+            </form>
+
+        
+        
+
+        
+    
+
+    </div>
+    </div>
+
+    <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+
+                
+
+                    
+
+                        
+
+                                      <li><a href="#complex-buttons">Complex Buttons</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navigation</a>
+            <ul class="dropdown-menu">
+              <li><a href="#primary-navigation">Primary Navigation</a></li>
+              <li><a href="#supplementary-navigation">Supplementary Navigation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Charts and Visualization</a>
+              <ul class="dropdown-menu">
+                  <li><a href="#highcharts-charts">HighCharts Charts</a></li>
+                  <li><a href="#highcharts-variants">HighCharts Variants</a></li>
+                  <li><a href="#d3-charts">D3 Charts</a></li>
+              </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More</a>
+            <ul class="dropdown-menu">
+              <li><a href="#labels-badges-alerts">Labels, Badges &amp; Alerts</a></li>
+              <li><a href="#tooltips-modals">Tooltips &amp; Modals</a></li>
+              <li><a href="#loading-indicators">Loading Indicators</a></li>
+              <li><a href="#search-utilities">Search Utilities</a></li>
+            </ul>
+          </li>
+
+                        
+
+                    
+
+                
+
+            </ul>
+        </div>
+    </div>
+</nav><!-- /navbar -->
+
+
+<div class="container doco mds-library">
+
+	<div class="row anchor">
+		<div class="span12 mds-wrapper">
+      <div class="block">
+  <div class="page-header voice voice-brand">
+    <h1>Components</h1>
+  </div>
+
+					<h2 class="voice voice-brand" id="complex-buttons">Complex Buttons</h2>
+		<table class="documentation">
+			<thead>
+				<tr>
+					<th>Example</th>
+					<th>Description</th>
+					<th>Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="example">
+						<button rel="stateful" data-loading-text="loading..." class="btn btn-primary">Loading State</button>
+					</td>
+					<td class="description">Stateful</td>
+					<td class="usage">
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">&lt;button rel="stateful" data-loading-text="loading..." class="btn"&gt;Button&lt;/button&gt;</pre>
+						<p>Script:</p>
+		<pre class="prettyprint linenums lang-javascript">$(&hellip;).button('loading');</pre>
+						<p>Sets button state to loading&#8212;disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.</p>
+						<p class="note">NOTE: Firefox persists the disabled state across page loads. A workaround for this is to use <code>autocomplete="off"</code>.</p>
+		<pre class="prettyprint linenums lang-javascript">
+$(&hellip;).button('reset');</pre>
+						<p>Resets button state&#8212;swaps text to original text.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-button</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /stateful -->
+				<tr>
+					<td class="example">
+						<button class="btn btn-primary" data-toggle="button">Single Toggle</button>
+					</td>
+					<td class="description">Toggle</td>
+					<td class="usage">
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;button class="btn btn-primary" data-toggle="button"&gt;Single Toggle&lt;/button&gt;</pre>
+						<p>Script:</p>
+		<pre class="prettyprint linenums lang-javascript">
+$(&hellip;).button('toggle');</pre>
+						<p>Toggles push state. Gives the button the appearance that it has been activated.</p>
+						<p>The <code>data-toggle</code> attribute enables auto-toggling.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-button</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /toggle -->
+        <tr>
+          <td class="example">
+            <p>
+              <button class="btn btn-ratings" data-toggle="button"><i class="icon-ico_starempty_lg"></i><span class="ratings-counter hide">0</span></button>
+            </p>
+            <p>
+              <button class="btn btn-ratings" data-toggle="button"><i class="icon-ico_starempty_lg"></i><span class="ratings-counter">20</span></button>
+            </p>
+          </td>
+          <td class="description">Ratings</td>
+          <td class="usage">
+            <p>Markup:</p>
+    <pre class="prettyprint linenums lang-html">
+&lt;button class="btn btn-ratings" data-toggle="button"&gt;&lti class"icon-ico_starempty_lg"&gt;&lt;/i&gt;&lt;span class="ratings-counter"&gt;20&lt;/span&gt;&lt;/button&gt;</pre>
+            <p>Zero (empty) Case add <code>.hide</code>:</p>
+            <pre class="prettyprint linenums lang-html">
+&lt;button class="btn btn-ratings" data-toggle="button"&gt;&lti class"icon-ico_starempty_lg"&gt;&lt;/i&gt;&lt;span class="ratings-counter hide"&gt;0&lt;/span&gt;&lt;/button&gt;</pre>
+            <p>Script:</p>
+    <pre class="prettyprint linenums lang-javascript">
+$(&hellip;).button('toggle');</pre>
+            <p>Toggles the rated state. Allows the ability to mark an item as a favorite as well as surface the overall popularity of the item.</p>
+            <p>The <code>data-toggle</code> attribute enables auto-toggling.</p>
+            <div class="alert alert-info">
+              <strong>Script Requirements:</strong>
+              <ul>
+                <li>bootstrap/bootstrap-button</li>
+              </ul>
+            </div>
+          </td>
+        </tr> <!-- /ratings -->
+				<tr>
+					<td class="example">
+						<div class="btn-group" data-toggle="buttons-radio">
+							<button class="btn">Left</button>
+							<button class="btn">Middle</button>
+							<button class="btn">Right</button>
+						</div>
+					</td>
+					<td class="description">Radio Button Groups</td>
+					<td class="usage">
+						<p>Add <code>data-toggle="buttons-radio"</code> for radio-style toggling on <code>.btn-group</code>.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="btn-group" data-toggle="buttons-radio"&gt;
+  &lt;button class="btn"&gt;Left&lt;/button&gt;
+  &lt;button class="btn"&gt;Middle&lt;/button&gt;
+  &lt;button class="btn"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-button</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /radio button groups -->
+				<tr>
+					<td class="example">
+						<div class="btn-group" data-toggle="buttons-checkbox">
+							<button class="btn">Left</button>
+							<button class="btn">Middle</button>
+							<button class="btn">Right</button>
+						</div>
+					</td>
+					<td class="description">Checkbox Button Groups</td>
+					<td class="usage">
+						<p>Add <code>data-toggle="buttons-checkbox"</code> for checkbox-style toggling on <code>.btn-group</code>.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="btn-group" data-toggle="buttons-checkbox"&gt;
+  &lt;button class="btn"&gt;Left&lt;/button&gt;
+  &lt;button class="btn"&gt;Middle&lt;/button&gt;
+  &lt;button class="btn"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-button</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /checkbox button groups -->
+				<tr>
+					<td class="example">
+						<p>
+						  <div class="btn-group">
+						    <button class="btn dropdown-toggle" data-toggle="dropdown">Action <i class="icon-ico_chevron_down_lg"></i></button>
+						    <ul class="dropdown-menu">
+						      <li><a href="#">Action</a></li>
+						      <li><a href="#">Another action</a></li>
+						      <li><a href="#">Something else here</a></li>
+						      <li class="divider"></li>
+						      <li><a href="#">Separated link</a></li>
+						    </ul>
+						  </div><!-- /btn-group -->
+						</p>
+					</td>
+					<td class="description">Button Dropdowns</td>
+					<td class="usage">
+						<p>Use any <code>button</code> to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
+						<p>To quickly add dropdown functionality to any element just add <code>data-toggle="dropdown"</code> and any valid bootstrap dropdown will automatically be activated.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="btn-group"&gt;
+  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;Action &lt;i class="icon-ico_chevron_down_lg&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+						<p>You may optionally target a specific dropdown by using <code>data-target="#id"</code> or <code>href="#fat"</code>.</p>
+						<p class="note">NOTE: In some cases&#8212;like mobile&#8212;dropdown menus will extend outside the viewport. You need to resolve the alignment manually or with custom javascript.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-dropdown</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /button dropdowns -->
+				<tr>
+					<td class="example">
+						<p>
+						  <div class="btn-group dropup">
+						    <button class="btn dropdown-toggle" data-toggle="dropdown">Action <i class="icon-ico_chevron_up_lg"></i></button>
+						    <ul class="dropdown-menu">
+						      <li><a href="#">Action</a></li>
+						      <li><a href="#">Another action</a></li>
+						      <li><a href="#">Something else here</a></li>
+						      <li class="divider"></li>
+						      <li><a href="#">Separated link</a></li>
+						    </ul>
+						  </div>
+						</p>
+					</td>
+					<td class="description">Button Dropups</td>
+					<td class="usage">
+						<p>Add <code>.dropup</code> to a <code>.btn-group</code> containing a dropdown to switch to a dropup.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="btn-group dropup"&gt;
+  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;Action &lt;i class="icon-ico_chevron_up_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+						<p class="note">NOTE: If using the original <code>.caret</code> markup from Bootstrap, the <code>.caret</code> will flip automatically for dropups. Otherwise, change the <code>.dropdown-toggle</code> icon to <code>.icon-ico_chevron_up_lg</code>.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-dropdown</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /button dropups -->
+				<tr>
+					<td class="example">
+			     <p>
+			        <div class="btn-group">
+			          <button class="btn">Action</button>
+			          <button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-ico_chevron_down_lg"></i></button>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			          </ul>
+			        </div><!-- /btn-group -->
+			      </p>
+					</td>
+					<td class="description">Split-Button Dropdowns</td>
+					<td class="usage">
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="btn-group"&gt;
+  &lt;button class="btn"&gt;Action&lt;/button&gt;
+  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;&lt;i class="icon-ico_chevron_down_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-dropdown</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /split-button dropdown -->
+				<tr>
+					<td class="example">
+						<p>
+					    <button class="btn btn-icon"><i class="icon-ico_user_male_lg"></i></button>
+						</p>
+						<p>
+						  <div class="btn-group">
+						    <button class="btn btn-icon dropdown-toggle" data-toggle="dropdown"><i class="icon-ico_user_male_lg"></i> <i class="icon-ico_chevron_down_lg"></i></button>
+						    <ul class="dropdown-menu">
+						      <li><a href="#">Action</a></li>
+						      <li><a href="#">Another action</a></li>
+						      <li><a href="#">Something else here</a></li>
+						      <li class="divider"></li>
+						      <li><a href="#">Separated link</a></li>
+						    </ul>
+						  </div>
+						</p>
+					</td>
+					<td class="description">Icon Buttons</td>
+					<td class="usage">
+						<p>An icon may be used in place of text for a button by adding <code>.btn-icon</code> to any Bootstrap button and including the proper Icon markup.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;button class="btn btn-primary btn-icon dropdown-toggle" data-toggle="dropdown"&gt;&lt;i class="icon-ico_user_male_lg"&gt;&lt;/i&gt; &lt;i class="icon-ico_chevron_down_lg"&gt;&lt;/i&gt;&lt;/button&gt;</pre>
+						<p class="note">NOTE: The icons prefixed <code>.icon-ico_chevron_down_lg-</code> are always rendered at 12px in <code>.dropdown-toggle</code> buttons.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-dropdown<br><small>(for dropdown icon buttons only)</small></li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /icon buttons -->
+				<tr>
+					<td class="example">
+						<p>
+							<div class="btn-group btn-filter">
+								<a href="#" class="btn"><span>Asset 01</span></a>
+								<a href="#" class="btn btn-remove"><i class="icon-ico_remove_lg"></i></a>
+							</div>
+						</p>
+						<p>
+							<div class="btn-group btn-filter">
+								<a href="#" class="btn"><i class="icon-ico_star_lg color-blue"></i><span>Asset 02</span></a>
+								<a href="#" class="btn btn-remove"><i class="icon-ico_remove_lg"></i></a>
+							</div>
+						</p>
+						<p>
+							<div class="btn-group btn-filter">
+								<a href="#" class="btn"><i class="icon-ico_star_lg color-red"></i><span>Asset 03</span></a>
+								<a href="#" class="btn btn-remove"><i class="icon-ico_remove_lg"></i></a>
+							</div>
+						</p>
+						<p>
+							<div class="btn-group btn-filter">
+								<a href="#" class="btn"><i class="icon-ico_star_lg color-green"></i><span>Asset 04</span></a>
+								<a href="#" class="btn btn-remove"><i class="icon-ico_remove_lg"></i></a>
+							</div>
+						</p>
+						<p>
+							<div class="btn-group btn-filter">
+								<a href="#" class="btn"><i class="icon-ico_star_lg color-orange"></i><span>Asset 05</span></a>
+								<a href="#" class="btn btn-remove"><i class="icon-ico_remove_lg"></i></a>
+							</div>
+						</p>
+						<p>
+							<div class="btn-group btn-filter">
+								<a href="#" class="btn"><i class="icon-ico_star_lg color-purple"></i><span>Asset 06</span></a>
+								<a href="#" class="btn btn-remove"><i class="icon-ico_remove_lg"></i></a>
+							</div>
+						</p>
+					</td>
+					<td class="description">Filter Label Buttons</td>
+					<td class="usage">
+						<p>Add <code>.btn-filter</code> to a <code>.btn-group</code> to trigger special filter alignment rules.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="btn-group btn-filter"&gt;
+  &lt;a href="#" class="btn"&gt;Asset 01&lt;/a&gt;
+  &lt;a href="#" class="btn btn-remove"&gt;&lt;i class="icon-ico_remove_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+						<hr>
+						<p>Icons with the prefix <code>.color-</code> specify colors for use within filter buttons. The primary GE Charting Palette is available for usage: <code>cyan</code>, <code>green</code>, <code>orange</code>, <code>purple</code> and <code>red</code>.
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="btn-group btn-filter"&gt;
+  &lt;a href="#" class="btn"&gt;&lt;i class="icon-ico_star_lg color-red"&gt;&lt;/i&gt;Asset 01&lt;/a&gt;
+  &lt;a href="#" class="btn btn-remove"&gt;&lt;i class="icon-ico_remove_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+					</td>
+				</tr> <!-- /filter buttons -->
+			</tbody>
+		</table>
+
+		<h2 class="voice voice-brand" id="navigation">Navigation</h2>
+		<h3 class="voice voice-brand" id="primary-navigation">Primary Navigation</h3>
+		<dl class="documentation">
+			<h3 class="voice voice-brand">Masthead &amp; Navigation</h3>
+			<p>The header contains primary navigation links to all top-level pages and masthead elements including:</p>
+			<ul>
+				<li>Application ID composed of the GE monogram and the site title</li>
+				<li>Notification controls, including Alerts, Messages, and potentially Tasks</li>
+				<li>Account details, including links to Settings and Help</li>
+				<li>The site's main search field</li>
+			</ul>
+			<p><strong>Usage Notes:</strong></p>
+			<ul>
+				<li>Notification controls are optional</li>
+				<li>Account details are optional</li>
+				<li>Less than 7 top-level sections are recommended, but if number of links exceeds available screen width, a More link can be inserted that contains overflow items</li>
+			</ul>
+
+			<h3 class="voice voice-brand">Flexible Dropdown</h3>
+			<p>Similar to a mega-dropdown, the flexible dropdown presents multiple secondary and tertiary navigation elements as the child of a primary navigation element, but the display area of the flexible dropdown is sized to fit available content.</p>
+
+			<p><strong>Usage Notes:</strong></p>
+			<ul>
+				<li>Dropdown displayed on click</li>
+				<li>Dropdown size changes to accommodate the amount of content available</li>
+				<li>On a mobile device, tap on a top-level navigation item to expose the dropdown menu. Tapping on a menu item will display the related item or page.</li>
+			</ul>
+			<p><a href="../examples/navigation/primary-navigation.html" target="_blank">Open fullscreen example.</a></p>
+		</dl>
+
+		<h3 class="voice voice-brand" id="supplementary-navigation">Supplementary Navigation</h3>
+
+		<table class="documentation">
+			<thead>
+				<tr>
+					<th>Example</th>
+					<th>Description</th>
+					<th>Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="example">
+						<p><a href="../examples/navigation/medium-footer.html" target="_blank">Open fullscreen example.</a></p>
+					</td>
+					<td class="description">Global Footer</td>
+					<td class="usage">
+						<p>Footer displays about statement, section links, staff listing, and secondary links (contact, privacy, etc.)</p>
+						<p><strong>Usage Notes:</strong></p>
+						<ul>
+							<li>Staff listing may be replaced with other content if desired (links to social media, resources, etc.)</li>
+							<li>Use a basic footer with only the monogram rule and secondary links if there is no content for the 3rd column</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="example">
+						<ul class="breadcrumb">
+							<li><a href="#">Primary Nav 1</a> <span class="divider"><i class="icon-ico_chevron_right_lg"></i></span></li>
+							<li><a href="#">Secondary Nav 1</a> <span class="divider"><i class="icon-ico_chevron_right_lg"></i></span></li>
+							<li class="active">Tertiary Nav 1</li>
+						</ul>
+					</td>
+					<td class="description">Breadcrumbs</td>
+					<td class="usage">
+						<p>Breadcrumbs are provided as a supplementary navigation tool</p>
+						<p><strong>Usage Notes:</strong></p>
+						<ul>
+							<li>Optional, most helpful when site is several layers deep and pages are easily categorized</li>
+							<li>Should not be used on home page or level 1 pages</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="example">
+						<p><a href="../examples/navigation/jumpnav-example.html" target="_blank">Open fullscreen example.</a></p>
+					</td>
+					<td class="description">Jump Subnavigation</td>
+					<td class="usage">
+						<p>The jump subnavigation bar includes links that allow users to jump to different sections within a very long page</p>
+
+						<p><strong>Usage Notes:</strong></p>
+						<ul>
+							<li>If number of links exceeds available screen width, a More link can be inserted that contains overflow items</li>
+							<li>As user scrolls down page or jumps to new sections from links, the active nav bar items are highlighted to reflect scroll position</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="example">
+						<div class="backtop-demo"><i class="icon-ico_arrowup_lg icon-white"></i></div>
+					</td>
+					<td class="description">Back to Top element</td>
+					<td class="usage">
+						<p>Use this element on a long page, to provide the user with an easy way to get back to the top of the page.</p>
+
+						<p>Simply insert this element HTML at the bottom of the page</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="backtop"&gt;
+  &lt;i class="icon-ico_chevron_up_lg icon-white"&gt;&lt;/i&gt;
+&lt;/div&gt;</pre>
+					</td>
+				</tr>
+				<tr>
+					<td class="example">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+							<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+						</ul>
+					</td>
+					<td class="description">Basic Tabs</td>
+					<td class="usage">
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="active"&gt;&lt;a href="#tab1" data-toggle="tab"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tab2" data-toggle="tab"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tab3" data-toggle="tab"&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+						<p>Activate tab navigation without javascript by specifying <code class="prettyprint">data-toggle="tab"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the bootstrap tab styling.
+						<p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
+						<p>Script:</p>
+		<pre class="prettyprint linenums lang-javascript">
+$('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-tab</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /basic tabs -->
+				<tr>
+					<td class="example">
+						<ul class="nav nav-tabs nav-stacked">
+							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+							<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+						</ul>
+					</td>
+					<td class="description">Stacked Tabs</td>
+					<td class="usage">
+						<p>Add <code>.nav-stacked</code> to the basic navigation markup.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;ul class="nav nav-tabs nav-stacked"&gt;
+  &lt;li class="active"&gt;&lt;a href="#tab1" data-toggle="tab"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tab2" data-toggle="tab"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tab3" data-toggle="tab"&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-tab</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /stacked tabs -->
+				<tr>
+					<td class="example">
+						<div class="tabbable">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+								<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+								<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab1">
+									<p>Section 1</p>
+								</div>
+								<div class="tab-pane" id="tab2">
+									<p>Section 2</p>
+								</div>
+								<div class="tab-pane" id="tab3">
+									<p>Section 3</p>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="tabbable tabs-left">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#" data-toggle="tab">Section 1</a></li>
+								<li><a href="#" data-toggle="tab">Section 2</a></li>
+								<li><a href="#" data-toggle="tab">Section 3</a></li>
+							</ul>
+							<div class="tab-content"></div>
+						</div>
+						<br>
+						<div class="tabbable tabs-right">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#" data-toggle="tab">Section 1</a></li>
+								<li><a href="#" data-toggle="tab">Section 2</a></li>
+								<li><a href="#" data-toggle="tab">Section 3</a></li>
+							</ul>
+							<div class="tab-content"></div>
+						</div>
+						<br>
+						<div class="tabbable tabs-below">
+							<div class="tab-content"></div>
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#" data-toggle="tab">Section 1</a></li>
+								<li><a href="#" data-toggle="tab">Section 2</a></li>
+								<li><a href="#" data-toggle="tab">Section 3</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="description">Tabbables</td>
+					<td class="usage">
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="tabbable"&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="active"&gt;&lt;a href="#tab1" data-toggle="tab"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#tab2" data-toggle="tab"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#tab3" data-toggle="tab"&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane active" id="tab1"&gt;
+      &lt;p&gt;Section 1&lt;/p&gt;
+    &lt;/div&gt;
+    &hellip;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>.</p>
+						<hr>
+						<p>Variant positions can be implemented by adding <code>.tabs-left</code>, <code>.tabs-right</code> or <code>.tabs-below</code> to <code>.tabbable</code>.</p>
+						<p>For <code>.tabs-below</code>, <code>.tab-content</code> and <code>.nav-tabs</code> need to be in reverse order.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="tabbable tabs-below"&gt;
+  &lt;div class="tab-content"&gt;
+    &hellip;
+  &lt;/div&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &hellip;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-tab</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /tabbables -->
+				<tr>
+					<td class="example">
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#">Page 1</a></li>
+							<li><a href="#">Page 2</a></li>
+							<li><a href="#">Page 3</a></li>
+						</ul>
+					</td>
+					<td class="description">Basic Pills</td>
+					<td class="usage">
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+						<p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
+					</td>
+				</tr> <!-- /basic pills -->
+				<tr>
+					<td class="example">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active"><a href="#">Page 1</a></li>
+							<li><a href="#">Page 2</a></li>
+							<li><a href="#">Page 3</a></li>
+						</ul>
+					</td>
+					<td class="description">Stacked Pills</td>
+					<td class="usage">
+						<p>Add <code>.nav-stacked</code> to the basic navigation markup.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;ul class="nav nav-pills nav-stacked"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+					</td>
+				</tr> <!-- /stacked pills -->
+				<tr>
+					<td class="example">
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#">Page 1</a></li>
+							<li><a href="#">Page 2</a></li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" href="#">Dropdown <i class="icon-ico_chevron_down_lg"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</td>
+					<td class="description">Pills with Dropdowns</td>
+					<td class="usage">
+		<pre class="prettyprint linenums lang-html">
+&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="dropdown"&gt;
+    &lt;a data-toggle="dropdown" href="#"&gt;Dropdown &lt;i class="icon-ico_chevron_down_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="divider"&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+						<p class="note">NOTE: See <i>Complex Buttons</i> documentation for more information on dropdown requirements.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-dropdown</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /pills with dropdowns -->
+				<tr>
+					<td class="example">
+						<div class="pagination">
+							<ul>
+								<li class="disabled"><a href="#"><i class="icon-ico_arrowleft_lg"></i></a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#"><i class="icon-ico_arrowright_lg"></i></a></li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<ul>
+								<li><a href="#"><i class="icon-ico_arrowleft_lg"></i></a></li>
+								<li><a href="#">10</a></li>
+								<li class="active"><a href="#">11</a></li>
+								<li><a href="#">12</a></li>
+								<li><a href="#"><i class="icon-ico_arrowright_lg"></i></a></li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<ul>
+								<li><a href="#"><i class="icon-ico_arrowleft_lg"></i></a></li>
+								<li class="active"><a href="#">10</a></li>
+								<li class="disabled"><a href="#">...</a></li>
+								<li><a href="#">20</a></li>
+								<li><a href="#"><i class="icon-ico_arrowright_lg"></i></a></li>
+							</ul>
+						</div>
+						<div class="pagination pagination-centered">
+							<ul>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="description">Pagination</td>
+					<td class="usage">
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li class="disabled"&gt;&lt;a href="#"&gt;&lt;i class="icon-ico_arrowleft_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+					</td>
+				</tr> <!-- /pagination -->
+				<tr>
+					<td class="example">
+						<ul class="pager">
+							<li class="previous"><a href="#"><i class="icon-ico_arrowleft_lg"></i> Older</a></li>
+							<li class="next"><a href="#">Newer <i class="icon-ico_arrowright_lg"></i></a></li>
+						</ul>
+						<ul class="pager">
+							<li class="previous disabled"><a href="#"><i class="icon-ico_arrowleft_lg"></i> Older</a></li>
+							<li class="next disabled"><a href="#">Newer <i class="icon-ico_arrowright_lg"></i></a></li>
+						</ul>
+					</td>
+					<td class="description">Pager</td>
+					<td class="usage">
+
+						<p>Left/Right Aligned:</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;ul class="pager"&gt;
+  &lt;li class="previous disabled"&gt;&lt;a href="#"&gt;&lt;i class="icon-ico_arrowleft_lg"&gt;&lt;/i&gt; Older&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="next"&gt;&lt;a href="#"&gt;Newer &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+					</td>
+				</tr> <!-- /pager -->
+			</tbody>
+		</table>
+
+							<h2 class="voice voice-brand" id="labels-badges-alerts">Labels, Badges &amp; Alerts</h2>
+		<table class="documentation">
+			<thead>
+				<tr>
+					<th>Example</th>
+					<th>Description</th>
+					<th>Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="example">
+						<p>
+							<span class="label">Default</span>
+						</p>
+            <p>
+              <span class="label label-success">Success</span>
+            </p>
+            <p>
+              <span class="label label-warning">Warning</span>
+            </p>
+            <p>
+              <span class="label label-important">Important</span>
+            </p>
+            <p>
+              <span class="label label-info">Info</span>
+            </p>
+            <p>
+              <span class="label label-inverse">Inverse</span>
+            </p>
+					</td>
+					<td class="description">Tags</td>
+					<td class="usage">
+						<p>Tags may be applied to content pieces, and serve as links to topic pages compiling content associated to given tags</p>
+
+						<p><strong>Usage Notes:</strong></p>
+						<ul>
+							<li>Tags link to topic pages featuring selection of content related to given tag</li>
+							<li>Tagging system, optional, to be developed by GE</li>
+							<li>Topic pages, optional, to be designed by GE</li>
+						</ul>
+		<pre class="prettyprint linenums lang-html">
+&lt;span class="label"&gt;Default&lt;/span&gt;</pre>
+
+						<hr>
+						<p>Use the Bootstrap utility classes <code>.pull-left</code> or <code>.pull-right</code> to make <code>.label</code> float alongside headlines or other block elements.</p>
+					</td>
+				</tr> <!-- /labels -->
+				<tr>
+					<td class="example">
+						<p>
+							<span class="badge">1</span>
+						</p>
+						<p>
+							<span class="badge badge-success">2</span>
+						</p>
+						<p>
+							<span class="badge badge-warning">4</span>
+						</p>
+						<p>
+							<span class="badge badge-important">6</span>
+						</p>
+						<p>
+							<span class="badge badge-info">8</span>
+						</p>
+						<p>
+							<span class="badge badge-inverse">10</span>
+						</p>
+					</td>
+					<td class="description">Badges</td>
+					<td class="usage">
+		<pre class="prettyprint linenums lang-html">
+&lt;span class="badge"&gt;1&lt;/span&gt;</pre>
+						<hr>
+						<p>Add one of <code>.badge-success</code>, <code>.badge-warning</code>, <code>.badge-important</code>, <code>.badge-info</code> or <code>.badge-inverse</code> to colorize the <code>.badge</code> for the appropriate context.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;span class="badge badge-success"&gt;2&lt;/span&gt;</pre>
+					</td>
+				</tr> <!-- /badges -->
+				<tr>
+					<td class="example">
+						<div class="alert alert-warning">
+							<strong>Warning!</strong> Best check yo self.
+						</div>
+						<div class="alert alert-error">
+							<strong>Oh snap!</strong> Change a few things up.
+						</div>
+						<div class="alert alert-success">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							<strong>Well done!</strong> You successfully read this.
+						</div>
+						<div class="alert alert-info">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							<strong>Heads up!</strong> <p>This needs your attention.</p>
+              <button class="btn btn-info">Submit</button>
+						</div>
+						<div class="alert alert-warning">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							<h4 class="alert-heading">Warning!</h4>
+							<p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+              <div class="toolbar">
+                <button class="btn btn-warning">Submit</button>
+              </div>
+						</div>
+						<div class="alert alert-error">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							<h4 class="alert-heading">Oh Snap!</h4>
+							<p>Change a few things and try submitting again. Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+							<div class="toolbar">
+								<button class="btn btn-danger">Submit</button>
+							</div>
+						</div>
+					</td>
+					<td class="description">Alerts</td>
+					<td class="usage">
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="alert"&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; Best check yo self.
+&lt;/div&gt;</pre>
+						<hr>
+						<p>Use one of <code>.alert-success</code>, <code>.alert-info</code> or <code>.alert-error</code> to colorize the <code>.alert</code> for the appropriate context.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="alert alert-success"&gt;
+  &lt;strong&gt;Well done!&lt;/strong&gt; You successfully read this.
+&lt;/div&gt;</pre>
+						<p>Add <code>.alert-fixed-top</code> to <code>.alert</code> to fix the position to the top of the browser window and only round the bottom corners.</p>
+						<hr>
+						<p>Add an optional <code>button</code> before the message. Use the attribute <code class="prettyprint">data-dismiss="alert"</code> to automatically enable alert dismissal.</p>
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="alert alert-error"&gt;
+  &lt;button type="button" class="close" data-dismiss="alert"&gt;×&lt;/button&gt;
+  &lt;strong&gt;Oh snap!&lt;/strong&gt; Change a few things up.
+&lt;/div&gt;</pre>
+						<p>Script:</p>
+		<pre class="prettyprint linenums lang-javascript">
+$(&hellip;).alert('close');</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-alert</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /alerts -->
+			</tbody>
+		</table>
+							<h2 class="voice voice-brand" id="tooltips-modals">Tooltips &amp; Modals</h2>
+		<table class="documentation">
+			<thead>
+				<tr>
+					<th>Example</th>
+					<th>Description</th>
+					<th>Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="example">
+				        <div class="well">
+							<p class="muted" style="margin-bottom: 0;">Pants level keffiyeh <a href="#" rel="tooltip" data-placement="top" title="top tooltip">you probably</a> haven't heard of them. Fixie sustainable quinoa 8-bit american apparel <a data-placement="right" href="#" rel="tooltip" title="right tooltip">have a</a> terry richardson vinyl chambray. A really ironic artisan quinoa fixie <a data-placement="bottom" href="#" rel="tooltip" title="bottom tooltip">whatever keytar</a>, scenester farm-to-table Austin <a data-placement="left" href="#" rel="tooltip" title="left tooltip">twitter handle</a> freegan cred raw denim single-origin coffee viral.</p>
+				        </div>
+					</td>
+					<td class="description">Tooltips</td>
+					<td class="usage">
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">
+Lorem ipsum &lt;a href="#" data-placement="top" rel="tooltip" title="tooltip text"&gt;dolor sit&lt;/a&gt; amet.</pre>
+						<p>Script:</p>
+		<pre class="prettyprint linenums lang-javascript">
+$(&hellip;).tooltip(options);</pre>
+						<p>Options:</p>
+						<table>
+							<tr>
+								<th>Name</th>
+								<th>Type</th>
+								<th>Default</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td><code>animation</code></td>
+								<td>boolean</td>
+								<td>true</td>
+								<td>apply a css fade transition to the tooltip</td>
+							</tr>
+							<tr>
+								<td><code>placement</code></td>
+								<td>string|function</td>
+								<td>'top'</td>
+								<td>how to position the tooltip - top | bottom | left | right</td>
+							</tr>
+							<tr>
+								<td><code>selector</code></td>
+								<td>string</td>
+								<td>false</td>
+								<td>If a selector is provided, tooltip objects will be delegated to the specified targets.</td>
+							</tr>
+							<tr>
+								<td><code>title</code></td>
+								<td>string | function</td>
+								<td>''</td>
+								<td>default title value if `title` tag isn't present</td>
+							</tr>
+							<tr>
+								<td><code>trigger</code></td>
+								<td>string</td>
+								<td>'hover'</td>
+								<td>how tooltip is triggered - hover | focus | manual</td>
+							</tr>
+							<tr>
+								<td><code>delay</code></td>
+								<td>number | object</td>
+								<td>0</td>
+								<td>
+									<p>delay showing and hiding the tooltip (ms) - does not apply to manual trigger type</p>
+									<p>If a number is supplied, delay is applied to both hide/show</p>
+									<p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
+								</td>
+							</tr>
+						</table>
+						<p>All of the above options may be applied independently as <code>data-</code> attributes.</p>
+						<p class="note">NOTE: For performance reasons, tooltips are opt-in. They must be manually initialized to function.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-tooltip</li>
+								<li>bootstrap/bootstrap-transition</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /tooltips -->
+				<tr>
+					<td class="example">
+						<div id="modal-demo" class="modal hide fade" style="display: none;">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">×</button>
+								<h3>Modal Heading</h3>
+							</div>
+							<div class="modal-body">
+								<h4>Text in a modal</h4>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+								<hr>
+								<h4>Overflowing text to show optional scrollbar</h4>
+								<p>We set a fixed <code>max-height</code> on the <code>.modal-body</code>. Watch it overflow with all this extra lorem ipsum text we've included.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn btn-primary" data-dismiss="modal">Cancel</a>
+								<a href="#" class="btn btn-primary">Save Changes</a>
+							</div>
+						</div>
+						<a data-toggle="modal" href="#modal-demo" class="btn btn-primary btn-large">Launch Modal</a>
+					</td>
+					<td class="description">Modals</td>
+					<td class="usage">
+						<p>To activate modals, set <code class="prettyprint">data-toggle="modal"</code> on a controller element with a <code class="prettyprint">data-target="#foo"</code> or <code class="prettyprint">href="#foo"</code> which corresponds to a modal element id, and when clicked, it will launch your modal.</p>
+						<p>Options may be added to the modal via script or as <code>data-</code> attributes on either the modal or the control element.</p>
+						<p>To enable fade-in/-out transitions on a modal, include <code>.fade</code> on the <code>.modal</code> element.</p>
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div id="modal-demo" class="modal hide fade" style="display: none;"&gt;
+  &lt;div class="modal-header"&gt;
+    &lt;button type="button" class="close" data-dismiss="modal"&gt;×&lt;/button&gt;
+    &lt;h3&gt;Modal Heading&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-body"&gt;
+    &hellip;
+  &lt;/div&gt;
+  &lt;div class="modal-footer"&gt;
+    &lt;a href="#" class="btn" data-dismiss="modal"&gt;Cancel&lt;/a&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Save changes&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;a data-toggle="modal" href="#modal-demo" class="btn"&gt;Launch Modal&lt;/a&gt;</pre>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-modal</li>
+								<li>bootstrap/bootstrap-transition</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /tooltips -->
+		</tbody>
+		</table>
+							<h2 class="voice voice-brand" id="loading-indicators">Loading Indicators</h2>
+		<table class="documentation">
+			<thead>
+				<tr>
+					<th>Example</th>
+					<th>Description</th>
+					<th>Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="example">
+						<div class="progress">
+							<div class="bar" style="width: 45%;"></div>
+						</div>
+					</td>
+					<td class="description">Progress Bar (Basic)</td>
+					<td class="usage">
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="progress"&gt;
+  &lt;div class="bar" style="width: 45%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>Use a percentage width on <code>.bar</code> to advance progress bars.</p>
+						<hr>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="progress"&gt;
+  &lt;div class="bar" style="width: 45%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</td>
+				</tr> <!-- /basic progress bar -->
+				<tr>
+					<td class="example">
+						<div class="progress progress-striped">
+							<div class="bar" style="width: 45%;"></div>
+						</div>
+					</td>
+					<td class="description">Progress Bar (Striped)</td>
+					<td class="usage">
+						<p>Add <code>.progress-striped</code> to add a striping effect to the progress bar.</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="progress progress-striped"&gt;
+  &lt;div class="bar" style="width: 45%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</td>
+				</tr> <!-- /striped progress bar -->
+        <tr>
+          <td class="example">
+            <div class="spinner"></div>
+          </td>
+          <td class="description">Indeterminate Progress Spinner</td>
+          <td class="usage">
+    <pre class="prettyprint linenums lang-html">
+&lt;div class="spinner"&gt;&lt;/div&gt;</pre>
+          </td>
+        </tr> <!-- spinner -->
+
+			</tbody>
+		</table>
+
+							<h2 class="voice voice-brand" id="search-utilities">Search Utilities</h2>
+		<table class="documentation">
+			<thead>
+				<tr>
+					<th>Example</th>
+					<th>Description</th>
+					<th>Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="example">
+						<form class="form-search">
+							<div class="input-append">
+								<input type="text" class="input-medium search-query" data-provide="typeahead" data-items="5" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'><button type="submit" class="btn btn-icon"><i class="icon-ico_search_lg"></i></button>
+							</div>
+						</form>
+					</td>
+					<td class="description">Typeahead</td>
+					<td class="usage">
+						<p>Script:</p>
+		<pre class="prettyprint linenums lang-javascript">
+$(&hellip;).typeahead();</pre>
+						<p>Options:</p>
+						<table>
+							<tr>
+								<th>Name</th>
+								<th>type</th>
+								<th>default</th>
+								<th>description</th>
+							</tr>
+							<tr>
+								<td>source</td>
+								<td>array</td>
+								<td>[ ]</td>
+								<td>The data source to query against.</td>
+							</tr>
+							<tr>
+								<td>items</td>
+								<td>number</td>
+								<td>8</td>
+								<td>The max number of items to display in the dropdown.</td>
+							</tr>
+							<tr>
+								<td>matcher</td>
+								<td>function</td>
+								<td>case insensitive</td>
+								<td>The method used to determine if a query matches an item. Accepts a single argument, the <code>item</code> against which to test the query. Access the current query with <code>this.query</code>. Return a boolean <code>true</code> if query is a match.</td>
+							</tr>
+							<tr>
+								<td>sorter</td>
+								<td>function</td>
+								<td>exact match,<br> case sensitive,<br> case insensitive</td>
+								<td>Method used to sort autocomplete results. Accepts a single argument <code>items</code> and has the scope of the typeahead instance. Reference the current query with <code>this.query</code>.</td>
+							</tr>
+							<tr>
+								<td>highlighter</td>
+								<td>function</td>
+								<td>highlights all default matches</td>
+								<td>Method used to highlight autocomplete results. Accepts a single argument <code>item</code> and has the scope of the typeahead instance. Should return html.</td>
+							</tr>
+						</table>
+						<p>To automatically trigger typehead, add <code>data-provide="typeahead"</code> to a text input control. Any of the above options may be specified via <code>data-</code> attributes.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-typeahead</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /typeahead -->
+				<tr>
+					<td class="example">
+
+
+            <div class="typeahead typeahead-faceted dropdown-menu" style="display: block; position: relative; width: 100%;">
+              <ul class="unstyled">
+                <li class="facet">
+                  <div class="facet-name">Top Result</div>
+                  <ul class="facet-results unstyled">
+                    <li><a href="#"><strong>Ma</strong>ine</a></li>
+                  </ul>
+                </li>
+                <li class="facet">
+                  <div class="facet-name">States</div>
+                  <ul class="facet-results unstyled">
+                    <li><a href="#"><strong>Ma</strong>ine</a></li>
+                    <li><a href="#"><strong>Ma</strong>ryland</a></li>
+                    <li><a href="#"><strong>Ma</strong>ssachusetts</a></li>
+                    <li><a href="#">Alaba<strong>ma</strong></a></li>
+                  </ul>
+                </li>
+                <li class="facet">
+                  <div class="facet-name">Cities</div>
+                  <ul class="facet-results unstyled">
+                    <li><a href="#"><strong>Ma</strong>bleton, GA</a></li>
+                    <li><a href="#"><strong>Ma</strong>cedon, NY</a></li>
+                    <li><a href="#"><strong>Ma</strong>cedonia, OH</a></li>
+                    <li><a href="#"><strong>Ma</strong>chesney Park, IL</a></li>
+                    <li><a href="#"><strong>Ma</strong>comb, IL</a></li>
+                  </ul>
+                </li>
+                <li class="last"><a href="#">View All Results</a></li>
+              </ul>
+            </div>
+					</td>
+					<td class="description">Faceted Search Results</td>
+					<td class="usage">
+						<p>For use with non-flattened typeahead item sets.</p>
+						<p>Markup:</p>
+		<pre class="prettyprint linenums lang-html">
+&lt;div class="typeahead typeahead-faceted dropdown-menu"&gt;
+  &lt;ul class="unstyled"&gt;
+    &lt;li class="facet"&gt;
+      &lt;div class="facet-name"&gt;Name&lt;/div&gt;
+      &lt;ul class="facet-results unstyled"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Items&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+						<p>Requires the typeahead to be initialized via JavaScript with <code>matcher</code>, <code>sorter</code> and <code>highlighter</code> functions specified to handle the items object.</p>
+						<div class="alert alert-info">
+							<strong>Script Requirements:</strong>
+							<ul>
+								<li>bootstrap/bootstrap-typeahead</li>
+							</ul>
+						</div>
+					</td>
+				</tr> <!-- /faceted search -->
+			</tbody>
+		</table>
+
+				</div>
+			</div>
+    </div>
+</div>
+
+    <script src="../../components/respond/respond.min.js"></script>
+
+    <script src="../../components/requirejs/require.js"></script>
+    <script src="../../js/require.config.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: '../../',
+        waitSeconds: 30
+      });
+
+      // Preload JS libraries and exec page scripts
+      require([
+        'jquery',
+        'ge-bootstrap',
+        'spinner',
+        'components/prettify/prettify',
+        'mds'
+      ], function($) {
+        $(function() {
+          // -------------------
+          // DOCUMENTATION SETUP
+          // -------------------
+
+          // Create a global function that can be called from inside iframes
+          // to resize the frame to fit the content window.
+          /*window.resizeFrame = function( src, h ) {
+            $( 'iframe[src="' + src + '"]').css( { height: h + 'px' } );
+          }*/
+
+          // Make code lovely using Google Prettify.
+          window.prettyPrint && prettyPrint();
+
+          // Enable ScrollSpy for dynamic navigation highlighting.
+          // We provide our own version of the "activate" function because
+          // the default Bootstrap lib doesn't handle dropdowns very well.
+          $.fn.scrollspy.Constructor.prototype.activate = function( target ) {
+            var active,
+                selector;
+
+            this.activeTarget = target;
+
+            $( this.selector )
+              .parent('.active')
+              .removeClass('active');
+
+            selector = this.selector
+                     + '[data-target="' + target + '"],'
+                     + this.selector + '[href="' + target + '"]';
+
+            active = $( selector )
+              .parent('li')
+              .addClass('active');
+
+            if ( active.parents('.dropdown-menu') ) {
+              active = active.parents('.btn-group').addClass('active');
+            }
+
+            active.trigger('activate');
+          }
+          // And now we initialize ScrollSpy on the body.
+          // DO NOT use data attributes on this, as it will init before our
+          // new constructor activate function is applied; this would be bad.
+          $('body').scrollspy({
+            offset: 120,
+            target: '.primary-navbar'
+          });
+          // Extend jQuery with a better easing function, so we can make
+          // some pretty scrolling animations.
+          // This easing function is from:
+          // jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+          // Open source under the BSD License.
+          // Copyright © 2008 George McGinley Smith
+          // All rights reserved.
+          $.extend($.easing, {
+            def: 'easeInOutCubic', easeInOutCubic: function (x, t, b, c, d) {
+              if ((t/=d/2) < 1) return c/2*t*t*t + b;
+              return c/2*((t-=2)*t*t + 2) + b;
+            }
+          });
+
+          // Finally, add some smooth scrolling to our body when one of the
+          // primary-navbar links are clicked (even though this isn't in
+          // Bootstrap, which everyone said it was... we'll rebuild anyway).
+          // $('.primary-navbar a').click(function( event ) {
+          //   event.preventDefault();
+          //   var offset = $( $(this).attr('href') ).offset();
+          //   $( 'html, body' ).animate( { scrollTop: offset.top - 120 }, 1000, 'easeInOutCubic' );
+          // });
+
+          $('.primary-navbar a').click(
+            function( event ) {
+              event.preventDefault();
+              var offset = $( $(this).attr('href') ).offset();
+              if (typeof offset !== 'undefined') {
+                $( 'html, body' ).animate( { scrollTop: offset.top - 120 }, 1000, 'easeInOutCubic' );
+              }
+            }
+          );
+
+            // Conditionally load D3/Declarative Viz if SVG is supported.
+            // This should prevent errors from being thrown in IE8
+            if (Modernizr.svg) {
+
+                require(['declarative-visualizations'], function(visualizations) {
+
+                    var components = [];
+
+                    $('div[data-visualization]').each(function(i, element) {
+                        var viz = $(element).attr('data-visualization');
+                        components.push( visualizations[viz](element) );
+                    });
+
+                });
+                // If SVG isn't supported alert the user that some elements won't be loaded
+            } else {
+                alert('Your browser does not support SVG.\nAny element using D3.js will be omitted.');
+            }
+
+          // ONE LAST THING! If this happens to be an iframe window we're
+          // loading then we will essentially create a listener that checks
+          // the body height, so that if the contents of this frame change
+          // then it will call back to the parent to continually resize the
+          // frame to always fit the content window.
+          // if ( parent != top ) {
+          //   var $el = $('body'),
+          //       h   = $el.height(),
+          //       key = 'body-height',
+          //       src = document.location.pathname;
+          //   $.data( this, key, h );
+          //   parent.resizeFrame( src, h );
+          //   function listen() {
+          //     var timeout = setTimeout(function() {
+          //       var h   = $el.height(),
+          //           old = $.data( this, key );
+          //           if ( h !== old ) {
+          //             $.data( this, key, h );
+          //             parent.resizeFrame( src, h );
+          //           }
+          //       listen();
+          //     }, 250);
+          //   }
+          //   listen();
+          // }
+
+          // Now, on to...
+
+          // ---------------------------
+          // DOCUMENTATION FUNCTIONALITY
+          // ---------------------------
+
+          // Enable stateful buttons
+          $('[rel=stateful]').click(function() {
+            var $self = $(this);
+            $self.button('loading');
+            setTimeout(function() {
+              $self.button('reset');
+            }, 3000);
+          });
+
+          // Enable spinners
+         $('[rel=spinner]').spin();
+
+         $('.spinner').spin();
+
+          // Enable tooltips
+          $('[rel=tooltip]').tooltip();
+
+          // Enable popovers
+          $('[rel=popover]').popover();
+
+          // Enable tabs (with dropdowns, mainly)
+          $('.nav-tabs > li > a').click(function(event) {
+            event.preventDefault();
+            $(this).tab('show');
+          });
+
+          // Make accordion carets animate!
+          $('.accordion .collapse')
+            .on('show', function() {
+              $(this).prev('.accordion-heading').find('.accordion-toggle').addClass('in');
+            })
+            .on('hide', function() {
+              $(this).prev('.accordion-heading').find('.accordion-toggle').removeClass('in');
+            });
+
+            // $('.modal').on('shown', function () {
+            //   var modalHeight = $(window).innerHeight() - 60;
+            //   var bodyHeight = modalHeight - $(this).find('.modal-header').outerHeight() - $(this).find('.modal-footer').outerHeight();
+            //   $(this).css({ 'max-height': modalHeight });
+            //   $(this).find('.modal-body').css({ 'max-height': bodyHeight });
+            // });
+        });
+      });
+    </script>
+
+</body>
+</html>

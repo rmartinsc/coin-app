@@ -1,0 +1,77 @@
+.carousel {
+  .next,
+  .prev {
+    // Override the relative position from Backstretch
+    // so the Bootstrap animations are preserved.
+    position: absolute !important;
+  }
+  .carousel-control {
+    background-color: #000;
+    border: 0;
+    .border-radius(20px);
+    color: @white;
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    opacity: 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 40px;
+    // https://github.com/twitter/bootstrap/issues/7583
+    // .transition(~"opacity 0.4s ease");
+    top: 50%;
+    left: 8%;
+
+    // Reposition the right one
+    &.right {
+      left: auto;
+      right: 8%;
+    }
+
+    i {
+      margin-top: 0;
+    }
+  }
+  &:hover .carousel-control {
+    opacity: 0.70;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .carousel-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    .border-radius(@btnBorderRadius);
+    height: 8px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    li {
+      display: inline-block;
+      margin-left: 8px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+    li a {
+      background-color: @white;
+      .border-radius(4px);
+      cursor: pointer;
+      display: block;
+      height: 8px;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      width: 8px;
+      // https://github.com/twitter/bootstrap/issues/7583
+      // .transition(~"background-color 0.2s ease");
+      &.active,
+      &:hover,
+      &:active {
+        background-color: @blue;
+      }
+    }
+  }
+}

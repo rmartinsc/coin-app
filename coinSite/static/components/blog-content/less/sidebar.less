@@ -1,0 +1,217 @@
+.block.sidebar {
+  font-size:@baseFontSize;
+  padding: 0px;
+  background-color: transparent;
+  &:first-of-type {
+    border: none;
+  }
+  h2 {
+    color: @grayDarkest;
+    font-size: @baseFontSize + 4;
+    font-weight:bold;
+    line-height: 1.5*@baseLineHeight;
+    margin-bottom:0.625*@baseLineHeight;
+    margin-top:2.5*@baseLineHeight;
+  }
+  h4 {
+    margin-bottom: 0px;
+    font-family: @brandFontFamily;
+    font-weight: bold;
+  }
+  h6 {
+    color: @grayDarkest;
+    font-size: @baseFontSize;
+    font-weight:bold;
+    line-height: 20px;
+    margin-bottom:0.625*@baseLineHeight;
+    margin-top: 0;  // 30px
+  }
+  > div:first-child h2 {
+    margin-top: @baseLineHeight;
+  }
+  a {
+    color:@linkColor;
+    i {
+      color:@linkColor;
+      &[class*="arrow"], &[class*="download"] {
+        position: relative; // MDS-307
+        top: 1px;
+        display: inline-block;
+        color: @blue;
+        &:hover {
+          color: @blueDark;
+        }
+      }
+    }
+    &:hover {
+      color:@blueDark;
+    }
+  }
+
+  .fullbleed {
+    margin-left: -20px;
+  }
+
+  .fill-container {
+    width: 100%;
+  }
+
+  img.fullbleed {
+    max-width: calc(~'100% + 40px');
+  }
+
+  .rail-module {
+    margin-bottom: 1px;
+    padding: @paddingHorizontal - 5 @paddingHorizontal @paddingHorizontal @paddingHorizontal;
+    background-color: @white;
+    &.graphic-links {
+      padding-left: 0;
+      padding-right: 0;
+
+      .caption,
+      .module-title, {
+        font-family: @sansFontFamily;
+        padding-left: @paddingHorizontal;
+        padding-right: @paddingHorizontal;
+      }
+      h6,
+      button {
+        padding-left: @paddingHorizontal;
+        padding-right: @paddingHorizontal;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    li {
+      border-top: none;
+      i {
+        color: @linkColor;
+      }
+    }
+    .module-title {
+      color: @black;
+    }
+  }
+
+    // specific to navigation module
+  .sidenav li, .items li, .downloads li {
+    line-height: 0.75*@baseLineHeight;
+    margin-bottom: @baseLineHeight/3;
+  }
+
+  .related {
+    .thumbnail > img {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  // specific to info banner module
+  .banner {
+    .thumbnail img {
+      width: 65%;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    .thumbnail .caption p {
+      font-style: normal;
+      margin-top: 0;
+    }
+    .btn-link {
+      font-weight: bold;
+      margin-top: 15px;
+      text-align: left;
+      &:hover i {
+        color: @linkColorHover;
+      }
+    }
+    .btn-link [class^="icon"] {
+      margin-left: -1px;
+    }
+  }
+
+  // specific to download module
+  .downloads li {
+    margin-bottom: 0.375*@baseLineHeight;
+    small {
+      color:#bbb;
+      font-size:11px;
+      font-weight:normal;
+    }
+    a.inverse:hover small {
+      color:@linkColor;
+    }
+    i {
+      margin-left: 3px;
+    }
+  }
+}
+
+// Inverse links
+// -------------------------
+// Set links to the reverse of the expected Bootstrap coloration,
+// so that the defualt color is the standard text color and the
+// hover/active state is the default link color.
+a.inverse {
+  color: @textColor;
+  &:hover,
+  &:active,
+  &.active,
+  &[disabled] {
+    color: @linkColor;
+  }
+}
+
+
+// Structured List
+// -------------------------
+// List with 1px border and spacing between list items. "capped"
+// variant adds borders to the top and bottom of the list as well.
+ul.structured {
+  list-style: none;
+  margin-left: 0;
+  > li {
+    border-top: 1px solid @grayLight;
+    margin-top: 0.625 * @baseLineHeight;
+    padding-top: 0.625 * @baseLineHeight;
+    &:first-child {
+      border-top: 0;
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+  }
+  &.capped > li {
+    &:first-child {
+      border-top: 1px solid @grayLight;
+      padding-top: 0.625 * @baseLineHeight;
+    }
+    &:last-child {
+      border-bottom: 1px solid @grayLight;
+      padding-bottom: 0.625 * @baseLineHeight;
+    }
+  }
+}
+// Thumbnails
+.thumbnail {
+  // strip away bootstrap visual treatment
+  background-color: transparent;
+  .box-shadow(none);
+  .border-radius(0);
+  padding: 0;
+}
+.thumbnail .caption {
+  // override to our color
+  color: @textColor;
+}
+.thumbnail .caption p {
+  // this is the most common text style in captions
+  // others will override these as necessary
+  font-size: 14px;
+  font-style: italic;
+  line-height: 0.625*@baseLineHeight;
+  margin-bottom: 0px !important;
+  margin-top: 30px;
+}

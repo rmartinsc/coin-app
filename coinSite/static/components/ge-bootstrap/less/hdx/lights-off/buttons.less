@@ -1,0 +1,335 @@
+// Basic buttons
+.btn {
+  #gradient > .vertical(@btnBackground, darken(@btnBackground, 3.5%));
+	border-color: @grayDarker;
+
+  &:hover,
+  &.hover {
+    background: @btnHoverBackground;
+    border-color: @grayDark;
+    color: @grayLight;
+  }
+
+  &:active,
+  &.active {
+    color: @white;
+    background-color: @blue;
+    #gradient > .vertical(@blue, darken(@blue, 11.5%));
+    border-color: darken(@blue, 10%);
+  }
+
+  &.disabled,
+  &.disabled:hover,
+  &.disabled.hover,
+  &.disabled:active,
+  &.disabled.active {
+    background-color: @grayDarkest;
+  }
+
+  &.btn-primary {
+    background: @grayDark;
+    color: @black;
+    border-color: @grayDark;
+    text-shadow: none;
+
+    &:hover,
+    &.hover {
+      background: @grayLight;
+      border-color: @grayLight;
+    }
+
+    &:active,
+    &.active {
+      color: @white;
+      //background-color: @blue;
+      #gradient > .vertical(@blue, darken(@blue, 11.5%));
+    	border-color: darken(@blue, 10%);
+      //border-color: @blue;
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      background: @grayDark;
+      color: @black;
+      border-color: @grayDark;
+    }
+  } // &.btn-primary
+
+	&.btn-default {
+		&:hover,
+		&.hover  {
+			border-color:@grayDark;
+		}
+
+		&:active,
+		&.active {
+			border-color: darken(@blue, 10%);
+		}
+	}
+
+  &.btn-inverse {
+    color: @grayLight;
+	  background: @grayDarker none;
+	  border-color: @grayDarker;
+
+    &:hover,
+    &.hover {
+      color: @grayLight;
+      border-color: @grayDarkest;
+      background-color: @grayDarkest;
+    }
+
+    &:active,
+    &.active {
+      color: @white;
+      #gradient > .vertical(@blue, darken(@blue, 11.5%));
+     //  background-color: @blue;
+      border-color: darken(@blue, 10%);
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      color: @grayDark;
+      border-color: @grayDarkest;
+      background-color: @grayDarkest;
+    }
+  } // &.btn-inverse
+
+  &.btn-info {
+    border: 1px solid @blue;
+    background-color: @grayDarkest;
+    color: @grayDark;
+
+    &:hover,
+    &.hover {
+      background-color: lighten(@black, 6.5%);
+      border-color: darken(@blue, 10%);
+    }
+
+    &:active,
+    &.active {
+      color: @white;
+      
+      #gradient > .vertical(@blue, darken(@blue, 11.5%));
+       background-color: @blue;
+      border-color: darken(@blue, 10%);
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      color: @grayDark;
+	    background: @grayDarkest none;
+	    border-color: darken(@blue, 20%);
+    }
+  } // &.btn-info
+
+  &.btn-success,
+  &.btn-warning,
+  &.btn-danger,
+  &.btn.btn-success + .btn.dropdown-toggle,
+  &.btn.btn-warning + .btn.dropdown-toggle,
+  &.btn.btn-danger + .btn.dropdown-toggle
+   {
+  background-color: @btnBackground;
+    border: 1px solid;
+    color: @grayDark;
+
+    &:hover,
+    &.hover {
+       color: @grayDark;
+      background-color: lighten(@black, 6.5%);
+    }
+
+    &:active,
+    &.active {
+    	&:before{
+    	color:@white;
+    	}
+      color: @white;
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      color: @grayDark;
+      background-color: @grayDarkest;
+    }
+  }
+
+  &.btn-success,
+  &.btn.btn-success + .btn.dropdown-toggle {
+  	&:before{
+  		color: @green;
+  	}
+    border-color: @green;
+	background-color:@btnBackground;
+    &:hover,
+    &.hover {
+      border-color: darken(@green, 10%);
+    }
+
+    &:active,
+    &.active {
+    background-color: darken(@green, 10%);
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      border-color: darken(@green, 20%);
+    }
+  } // &.btn-success
+
+  &.btn-warning,
+  &.btn.btn-warning + .btn.dropdown-toggle {
+  	&:before{
+  		color: @orange;
+  	}
+    border-color: @orange;
+	background-color:@btnBackground;
+    &:hover,
+    &.hover {
+      border-color: darken(@orange, 10%);
+    }
+
+    &:active,
+    &.active {
+	    background: darken(@orange, 10%) none;
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      border-color: darken(@orange, 20%);
+    }
+  } // &.btn-warning
+
+  &.btn-danger,
+  &.btn.btn-danger + .btn.dropdown-toggle {
+  	&:before{
+  		color: @red;
+  	}
+    border-color: @red;
+	background-color:@btnBackground;
+    &:hover,
+    &.hover {
+      border-color: darken(@red, 10%);
+    }
+
+    &:active,
+    &.active {
+	    background: darken(@red, 10%) none;
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      border-color: darken(@red, 20%);
+    }
+  } // &.btn-danger
+} // .btn
+
+
+// Mega buttons
+.btn {
+  &.btn-mega {
+    border-color: lighten(@grayDarker, 5%);
+    #gradient > .vertical(@btnBackground, darken(@btnBackground, 3.5%));
+    background-color: @btnBackground;
+    &:hover,
+    &.hover {
+      color: @grayLighter;
+      border-color: lighten(@grayDarkest, 5%);
+      background-color: darken(@btnBackground, 3.5%);
+    }
+
+    &:active,
+    &.active {
+      color: @white; // Required to override gray hover color
+	    border-color: darken(@blue, 10%);
+      #gradient > .vertical(@blue, darken(@blue, 11.5%));
+      background-color: @blue;
+    }
+
+    &.disabled,
+    &.disabled:hover,
+    &.disabled.hover,
+    &.disabled:active,
+    &.disabled.active {
+      border-color: @grayDarkest;
+	    background: @btnBackground none;
+    }
+
+    &.btn-success,
+    &.btn-warning,
+    &.btn-danger {
+	background-color: @btnBackground;
+      &.disabled,
+      &.disabled:hover,
+      &.disabled.hover,
+      &.disabled:active,
+      &.disabled.active,
+      &:hover {
+        background-color: @btnBackground;
+      }
+
+      &:hover,
+      &.hover {
+        background-color: @btnHoverBackground;
+      }
+    }
+
+    &.btn-success {
+      &:hover,
+      &.hover {
+        border-color: darken(@green, 10%);
+      }
+
+      &:active,
+      &.active {
+	      background: darken(@green, 10%) none;
+      }
+    }
+
+    &.btn-warning {
+      &:hover,
+      &.hover {
+        border-color: darken(@orange, 10%);
+      }
+
+      &:active,
+      &.active {
+	      background: darken(@orange, 10%) none;
+      }
+    }
+
+    &.btn-danger {
+      &:hover,
+      &.hover {
+        border-color: darken(@red, 10%);
+      }
+
+      &:active,
+      &.active {
+	      background: darken(@red, 10%) none;
+      }
+    }
+  }
+}

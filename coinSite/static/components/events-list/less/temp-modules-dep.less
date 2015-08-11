@@ -1,0 +1,229 @@
+// Temporary
+@import "ge-bootstrap/less/ge-bootstrap.less";
+
+.modules {
+  .module {
+
+    // start draggable overrides 
+
+    &.draggable {
+      .module-header {
+        &:hover {
+          cursor: default;
+        }
+        &:active {
+          background-color: @white;
+        }
+      }
+    }
+
+    &.scrollable {
+      .module-body {
+        overflow-y: scroll; 
+      }
+    }
+
+    // end draggable overrides 
+
+    height: 380px;
+    min-height: 380px;
+    padding: 0px;
+    margin-bottom: @gridGutterWidth1200;
+    border-radius: 0;
+    background-color: @white;
+    header.module-header {
+      .btn-small {
+        i {
+          margin-bottom: -4px;
+        }
+      }
+      .btn-group {
+        margin: 0;
+      }
+      padding-top: @gridGutterWidth1200;
+      padding-left: @gridGutterWidth1200;
+      padding-right: @gridGutterWidth1200;
+    }
+    .module-body {
+      height: 300px;
+    }
+    .module-footer {
+      padding-left: @gridGutterWidth1200;
+      padding-right: @gridGutterWidth1200;
+    }
+    &.with-footer {
+      .module-body {
+        height: 260px;
+      }
+    }
+    &.draggable .module-body > div:first-child, .module-body > ul {
+      padding: 0 15px 0 @gridGutterWidth1200;
+    }
+    // -- feature rule overrides
+    .block.feature {
+      min-height: 0;
+    }
+    // -- Specific module types
+    &.chromeless {
+
+    }
+    &.double {
+      height: 790px;
+      min-height: 790px;
+      .module-body {
+        height: 710px;
+      }
+    }
+    // -- Specific content types
+    .hero {
+      .text.bottom {
+        left: @gridGutterWidth1200;
+        margin-left: 0;
+      }
+    }
+    &.links {
+      .module-body {
+        ul {
+          margin-top: 0;
+        }
+      }
+    }
+    &.with-toolbar {
+      header {
+        .toolbar {
+          .clearfix;
+          margin-top: 20px;
+          .btn-group {
+            float: left;
+          }
+          form.form-search {
+            display: inline-block;
+            width: auto;
+            margin-top: 10px;
+            margin-bottom: 0;
+            float: left;
+            .input-small {
+              width: 90px;
+            }
+            .btn {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+      .module-body {
+        height: 200px;
+      }
+      &.double {
+        .module-body {
+          height: 610px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .modules {
+    .module {
+      padding: 0;
+      &.draggable {
+        padding: 0;
+        .module-body {
+          > div:first-child {
+            padding-left: 15px;
+          }
+        }
+      }
+      &.scrollable {
+        .module-body {
+          height: auto;
+          overflow-y: hidden;
+        }
+      }
+      &.with-toolbar {
+        header {
+          .toolbar {
+            .btn-group {
+              display: block;
+              float: none;
+            }
+            form.form-search {
+              display: block;
+              float: none;
+            }
+          }
+        }
+        .module-body {
+          height: 175px;
+        }
+        &.double {
+          .module-body {
+            height: auto;
+            min-height: 0;
+          }
+        }
+      }
+      header.module-header {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        form.form-search {
+          margin-bottom: 10px;
+        }
+        .toolbar {
+          margin-top: 10px;
+        }
+      }
+      .module-body {
+        padding-bottom: 10px;
+        > ul {
+          padding-left: 15px;
+        }
+        > div:first-child {
+          padding-left: 15px;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .modules .module {
+    position: relative !important; // override masonry
+    left: 0px !important;
+    top: 0px !important;
+    height: auto !important;
+
+    &.with-toolbar {
+      header {
+        .toolbar {
+          .clearfix;
+          margin-top: 20px;
+          .btn-group {
+            float: none;
+            display: inline-block;
+            margin-right: 10px;
+          }
+          form.form-search {
+            display: inline-block;
+            margin-top: 20;
+            float: none;
+            .input-small {
+              width: 90px;
+            }
+            .btn {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

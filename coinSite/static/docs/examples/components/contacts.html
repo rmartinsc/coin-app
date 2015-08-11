@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Application Example: Contact List with Presence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../components/brandkit/favicon/favicon-144px.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../components/brandkit/favicon/favicon-114px.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../components/brandkit/favicon/favicon-72px.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../../components/brandkit/favicon/favicon.png">
+
+    <link href="../../../css/mds.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="../../../css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    
+
+    <script src="../../../components/modernizr/modernizr.js"></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+  <div class="modules masonry"><!-- start modules container -->
+    <section class="module contacts draggable scrollable with-toolbar double col-md-3" style="margin-left: 30px;">
+      <header class="module-header">
+        <div class="clearfix">
+          <h3 class="voice voice-brand pull-left">Contacts</h3>
+          <div class="btn-group pull-right">
+            <button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><i class="icon-ico_chevron_down_lg"></i></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="toolbar">
+          <div class="btn-group" data-toggle="buttons-radio">
+            <button class="btn active">Recent</button>
+            <button class="btn">Favorites</button>
+          </div>
+          <div class="input-group input-prepend pull-right form-search" style="width: 140px;">
+              <input type="search" placeholder="Search" class="form-control search-query" data-toggle="dropdown" data-target=".navbar-search">
+              <span class="input-group-btn">
+                  <button type="submit" class="btn btn-icon"><i class="icon-ico_search_lg"></i></button>
+              </span>
+          </div>
+        </div>
+      </header>
+      <div class="module-body">
+        <ul class="contact-list list-unstyled">
+          <li>
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-05.png">
+                <div class="info">
+                  <h6>Alice Andrews</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-04.png">
+                <div class="info">
+                  <h6>Robert French</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-03.png">
+                <div class="info">
+                  <h6>Diane Haight</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability"><i class="icon-availability"></i>Not Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-01.png">
+                <div class="info">
+                  <h6>Julie Jackson</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-02.png">
+                <div class="info">
+                  <h6>Roger Samson</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability"><i class="icon-availability"></i>Not Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="ie-hide">
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-01.png">
+                <div class="info">
+                  <h6>Teresa Turner</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="ie-hide">
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-02.png">
+                <div class="info">
+                  <h6>Stewart Vernon</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="ie-hide">
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-05.png">
+                <div class="info">
+                  <h6>Alice Andrews</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="ie-hide">
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-05.png">
+                <div class="info">
+                  <h6>Alice Andrews</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="ie-hide">
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-05.png">
+                <div class="info">
+                  <h6>Alice Andrews</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="ie-hide">
+            <div class="contact">
+              <div class="wrapper">
+                <img src="../../assets/images/ede-contact-thumb-05.png">
+                <div class="info">
+                  <h6>Alice Andrews</h6>
+                  <p>Job Title, GE Business</p>
+                  <p class="hide">San Ramon, CA, USA <time datetime="HH:MM" class="message-time">5:29 PM PST</time></p>
+                  <p class="availability available"><i class="icon-availability"></i>Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <div class="btn-group">
+                <a href="#" rel="tooltip" data-original-title="Message" class="btn"><i class="icon-ico_mail_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Share" class="btn"><i class="icon-ico_contrast_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Cell" class="btn"><i class="icon-ico_calendar_sm icon-black"></i></a>
+                <a href="#" rel="tooltip" data-original-title="Phone" class="btn"><i class="icon-ico_phone_sm icon-black"></i></a>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="#"><i class="icon-ico_user_male_lg"></i></a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-ico_chevron_down_lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">View Organization</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Follow on Colab</a></li>
+                  <li><a href="#">Add to Favorites</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Share Profile</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="view-all">
+            <a href="#" class="btn btn-link" nowrap>View all Contacts <i class="icon-ico_arrowright_lg"></i></a>
+          </li>
+        </ul>
+      </div>
+      <footer class="module-footer"></footer>
+    </section>
+  </div>
+    <script src="../../../components/respond/respond.min.js"></script>
+    <script src="../../../components/requirejs/require.js"></script>
+    <script src="../../../js/require.config.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: '../../../'
+      });
+      require(['mds', 'jquery']);
+    </script>
+  <script>
+      requirejs.config({
+        baseUrl: '../../../'
+      });
+      require(['mds', 'jquery', 'contact-list'], function() {
+
+      });
+    </script>
+    <!-- end scripts -->
+    </body>
+    </html>

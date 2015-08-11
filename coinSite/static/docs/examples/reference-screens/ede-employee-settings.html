@@ -1,0 +1,793 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Application Example: Employee Profile Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../components/brandkit/favicon/favicon-144px.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../components/brandkit/favicon/favicon-114px.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../components/brandkit/favicon/favicon-72px.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../../components/brandkit/favicon/favicon.png">
+
+    <link href="../../../css/mds.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/cwc.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="../../../css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    
+
+    <script src="../../../components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <!-- start sticky footer structure, note class is applied to the body's child container! -->
+    <div class="sticky-footer">
+      <header class="header">
+        <nav class="navbar
+             navbar-small 
+            
+                navbar-static-top
+            
+            navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="ge-logo"></span>
+                <span class="primary-brand"></span>
+                <span class="secondary-brand">My Application</span>
+            </a>
+        </div>
+
+        
+        <div class="toolbar-container pull-right">
+            
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <!-- search form -->
+            <form class="navbar-search inverse pull-right">
+                <div class="input-group input-prepend" style="width: 210px;">
+                    <input type="search" placeholder="Search" class="form-control search-query" data-toggle="dropdown" data-target=".navbar-search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-icon"><i class="icon-ico_search_lg"></i></button>
+                    </span>
+                </div>
+                <div class="typeahead typeahead-faceted dropdown-menu pull-right">
+                    <ul class="list-unstyled">
+                        <li class="facet">
+                            <div class="facet-name">Top Result</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">States</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                                <li><a href="#"><strong>Ma</strong>ryland</a></li>
+                                <li><a href="#"><strong>Ma</strong>ssachusetts</a></li>
+                                <li><a href="#">Alaba<strong>ma</strong></a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">Cities</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>bleton, GA</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedon, NY</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedonia, OH</a></li>
+                                <li><a href="#"><strong>Ma</strong>chesney Park, IL</a></li>
+                                <li><a href="#"><strong>Ma</strong>comb, IL</a></li>
+                            </ul>
+                        </li>
+                        <li class="last"><a href="#">View All Results</a></li>
+                    </ul>
+                </div>
+            </form>
+
+        
+        
+
+
+
+        <div class="btn-group">
+            <button class="btn dropdown-toggle btn-default" rel="tooltip" data-title="Notifications" data-placement="bottom" data-toggle="dropdown"><i class="icon-ico_bell_lg"></i> 1</button>
+            <ul class="dropdown-menu pull-right message-list">
+                <li class="message-item">
+                    <a href="#">
+                        <span class="label label-default">Action Required</span>
+                        <h6 class="message-title">Notification 1</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…<br><time datetime="MM:DD:YYTHH:MM:SS" class="message-time">Nov 13, 2013  9:22 AM</time></p>
+                    </a>
+                </li>
+                <li class="message-item">
+                    <a href="#">
+                        <h6 class="message-title">Notification 2</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…<br><time datetime="MM:DD:YYTHH:MM:SS" class="message-time">Nov 13, 2013  9:10 AM</time></p>
+                    </a>
+                </li>
+                <li class="message-item"><a href="#">View all Notifications</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle btn-default" rel="tooltip" data-title="Messages" data-placement="bottom" data-toggle="dropdown"><i class="icon-ico_mail_lg"></i> 1</button>
+            <ul class="dropdown-menu pull-right message-list">
+                <li class="message-item">
+                    <a href="#">
+                        <h6 class="message-title">Ben Franklin <small class="message-subject">Duis aute irure dolor</small></h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…<br><time datetime="MM:DD:YYTHH:MM:SS" class="message-time">Nov 13, 2013  9:22 AM</time></p>
+                    </a>
+                </li>
+                <li class="message-item">
+                    <a href="#">
+                        <h6 class="message-title">Issac Newton <small class="message-subject">Dolor in reprehenderit</small></h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…<br><time datetime="MM:DD:YYTHH:MM:SS" class="message-time">Nov 13, 2013  9:10 AM</time></p>
+                    </a>
+                </li>
+                <li class="message-item"><a href="#">View all Messages</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle btn-default" data-toggle="dropdown"><i class="icon-ico_user_male_lg"></i><span class="user-name">S. Smith </span> <i class="icon-ico_chevron_down_lg"></i></button>
+            <ul class="dropdown-menu pull-right">
+                <li class="location">
+                    <a href="#"><h6><i class="icon-ico_worldamericas_lg"></i> Change Location</h6>
+                        Van Buren Township, MI, USA</a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">Your Profile</a></li>
+                <li><a href="#">Settings &amp; Preferences</a></li>
+                <li><a href="#">Help</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </div>
+
+        
+    
+
+    </div>
+    </div>
+
+    <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+
+                
+
+                    
+
+                        
+
+                                    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle">Profile</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Network</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Performance</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events Calendar</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Training & Learning</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </li>
+
+                        
+
+                    
+
+                
+
+            </ul>
+        </div>
+    </div>
+</nav><!-- /navbar -->
+
+
+      </header>
+
+      <section class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block clearfix">
+              <h2 class="pull-left">Settings &amp; Preferences</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="fill-container full">
+        <div class="settings-banner">
+          <div class="row container banner-content">
+  
+            <div class="banner-lockup col-md-12">
+
+              <div class="row">
+
+                <div class="col-md-5">
+                  <div class="inline-block">
+                    <img class="banner-thumbnail" src="../../assets/images/ede-thumb-stewart.png">
+                  </div>
+                  <div class="inline-block">
+                    <h2>Stewart Smith</h2>
+                    Lorem Ipsum Job Title, GE Business<br>
+                    Van Buren Township MI, USA <span class="timestamp">8:29 PM EST</span>
+                    <p class="availability available"><i class="icon-availability"></i>Available</p>
+                  </div>
+                </div>
+
+                <div class="col-md-7 banner-lockup">
+                  <div class="pull-right">
+                    <button id="backgroundImage" class="btn hide"><i class="icon-ico_image_generic_sm"></i> Change Image</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            
+          </div><!-- end header row -->
+        </div>
+      </section>
+
+      
+
+      <section class="container">
+
+        <div class="row">
+          <div class="col-md-12">
+
+          </div>
+        </div>
+
+        <div class="row" style="margin-left: 0px;">
+          <section class="col-md-3 side-nav">
+            <div class="block multi-level-nav">
+              <ul class="collapsible-list" style="margin-left: 0px;">
+                
+                <li class="collapsible-list-subnav open">
+                  <a class="collapsible-list-parent" href="#summary"><strong class="selected-nav">Summary</strong></a>
+
+                  <ul class="collapsible-list secondary">
+                    <li>
+                      <a href="#skillsExpertise"><strong>Skills &amp; Expertise</strong></a>
+                    </li>
+                    <li>
+                      <a href="#currentAssignment"><strong>Current Assignment</strong></a>
+                    </li>
+                  </ul>
+
+                </li>
+                <li class="collapsible-list-subnav open">
+                  <a class="collapsible-list-parent" href="#contactInfo"><strong>Contact Information</strong></a>
+
+                  <ul class="collapsible-list secondary" style="display: none;">
+                    <li>
+                      <a href="#workContact"><strong>Work</strong></a>
+                    </li>
+                    <li>
+                      <a href="#homeContact"><strong>Home</strong></a>
+                    </li>
+                    <li>
+                      <a href="#emergencyContact"><strong>Emergency Contact</strong></a>
+                    </li>
+                  </ul>
+
+                </li>
+                <li class="collapsible-list-subnav">
+                  <a class="collapsible-list-parent" href="#experience"><strong>Experience</strong></a>
+                  <ul class="collapsible-list secondary" style="display: none;">
+                    <li>
+                      <a href="#experience"><strong>Professional</strong></a>
+                    </li>
+                    <li>
+                      <a href="#education"><strong>Education &amp; Training</strong></a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#networkAffiliations"><strong>Networks &amp; Affiliations</strong></a></li>
+              </ul>
+
+            </div>
+          </section><!-- end sidebar jumpnav -->
+
+          <section class="col-md-9">
+            <div class="row">
+              <section class="col-md-12">
+                <div id="summary" class="block">
+                  <h3 class="reset-top-margin">Summary</h3>
+
+                  <div class="row">
+                    
+                    <textarea class="ede-textarea-float col-md-7" rows="8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </textarea>
+
+                    <div class="col-md-4 help-block">
+                      Guidance on writing lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, fugiat nulla.
+                    </div>
+                            
+                  </div><!-- end edit summary row -->
+                  
+                  <br>
+                  
+                  <div class="row">
+                    <div class="col-md-4">
+                      <button class="btn" href="#">Cancel</button>
+                      <button class="btn btn-primary" href="#">Save</button>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="clearfix reset-top-margin settings-margin-left">
+
+                      <div class="form-group">
+                        <label for="blogLinkInput">Blog Link</label>
+                        <input type="text" class="blog-link form-control" id="blogLinkInput" value="http://www.gereports.com/author/stewart-smith" style="width: 575px;">
+                      </div>
+               
+                    </div>
+
+
+                  </div>
+
+                  <hr><!-- subsection divider -->
+
+
+                  <div class="row">
+
+                    <div id="skillsExpertise" class="clearfix reset-top-margin settings-margin-left">
+
+                      <h3>Skills &amp; Expertise <button class="btn pull-right inline ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button></h3>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <span class="label tag">Agile Development</span>
+                          <span class="label tag">Product Development</span>
+                          <span class="label tag">Executive Management</span>
+                          <span class="label tag">Adipiscing Consecteur</span>
+                          <span class="label tag">Dolor</span>
+                          <span class="label tag">Lorem Ipsum</span>
+                          <span class="label tag">Dolor</span>
+                          <span class="label tag">Sit Amet</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> 
+
+                  <hr><!-- subsection divider -->
+
+                  <div class="row">
+
+                    <h3 class="settings-margin-left">Current Assignment<button class="btn pull-right inline ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button></h3>
+
+                    <div id="currentAssignment" class="col-md-4">
+                      
+                      <!-- sorry about the table layout, only way to create the lockup - MD -->
+                      <table class="table table-unstyled">
+                        <tbody>
+                          <tr>
+                            <td><strong>Business</strong></td>
+                            <td>GE Capital</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Business Segment</strong></td>
+                            <td>GE Capital - Staff</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Sub Business</strong></td>
+                            <td>GE Capital Americas</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Organization</strong></td>
+                            <td>AMSTC GEC HQ Strategic Initiative</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Function</strong></td>
+                            <td>Information Technology</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Title</strong></td>
+                            <td>Program Manager</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><!-- end internal table row -->
+
+                </div>
+              </section>
+            </div><!-- end row 1 summary -->
+            <div class="row">
+              <section class="col-md-12">
+                <div id="contactInfo" class="block">
+                  <h3 class="reset-top-margin">Contact Information</h3>
+                  <div class="row">
+                    <div class="col-md-5 reset-bottom-margin">
+                      <h4 id="workContact" class="reset-top-margin">Work</h4>
+                     
+                      <div class="form-group">
+                        <label>Address 1</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="1 Village Center Drive">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Address 2</label>
+                        <input type="text" class="form-control" style="width: 315px;">
+                      </div>
+
+                      <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="Van Buren Township">
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>State</label>
+                            <input type="text" class="form-control" style="width: 75px;" placeholder="MI">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Zip</label>
+                            <input type="text" class="form-control" style="width: 200px;" placeholder="48111-5711">
+                          </div>
+                        </div>
+                      </div>
+                        
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="stewart.smith@ge.com">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Office Phone</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="+1 212 727 3112">
+                      </div>
+                      
+                      <div class="form-group">
+                        <label>Mobile Phone</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="+1 917 555 1234">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Dialcom</label>
+                        <input type="text" class="form-control" style="width: 315px;">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Fax</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="+1 212 555 4312">
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6 reset-bottom-margin">
+                          <button class="btn" href="#">Cancel</button>
+                          <button class="btn btn-primary" href="#">Save</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div><!-- end contact work row -->
+
+                </div>
+              </section>
+            </div><!-- end row 2 contact info -->
+
+            <div class="row">
+              <section class="col-md-12">
+                <div class="block locked-block">
+
+                  <div class="row">
+
+
+                    <h4 id="homeContact" class="settings-margin-left reset-top-margin">Home <button class="btn pull-right inline btn-white ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button></h4>
+                    <div class="col-md-4">
+                      <table class="table table-unstyled">
+                        <tbody>
+                          <tr>
+                            <td><strong>Address</strong></td>
+                            <td>  
+                                123 Main Street<br>
+                                Chelsea, MI<br>
+                                48111-0123 USA
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Home Phone</strong></td>
+                            <td>+1 203 555 9810</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mobile Phone</strong></td>
+                            <td>+1 646 555 0198</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                    <div class="col-md-offset-3 col-md-4">
+                      <p class="help-block"><i class="icon-ico_lock_sm icon-gray-light"></i>   This information can only be viewed by the employee, their manager, and HR.</p>
+                    </div>
+                  </div>
+
+                  <hr class="locked-divider"> <!-- Subsection divider -->
+
+                  <div class="row">
+                    <div class="col-md-4">
+                      <h4 id="emergencyContact" class="reset-top-margin">Emergency Contact</h4>
+
+                      <table class="table table-unstyled">
+                        <tbody>
+                          <tr>
+                            <td><strong>Name</strong></td>
+                            <td>Tom Edison</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Relationship</strong></td>
+                            <td>Spouse</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Office Phone</strong></td>
+                            <td>+1 212 727 3112</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mobile Phone</strong></td>
+                            <td>+1 917 555 1234</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Home Phone</strong></td>
+                            <td>+1 202 555 3421</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-md-offset-3 col-md-4">
+                      <p class="help-inline"><i class="icon-ico_lock_sm icon-gray-light"></i>   This information can only be viewed by the employee, their manager, and HR.</p>
+                  </div>
+
+                </div>
+              </section>
+            </div><!-- end row 3 locked info -->
+
+
+            <div class="row">
+
+              
+              <section class="col-md-12">
+
+                <div class="block ie-margin-left">
+
+                  <div id="experience">
+                    <div class="row">
+                      <div class="clearfix">
+                        <button type="submit" class="btn pull-right ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button>
+                        <h3 class="reset-top-margin settings-margin-left">Experience</h3>
+                      </div>
+                    </div>
+                    
+
+                    <h4 class="reset-bottom-margin">Human Resources Director</h4>
+                    GE Capital<br>
+                    Stamford, CT USA<br>
+                    <span class="timestamp">November 2011 - Present (2 years 1 month)</span>
+
+                    <h4 class="reset-bottom-margin">Organization &amp; Staffing Manager</h4>
+                    GE Corporate<br>
+                    Fairfield, CT USA<br>
+                    <span class="timestamp">November 2010 - November 2011 (1 year)</span>
+
+                    <h4 class="reset-bottom-margin">Human Resources Leadership Program (HRLP)</h4>
+                    GE Corporate<br>
+                    Fairfield, CT USA<br>
+                    <span class="timestamp">September 2008 - November 2010 (2 years 2 months)</span>
+
+                    <h4 class="reset-bottom-margin">Compensation Manager</h4>
+                    ABC Company<br>
+                    San Francisco, CA USA<br>
+                    <span class="timestamp">September 2000 - September 2008 (8 years)</span>
+
+                  </div>
+        
+              
+                  <hr class="header-div-subsection"><!-- subsection divider -->
+                
+                  
+                  <div id="education">
+                    <div class="row">
+                      <div class="clearfix">
+                        <button type="submit" class="btn pull-right ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button>
+                        <h3 class="reset-top-margin settings-margin-left">Education &amp; Training</h3>
+                      </div>
+                    </div>
+
+                    <h4 class="reset-bottom-margin">Lorem Ipsum University</h4>
+                    MBA, Human &amp; Organizational Performance<br>
+                    <span class="timestamp">1998-2000</span>
+
+                    <h4 class="reset-bottom-margin">Dolor University</h4>
+                    BS, Accounting<br>
+                    <span class="timestamp">1994-1998</span>
+
+                  </div>
+                 
+    
+                </div>
+                </section>
+     
+
+            </div><!-- end qualifications  -->
+
+            <div class="row">
+              <section class="col-md-12">
+                <div id="networkAffiliations" class="block ie-margin-left">
+                  <div class="row">
+                    <div class="clearfix">
+                      <button type="submit" class="btn pull-right ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button>
+                      <h3 class="reset-top-margin settings-margin-left">Networks &amp; Affiliations</h3>
+                    </div>
+                  </div>
+                  <a href="#"><strong>Veteran's Network (GEVN)</strong></a><br>
+                  <a href="#"><strong>Women's Network (GEWN)</strong></a>
+                </div>
+
+              </section>
+            </div><!-- end row 6 network and affiliations -->
+
+            
+
+
+
+            
+
+          </section>
+        </div><!-- end row container -->
+
+
+
+      </div><!-- end content container -->
+
+      <div class="backtop"><i class="icon-ico_arrowup_lg"></i></div>
+      <footer>
+        <div class="footer small">
+  <div class="footer-inner">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="brand"><span class="ge-logo"></span>Imagination at work</div>
+          <div class="block colophon pull-right">
+            <ul>
+              <li><a href="#" target="_blank">Privacy</a></li>
+              <li><a href="#" target="_blank">Terms</a></li>
+              <li><a href="#" target="_blank">Contact</a></li>
+              <li><a href="#" target="_blank">Accessibility</a></li>
+              <li><a href="#" target="_blank">Cookies</a></li>
+              <li>&copy; 2014 General Electric</li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /row -->
+    </div>
+  </div>
+</div><!-- /footer -->
+
+<div class="footer footer-small-mobile">
+  <div class="footer-inner">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="brand"><span class="ge-logo"></span>Imagination at work</div>
+        </div>
+      </div><!-- /row -->
+
+      <hr/>
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="block colophon">
+            <ul>
+              <li><a href="#" target="_blank">Privacy</a></li>
+              <li><a href="#" target="_blank">Terms</a></li>
+              <li><a href="#" target="_blank">Contact</a></li>
+              <li><a href="#" target="_blank">Accessibility</a></li>
+              <li><a href="#" target="_blank">Cookies</a></li>
+              <li>&copy; 2014 General Electric</li>
+            </ul>
+          </div>
+
+        </div>
+      </div><!-- /row -->
+
+    </div>
+  </div>
+</div><!-- /footer -->
+
+      </footer>
+    </div>
+    <!-- end sticky footer structure -->
+
+    <!-- start scripts -->
+    <script src="../../../components/respond/respond.min.js"></script>
+    <script src="../../../components/requirejs/require.js"></script>
+    <script src="../../../js/require.config.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: '../../../'
+      });
+      require(['mds', 'jquery', 'multi-level-nav']);
+    </script>
+    <!-- end scripts -->
+  </body>
+  <!-- end body content -->
+</html>

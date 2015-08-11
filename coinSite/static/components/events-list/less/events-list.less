@@ -1,0 +1,84 @@
+// DEPENDENCIES
+// --------------------------------------------------
+
+@import "ge-bootstrap/less/ge-bootstrap.less";
+@import "modules/less/modules.less";
+@import "temp-modules-dep.less";
+// @import "path/to/component/main.less";
+@import "variables.less";
+
+// STYLES
+// --------------------------------------------------
+
+ul.events-list {
+  margin: 0;
+  > li {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 15px 0 0 0;
+    &.view-all {
+      margin-bottom: 0;
+      padding-top: 4px;
+      padding-bottom: 0;
+    }
+    .event {
+      > a {
+        .clearfix;
+        display: block;
+        h6 {
+          color: @blue;
+        }
+        p {
+          color: @textColor;
+        }
+        h6, p {
+          margin: 0;
+        }
+        time {
+          color: @textColor;
+        }
+        .media {
+          padding: 4px 0 20px 0;
+          margin-right: 10px;
+        }
+        &:hover {
+          h6 {
+            color: @blueDark;
+          }
+        }
+      }
+      .actions {
+        display: none;
+        padding: 0 0 20px 0;
+        margin-bottom: 20px !important; // override modules style which is unnecessarily broad ".module .module-body div:last-child"
+        border-bottom: 1px solid @grayLighter;
+      }
+      &:last-child {
+        .actions {
+          margin-bottom: 0 !important;
+          border-bottom: none;
+        }
+      }
+    }
+    &.heading {
+      &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+      &:not(:first-child) {
+        border-top: 1px solid @grayLighter;
+      }
+      padding: 15px 0 0 0;
+      margin: 0;
+      h4 {
+        margin: 0;
+      }
+      strong {
+        color: @black;
+        font-weight: bold;
+      }
+    }
+  }
+}
+

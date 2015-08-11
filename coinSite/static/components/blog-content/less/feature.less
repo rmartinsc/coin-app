@@ -1,0 +1,101 @@
+.feature {
+  min-height: 150px;
+  &.inverse {
+    &:hover,
+    &:active,
+    &.active {
+      background-color: darken(@grayLighter, 18%);
+    }
+  }
+  &.home:hover {
+    cursor: pointer;
+  }
+
+  .title {
+    color: @black;
+    font-weight: normal;
+    font-size: @baseFontSize + 10;
+    line-height: 26px;
+    a {
+      color: @black;
+    }
+  }
+  .media {
+    background-color: @black;
+    margin: 0 -30px 20px;
+    position: relative;
+    &:first-child {
+      margin-top: -30px;
+    }
+  }
+  img,
+  .image {
+    display: block;
+    &.shaded {
+      opacity: 0.7;
+    }
+  }
+  p {
+    margin-right: 5%;
+  }
+  .timestamp {
+    color: @gray;
+    font-size: @baseFontSize;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .btn-link {
+    font-weight: bold;
+  }
+  .btn-inverse:hover {
+    background-color: @linkColor;
+    border-color: @linkColor;
+    color: @white;
+  }
+}
+
+.media {
+  position: relative;
+  [class*="ico_play"] {
+    color: @white;
+    font-size: 112px;
+    height: 112px;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding: 15px 0;
+    position: absolute;
+    left: 38px;
+    bottom: 30px;
+    width: 112px;
+    text-align: center;
+    text-indent: 3px;
+    opacity: .9;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.player-small {
+  position: relative;
+  [class*="ico_play"] {
+    color: @white;
+    font-size: 48px;
+    height: 48px;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding: 15px 0;
+    position: absolute;
+    left: 38px;
+    bottom: 50px;
+    width: 48px;
+    text-align: center;
+    text-indent: 3px;
+    opacity: .9;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

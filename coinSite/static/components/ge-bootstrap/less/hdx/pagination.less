@@ -1,0 +1,17 @@
+.pagination {
+	 li > a {
+        &:hover {
+          color: @paginationHoverColor;
+          background-color: @grayLightest;
+        }
+	}
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      background-color: mix(lighten(@cyan, 15%), @cyan, 60%);
+      border-color: transparent;
+    }
+  }
+}

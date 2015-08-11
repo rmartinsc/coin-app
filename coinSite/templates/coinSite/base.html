@@ -1,30 +1,306 @@
 {% load staticfiles %}
-<html>
-    <head>
-    <title>ITLP Coin</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static "css/coinStory.css" %}">
-    </head>
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ITLP Beliefs Coin: Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../components/brandkit/favicon/favicon-144px.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../components/brandkit/favicon/favicon-114px.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../components/brandkit/favicon/favicon-72px.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../../components/brandkit/favicon/favicon.png">
     
-<body>
-    <div class="page-header">
-        {% if user.is_authenticated %}
-        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-        <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
-        <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
-        {% else %}
-        <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
-        {% endif %}
-    <h1><a href="{% url 'coinSite.views.post_list' %}">ITLP Beliefs Coin</a></h1>
-</div>
-    <div class="content">
-        <div class="row">
-            <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
-            </div>
+    <link href="{% static "css/coinStory.css" %}" rel="stylesheet" >
+    <link href="{% static "css/mds.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "css/responsive.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "docs/assets/css/cwc.css" %}" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="{% static "css/ie.css" %}" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    
+    <script src="{% static "components/modernizr/modernizr.js" %}"></script>
+    
+  </head>
+      <body>
+    <!-- start sticky footer structure, note class is applied to the body's child container! -->
+    <div class="sticky-footer">
+      <header class="header">
+        <nav class="navbar
+            
+            
+                navbar-static-top
+            
+            navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'coinSite.views.home_page' %}">
+                <span class="ge-logo"></span>
+                <span class="primary-brand">ITLP</span>
+                <span class="secondary-brand">Beliefs Coin</span>
+            </a>
+        </div>
+
+        
+        <div class="toolbar-container pull-right">
+            
+                <div class="btn-toolbar pull-left">
+                {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+                <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
+                {% else %}
+                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Login</button>
+                </div></span></a>
+                {% endif %}
+                </div>
+            
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        
+    
+
+    </div>
+    </div>
+
+    <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+
+                
+
+                    
+
+                        
+
+                                    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 1</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Secondary Nav 1</a></li>
+            <li><a href="#">Secondary Nav 2</a></li>
+            <li><a href="#">Secondary Nav 3</a></li>
+            <li><a href="#">Secondary Nav 4</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 2</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Secondary Nav 1</a></li>
+            <li><a href="#">Secondary Nav 2</a></li>
+            <li><a href="#">Secondary Nav 3</a></li>
+            <li><a href="#">Secondary Nav 4</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 3</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Secondary Nav 1</a></li>
+            <li><a href="#">Secondary Nav 2</a></li>
+            <li><a href="#">Secondary Nav 3</a></li>
+            <li><a href="#">Secondary Nav 4</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 4</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Secondary Nav 1</a></li>
+            <li class="open">
+              <a href="#">Secondary Nav 2</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Tertiary Nav 1</a></li>
+                <li><a href="#">Tertiary Nav 2</a></li>
+                <li><a href="#">Tertiary Nav 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Secondary Nav 3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 5</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Secondary Nav 1</a></li>
+            <li><a href="#">Secondary Nav 2</a></li>
+            <li><a href="#">Secondary Nav 3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 6</a>
+          <ul class="dropdown-menu">
+            <li class="open">
+              <a href="#">Secondary Nav 1</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Tertiary Nav 1</a></li>
+                <li><a href="#">Tertiary Nav 2</a></li>
+                <li><a href="#">Tertiary Nav 3</a></li>
+              </ul>
+            </li>
+            <li class="open">
+              <a href="#">Secondary Nav 2</a>
+              <ul class="list-unstyled">
+                <li><a href="#">Tertiary Nav 1</a></li>
+                <li><a href="#">Tertiary Nav 2</a></li>
+                <li><a href="#">Tertiary Nav 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+                        
+
+                    
+
+                
+
+            </ul>
         </div>
     </div>
-</body>
+</nav><!-- /navbar -->
+
+      </header>
+      <div class="fill-wrapper content">
+
+                    {% block content %}
+                    {% endblock %}
+
+      </div>
+
+      <div class="backtop"><i class="icon-ico_arrowup_lg"></i></div>
+      <footer>
+        <div class="footer large">
+  <div class="footer-inner">
+    <div class="container">
+
+      <div class="row footer-header">
+        <div class="col-md-12">
+          <div class="brand"><span class="ge-logo"></span>Imagination at work</div>
+        </div>
+      </div><!-- /row -->
+
+      <hr/>
+
+      <div class="row footer-body">
+        <div class="col-md-5 col-sm-4">
+          <div class="block">
+            <h6>About</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="block">
+            <h6>Contact Us</h6>
+            <p>With the launch of the WattStation, GE  continues a century lorem ipsum.</p>
+            <p>1 (800) 727-9268<br/>
+            <a class="contact-email" href="#">info@ge-energy.com</a></p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <div class="block">
+            <h6>Sections</h6>
+            <ul>
+              <li><a href="#">Your City</a></li>
+              <li><a href="#">Your Business</a></li>
+              <li><a href="#">Your Home</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Find a Station</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="block">
+            <h6>Connect</h6>
+            <ul class="list-icon">
+              <li><a href="#"><i class="icon-ico_googleplus_sq_lg"></i><span>Google+</span></a></li>
+              <li><a href="#"><i class="icon-ico_pinterest_sq_lg"></i><span>Pintrest</span></a></li>
+              <li><a href="#"><i class="icon-ico_instagram_lg"></i><span>Instagram</span></a></li>
+              <li><a href="#"><i class="icon-ico_twitter_sq_lg"></i><span>Titter</span></a></li>
+              <li><a href="#"><i class="icon-ico_linkedin_sq_lg"></i><span>Linkedin</span></a></li>
+              <li><a href="#"><i class="icon-ico_youtube_lg"></i><span>You Tube</span></a></li>
+              <li><a href="#"><i class="icon-ico_facebook_sq_lg"></i><span>Facebook</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /row -->
+
+      <hr/>
+
+      <div class="row footer-footer">
+        <div class="col-md-12">
+
+          <div class="block colophon">
+            <ul>
+              <li><a href="#" target="_blank">Privacy</a></li>
+              <li><a href="#" target="_blank">Terms</a></li>
+              <li><a href="#" target="_blank">Contact</a></li>
+              <li><a href="#" target="_blank">Accessibility</a></li>
+              <li><a href="#" target="_blank">Cookies</a></li>
+              <li>&copy; 2014 General Electric</li>
+            </ul>
+          </div>
+
+        </div>
+      </div><!-- /row -->
+
+    </div>
+  </div>
+</div><!-- /footer -->
+
+      </footer>
+    </div>
+    <!-- end sticky footer structure -->
+
+
+    <!-- start scripts -->
+    <script src="{% static "components/respond/respond.min.js" %}"></script>
+    <script src="{% static  "components/requirejs/require.js" %}"></script>
+    <script src="{% static  "js/require.config.js" %}"></script>
+    
+    <script>
+      requirejs.config({
+            baseUrl: '{% static "/" %}'
+      });
+
+      require(['mds', 'jquery'], function () {
+          // something about mixing MDS and videoplayer loading/running inline causes plugin registration to fail,
+          // so it's broken out to another block
+          require(['videoplayer'], function() {
+              videojs('example_video_1', {
+                  plugins: {
+                      timetooltip: {},
+                      responsive: { width: 624, height: 260 }
+                  }
+              });
+              if ($( '.masonry .row' ).length ) {
+                  $( '.masonry .row' ).masonry();
+              }
+
+
+          });
+      });
+    </script>
+    <!-- end scripts -->
+
+  </body>
+  <!-- end body content -->
 </html>

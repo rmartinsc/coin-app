@@ -1,0 +1,22 @@
+{
+  "name": "backtotop",
+  "description": "Return to top of page with fancy effects",
+  "version": "0.5.2",
+  "main": [
+    "js/backtotop.js"
+  ],
+  "ignore": [
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    ".*",
+    "Gruntfile.js",
+    "js/require.config.js"
+  ],
+  "dependencies": {
+    "requirejs": "git://github.com/jrburke/requirejs-bower#~2.1.11",
+    "jquery": "git://github.com/components/jquery#~1.10.2",
+    "ge-bootstrap": "git@github.sw.ge.com:DXC/ge-bootstrap#master"
+  }
+}

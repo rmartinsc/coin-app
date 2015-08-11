@@ -1,0 +1,261 @@
+.wysiwyg() {
+  .block {
+    padding: 30px 40px 60px;
+  }
+  p {
+    margin-bottom: 30px;
+    margin-right: 15%;
+  }
+  h1 {
+    color: @black;
+    font-size: (@baseFontSize * 3) + 6;
+    font-weight: normal;
+    margin-bottom: 2*@baseLineHeight/3;
+  }
+  h2 {
+    border-top: 1px solid @gray;
+    color: @black;
+    font-size: (@baseFontSize * 3) - 6;
+    font-weight: normal;
+    line-height: 2*@baseLineHeight;
+    margin-bottom: @baseLineHeight;
+    margin-top: 2*@baseLineHeight;
+  }
+  h3 {
+    border-top: 1px solid @gray;
+    color: @black;
+    font-size: @baseFontSize + 10;
+    font-weight: normal;
+  }
+  h5 {
+    color: @black;
+  }
+  .light {
+    color: @gray;
+  }
+  .block h2:first-child,
+  .block h3:first-child,
+  .block h4:first-child {
+    border-top: 0;
+  }
+
+  // Media
+  // full width media in the body of a page
+  .pagemedia {
+    margin: @baseLineHeight -40px 0;
+  }
+  .media-caption {
+    margin-bottom: 2*@baseLineHeight;
+  }
+  .media-caption p {
+    font-size: 11px;
+    font-style: italic;
+    line-height: 0.625*@baseLineHeight;
+    margin-bottom: 0 !important;
+    margin-top: 0.25*@baseLineHeight;
+    margin-right: 0 !important;
+  }
+}
+
+
+// the basic class for page content, utilizes mixin
+.pagecontent {
+  .wysiwyg();
+}
+
+// Article
+
+article {
+  > h2, > h3, > h4 {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  > h5, > h6 {
+    margin-bottom: 20px;
+  }
+  > p {
+    font-family: @serifFontFamily;
+    padding: 0 8em 1em 0;
+  }
+  + .pager {
+    padding: 0 @gridGutterWidth1200 @gridGutterWidth1200 @gridGutterWidth1200;
+    margin: 0;
+    background-color: @white;
+  }
+  hr {
+    margin: 10px 0;
+  }
+  > .thumbnail {
+    &.body.person {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .caption {
+      max-width: 280px;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Blockquote
+blockquote {
+  border-left: 0;
+  margin-left: 40px;
+  p {
+    #voice > .brand( 26px, bold, 36px );
+    margin-bottom: 5px !important;
+  }
+  small {
+    color: @gray;
+    font-size: @baseFontSize;  // Not semantically correct - MD
+  }
+  .pagecontent   & {
+    padding-left: 15px;
+  }
+}
+
+.voice-brand blockquote p,
+blockquote.voice-brand p {
+  #voice > .brand( 16px, normal, 20px );
+}
+
+blockquote {
+  border-left-width: 0;
+  padding-left: 0;
+  &.pull-right {
+    border-right-width: 0;
+    padding-right: 0;
+  }
+  p {
+    #voice > .human( 36px, normal, 42px );
+    font-style: normal;
+    font-weight: bold;
+    color: @headingsColor;
+    .cite {
+      font-style: italic;
+    }
+    &:before {
+     content: "\201C";
+     font-size: 1em;
+     font-weight: bold;
+     margin-left: -.4em;
+    }
+    &:after {
+     content: "\201D";
+     font-size: 1em;
+     font-weight: bold;
+    }
+  }
+}
+
+.blockquote {
+  color: @grayLighter;
+  float:left;
+  font-size:88px;
+  font-style: italic;
+  font-weight: bold;
+  line-height:70px;
+}
+.cite {
+  font-style: italic;
+}
+
+
+// Byline and Lead are elements at the top of and article or blog post
+.byline {
+  font-size: 11px;
+  margin-bottom: 0 !important;
+}
+.lead {
+  font-size: 2*@baseLineHeight/3;
+  font-style: italic;
+  line-height: @baseLineHeight;
+  margin-top: 0.5*@baseLineHeight;
+}
+
+// Brandmark is the small visual element that appears at
+// the bottom of blog posts and articles
+.brandmark {
+  height: 30px;
+  margin: @baseLineHeight 0 2*@baseLineHeight;
+  width: 30px;
+}
+
+// Thumbnail
+// We use bootstrap's thumbnail container for images in main body sections
+.thumbnail.body {
+  margin-bottom: 0;
+  padding: 20px 0;
+  .caption, img {
+    float: left;
+  }
+  img {
+    margin-right: 20px;
+  }
+  .caption p {
+    margin-right: 0;
+  }
+  &.medium img {
+    width: 50%;
+  }
+  &.medium .caption {
+    width: 45%;
+  }
+  &.small img {
+    width: 25%;
+  }
+  &.small .caption {
+    width: 70%;
+  }
+  &.bio {
+    min-height: 60px;
+    padding-top: 18px;
+    padding-left: 80px;
+    position:relative;
+    img {
+      position: absolute;
+      left: 0;
+      top: 28px;
+      height: 60px;
+      width: 60px;
+    }
+    p {
+      margin-right: 0 !important;
+    }
+    .caption {
+      p {
+        font-size: inherit;
+        font-style: inherit;
+        line-height: inherit;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &.person {
+    min-height: 60px;
+    padding-top: 18px;
+    padding-left: 80px;
+    position:relative;
+    img {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      height: 60px;
+      width: 60px;
+    }
+    p {
+      margin-right: 0 !important;
+    }
+    .name {
+      font-weight: bold;
+    }
+    .stats {
+      margin-bottom: 10px;
+    }
+  }
+
+}

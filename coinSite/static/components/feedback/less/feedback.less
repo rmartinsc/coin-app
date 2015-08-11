@@ -1,0 +1,169 @@
+// DEPENDENCIES
+// --------------------------------------------------
+
+@import "ge-bootstrap/less/ge-bootstrap.less";
+@import "blog-content/less/blog-content.less";
+@import "slider/less/slider.less";
+// @import "path/to/component/main.less";
+@import "variables.less";
+
+// STYLES
+// --------------------------------------------------
+
+.feedback-action {
+  position: fixed;
+  z-index: 1030;
+  left: 10px;
+  bottom: 0px;
+  opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  .feedback-container {
+    position: relative;
+    .popover-placement {
+      position: absolute;
+      bottom: 44px;
+      left: -300px;
+    }
+    .popover {
+      position: static !important;
+      top: 0px !important;
+      left: 0px !important;
+      z-index: 3;
+      width: 400px !important;
+      max-width: 400px !important;
+      .arrow {
+        display: none;
+      }
+    }
+  }
+  &:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+}
+
+.feedback.modal {
+  .radio-container {
+    margin-bottom: 20px;
+  }
+  .slider-container {
+    .scale {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      span {
+        display: inline-block;
+        width: 97px;
+        font-size: 14px;
+        text-align: center;
+        vertical-align: top;
+      }
+      span:first-child {
+        width: 60px;
+      }
+      span:nth-child(2) {
+        width: 135px;
+      }
+      span:nth-child(4) {
+        margin-left: 20px
+      }
+      span:nth-child(5) {
+        width: 45px;
+        margin-left: 30px;
+      }
+    }
+    .icon-chevron-left {
+      display: inline-block;
+      width: 5px;
+      height: 20px;
+      color: transparent;
+      border-left: 1px solid @grayLight;
+      border-right: 1px solid @grayLight;
+    }
+    .icon-chevron-right {
+      display: none;
+      color: transparent;
+    }
+  }
+  textarea {
+    resize: none;
+    width: 96%;
+    height: 75px;
+  }
+  .btn.close {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    .actions a {
+      line-height: 12px;
+    }
+  }
+  .slider {
+    width: 494px;
+  }
+  .links {
+    margin-top: 5px;
+  }
+}
+
+//-- slider
+
+div.slider {
+  border: none;
+}
+
+div.slider label {
+  display: table-cell;
+  padding: 0;
+}
+
+div.slider .interactive {
+  padding-right: 0;
+}
+
+div.slider div.center {
+  background-color: @grayLightest;
+  border: none;
+}
+
+div.slider .track-and-thumb {
+  height: 20px;
+}
+
+div.slider .track { // width will be JS managed
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background-color: @blue;
+  .border-radius(@baseBorderRadius);
+}
+
+div.slider .thumb {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  height: 35px;
+  width: 15px;
+  color: transparent;
+}
+
+div.slider .thumb i:first-child {
+  padding-right: 0;
+}
+
+div.slider button:hover {
+  border-color: @cyan;
+  color: @cyan;
+}
+
+div.slider button:active,
+div.slider.active .thumb {
+  border-color: @gray;
+  color: @gray;
+  #gradient > .vertical(lighten(@white, 15%), @white);
+}
+
+div.slider.active .track {
+  background-color: @blue;
+}
+

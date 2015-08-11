@@ -1,12 +1,13 @@
 {% extends "coinSite/base.html" %}
+{% load staticfiles%}
 
 {% block content %}
     <div class="post">
         {% if post.published_date %}
             {{ post.published_date }}
         {% else %}
-            <a class="btn btn-default" href="{% url 'coinSite.views.post_publish' pk=post.pk %}">Approve</a>
-            <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span>Reject</a>
+            <a class="btn btn-primary" href="{% url 'coinSite.views.post_publish' pk=post.pk %}">Approve</a>
+            <a class="btn btn-primary" href="{% url 'post_remove' pk=post.pk %}"></span>Reject</a>
         {% endif %}
         <h1>{{ post.storyTitle }}</h1>
         <p>{{ post.storyText|linebreaks }}</p>

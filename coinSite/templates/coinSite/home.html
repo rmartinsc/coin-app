@@ -1,0 +1,57 @@
+{% extends "coinSite/base.html" %}
+{% load staticfiles%}
+
+{% block content %}
+
+<section class="fill-container header-carousel carousel slide stacked">
+          <div class="carousel-inner">
+            <div class="item text fill-container full hero active">
+              <div class="media">
+                <img src="{% static "docs/assets/images/cl_hm_hero-1.png" %}">
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="text bottom span5">
+                    <a href="#">
+                      <h1>Lorem Ipsum Dolor Sit</h1>
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item fill-container full hero">
+              <div class="media">
+                <img src="{% static "docs/assets/images/cl_hm_hero-2.png" %}">
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="text bottom span5">
+                    <a href="#">
+                      <h1>Amet Felsar Dolor</h1>
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item fill-container full hero">
+              <div class="media">
+                <img src="{% static "docs/assets/images/cl_hm_hero-3.png" %}">
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="text bottom span5">
+                    <a href="#">
+                      <h1>Lorem Ipsum Dolor</h1>
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+// DEPENDENCIES
+// --------------------------------------------------
+
+@import "ge-bootstrap/less/ge-bootstrap.less";
+// @import "path/to/component/main.less";
+@import "variables.less";
+
+// CONTACT LIST STYLES
+// --------------------------------------------------
+
+.contact-list {
+  margin-top: -15px;
+  > li {
+    display: table;
+    width: 100%;
+    &:not(:first-child) {
+      border-top: 1px solid @grayLighter;
+    }
+    .contact {
+      display: block;
+      width: 260px;
+      padding: 10px 0 10px 0;
+      .wrapper {
+        display: table-cell;
+        img {
+          display: inline-block;
+          margin: 0 10px 0 0;
+          vertical-align: middle;
+        }
+        .info {
+          display: inline-block;
+          vertical-align: middle;
+          width: 160px;
+          h6 {
+            color: @blue;
+          }
+          h6.type-contractor {
+            display: inline;
+            color: @textColor;
+          }
+          h6.type-contractor + p {
+            display: inline;
+          }
+          h6, p {
+            margin: 0;
+          }
+          .availability {
+            .icon-availability {
+              display: inline-block;
+              height: 12px;
+              width: 12px;
+              margin-bottom: -2px;
+              margin-right: 5px;
+              border: 1px solid @gray;
+              border-radius: 4em;
+              background-color: transparent;
+            }
+            &.available {
+              .icon-availability {
+                border-color: @green;
+                background-color: @green;
+              }
+            }
+          }
+          .message-time {
+            white-space: nowrap;
+          }
+        }
+      }
+      
+      &:hover, &:active {
+        cursor: pointer;
+        h6 {
+          color: @blueDark;
+        }
+      }
+    }
+    .actions {
+      display: none;
+      margin-top: 10px;
+      width: 310px;
+      .btn-group {
+        display: block;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

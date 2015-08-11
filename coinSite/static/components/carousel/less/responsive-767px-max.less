@@ -1,0 +1,28 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+@media (max-width: 767px) {
+// HERO
+// --------------------------------------------------
+  .teasers {
+    // background-color: @bodyBackground;
+  }
+
+  .hero.carousel .item {
+    min-height: 300px;
+  }
+
+  .carousel.teasers {
+    .item {
+      // Override the carousel JS to show all items.
+      display: block !important;
+    }
+    .row :last-child {
+      margin-bottom: 0;
+    }
+    .carousel-control {
+      display: none;
+    }
+  }
+}

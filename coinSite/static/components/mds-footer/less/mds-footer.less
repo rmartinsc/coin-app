@@ -1,0 +1,189 @@
+// Dependencies
+// --------------------------------------------------
+
+@import "ge-bootstrap/less/ge-bootstrap.less";
+@import "variables.less";
+
+// Styles
+// --------------------------------------------------
+
+.footer {
+  background-color: @footerBackground;
+  color: @textColor;
+  font-size: @baseFontSize;
+  padding-top: 25px;
+  .block {
+    background: transparent;
+    padding: 0;
+    .title {
+      color: @white;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1;
+      margin: 0 0 20px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .col-md-12 {
+    margin-bottom: 0px;
+  }
+  .ge-logo {
+    background: transparent url("@{componentsPath}/brandkit/img/ge-monogram_footer.svg") no-repeat;
+    background-size: contain; //The GE Monogram has slightly different width/height dimensions
+    border: 0;
+    color: transparent;
+    float: left;
+    font: 0/0 a;
+    height: 70px;
+    margin: -10px 10px -35px 24px;
+    width: 40px;
+  }
+}
+.footer-inner > .container {
+  position: relative;
+}
+
+
+// CHILDREN
+// --------
+
+.footer {
+  overflow: hidden;
+  // -- base elements
+  h6 {
+    font-family: @brandFontFamily;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  li {
+    // line-height: 1em;
+  }
+  a {
+    display: inline-block;
+    color: @textColor;
+    &:hover {
+      color: @linkColor;
+    }
+    &.contact-email {
+      color: @linkColor;
+    }
+  }
+  // -- blocks
+  hr {
+    margin: 0;
+    border-top: 1px solid @grayLight;
+  }
+  .footer-body {
+    padding: 50px 0;
+  }
+  .block {
+    border-top: 0;
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .brand {
+    display: inline-block;
+    height: 42px;
+    margin-top: 15px;
+    margin-left: -24px;
+  }
+  .colophon {
+    margin-top: 0px;
+    ul {
+      margin: 15px 0 10px;
+      text-align: left;
+    }
+    li {
+      display: inline;
+      &:first-child a {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      &:last-child {
+        color: @gray;
+      }
+    }
+    a {
+      margin: 0 5px;
+      padding: 5px;
+    }
+  }
+  // -- Small footer swap for mobile
+  &.footer-small-mobile {
+      display: none;
+  }
+  // -- sizes
+  &.small {
+    margin-top: 0;
+    padding-top: 5px;
+    .brand {
+      height: 42px;
+      margin-bottom: 0;
+      margin-left: -24px;
+    }
+    .colophon {
+      display: inline;
+      border-top: none;
+      margin-top: 10px;
+      ul {
+        display: inline;
+      }
+    }
+    [class*="col-md"] {
+      margin-bottom: 0;
+    }
+  }
+  &.large {
+
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+// HTML5 STICKY FOOTER
+// -------------------
+
+.sticky-footer {
+  display: table;
+  height: 100%;
+  width: 100%;
+  > header, > footer, > section  {
+    display: table-row;
+    height: 1px;
+  }
+  .content {
+    height: auto;
+  }
+}
+
+// GENERAL STYLES - MOVE!
+// ----------------------
+
+.list-icon {
+  li {
+    display: inline-block;
+    line-height: 5px;
+    i {
+      display: inline-block;
+      font-size: 2em;
+      line-height: 1.2em;
+    }
+    a {
+      padding: 0;
+      margin: 0;
+    }
+    span {
+      font-size: 0px;
+    }
+  }
+}

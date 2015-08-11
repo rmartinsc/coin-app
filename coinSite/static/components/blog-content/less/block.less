@@ -1,0 +1,29 @@
+.block {
+  background-color: @white;
+  padding: @gridGutterWidth1200;  // 30px
+  &.inverse {
+    background-color: darken(@grayLighter, 10%);
+  }
+  &.inner-right {
+    padding: @gridGutterWidth1200 @gridGutterWidth1200 @gridGutterWidth1200 0;
+  }
+  &.inner-left {
+    padding: @gridGutterWidth1200 0 @gridGutterWidth1200 0;
+  }
+  &.inner {
+    padding: 0 @gridGutterWidth1200 0 @gridGutterWidth1200 ;
+  }
+  // -- new block types
+  &.horizontal {
+    padding: 0 @gridGutterWidth1200 0 @gridGutterWidth1200;
+  }
+  &.vertical {
+    padding: @gridGutterWidth1200 0 @gridGutterWidth1200 0;
+  }
+}
+.block > :first-child {
+  margin-top: 0;
+}
+.block > :last-child {
+  margin-bottom: 0;
+}

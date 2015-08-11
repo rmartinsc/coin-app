@@ -21,7 +21,6 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.coinGiver = request.user
-            post.published_date = timezone.now()
             post.save()
             return redirect('coinSite.views.post_detail', pk=post.pk)
     else:
@@ -44,3 +43,6 @@ def post_remove(request, pk):
     post = get_object_or_404(Story, pk=pk)
     post.delete()
     return redirect('coinSite.views.post_list')
+    
+def home_page(request):
+    return render(request, 'coinSite/home.html')

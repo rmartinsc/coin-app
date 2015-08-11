@@ -1,0 +1,27 @@
+{
+  "name": "feedback",
+  "version": "0.1.0",
+  "main": [
+    "js/feedback.js",
+    "less/feedback.less",
+    "less/responsive.less"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "package.json",
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    "js/require.config.js"
+  ],
+  "dependencies": {
+    "ge-bootstrap": "git@github.sw.ge.com:DXC/ge-bootstrap#master",
+    "requirejs": "git://github.com/jrburke/requirejs-bower#~2.1.11",
+    "jquery": "git://github.com/components/jquery#~1.10.2",
+    "slider": "git@github.sw.ge.com:DXC/slider#master",
+    "blog-content": "git@github.sw.ge.com:DXC/blog-content#~0.7.0"
+  }
+}

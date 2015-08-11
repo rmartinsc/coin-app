@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  img {
+    width: 100%;
+  }
+
+  .text {
+    position: absolute;
+    bottom: @gridGutterWidth1200;
+    margin-top: 0;
+    margin-bottom: 0;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      line-height: 1.2em;
+      color: @white;
+    }
+    &.inverse {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: @black
+      }
+    }
+    &.top {
+      position: absolute;
+      top: @gridGutterWidth1200;
+      bottom: auto;
+    }
+    &.bottom {
+      position: absolute;
+      bottom: @gridGutterWidth1200;
+      top: auto;
+    }
+  }
+  .text.middle {
+    top: 45%;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      display: inline;
+    }
+  }
+}
+

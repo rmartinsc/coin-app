@@ -1,0 +1,26 @@
+{
+  "name": "contact-list",
+  "version": "0.2.0",
+  "main": [
+    "js/contact-list.js",
+    "less/contact-list.less",
+    "less/responsive.less"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "package.json",
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    "js/require.config.js"
+  ],
+  "dependencies": {
+    "ge-bootstrap": "git@github.sw.ge.com:DXC/ge-bootstrap#master",
+    "requirejs": "git://github.com/jrburke/requirejs-bower#~2.1.11",
+    "jquery": "git://github.com/components/jquery#~1.10.2",
+    "blog-content": "git@github.sw.ge.com:DXC/blog-content#~0.7.0"
+  }
+}

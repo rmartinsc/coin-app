@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf8">
+    <title>GE Software Carousel</title>
+    <link href="../../../css/carousel.css" rel="stylesheet">
+    <link href="../../../css/responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <a data-toggle="modal" href="#lightbox">Launch Lightbox</a>
+    <div class="modal lightbox hide fade" id="lightbox">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <p>Image title</p>
+        </div>
+        <div class="modal-body">
+          <div id="lightboxCarousel" class="carousel slide" data-navigation-position="right">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="container">
+                <div class="media"><img src="http://placehold.it/600x450/711371/420b42"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="container">
+                <div class="media"><img src="http://placehold.it/600x450/f4b366/ed8000"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="container">
+                <div class="media"><img src="http://placehold.it/600x450/add566/446b00"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="container">
+                <div class="media"><img src="http://placehold.it/600x450/f5857c/8a1e15"></div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control left" href="#lightboxCarousel" data-slide="prev"><i class="icon-arrow-left"></i></a>
+          <a class="carousel-control right" href="#lightboxCarousel" data-slide="next"><i class="icon-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <h3 class="voice-brand">Slide Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <button class="btn btn-primary">Read More <i class="icon-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <script src="../../../components/requirejs/require.js"></script>
+    <script src="../../require.config.js"></script>
+    <script type="text/javascript">
+
+     requirejs.config({
+          baseUrl: "../../../"
+      });
+      require(['jquery', 'carousel']);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2199 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MDS Documentation: Content Components</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../components/brandkit/favicon/favicon-144px.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../components/brandkit/favicon/favicon-114px.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../components/brandkit/favicon/favicon-72px.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../components/brandkit/favicon/favicon.png">
+
+    <link rel="icon" href="../../components/brandkit/favicon/favicon.ico">
+
+    <link href="../assets/css/documentation.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="../../css/mds.css" rel="stylesheet" type="text/css">
+    
+
+    <link href="../../css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <script src="../../components/requirejs/require.js"></script>
+    <script src="../../js/require.config.js"></script>
+    <script type="text/javascript">
+      require.config({ baseUrl: '../../' });
+    </script>
+
+    
+
+    <script src="../../components/modernizr/modernizr.js"></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<nav class="navbar
+             navbar-small 
+            
+                navbar-fixed-top
+            
+            navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="ge-logo"></span>
+                <span class="primary-brand"></span>
+                <span class="secondary-brand">GE Software</span>
+            </a>
+        </div>
+
+        
+        <div class="toolbar-container pull-right">
+            
+                <div class="btn-toolbar pull-left">
+                    <button class="btn btn-primary">Get in Touch</button>
+                </div>
+            
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <!-- search form -->
+            <form class="navbar-search inverse pull-right">
+                <div class="input-group input-prepend" style="width: 210px;">
+                    <input type="search" placeholder="Search" class="form-control search-query" data-toggle="dropdown" data-target=".navbar-search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-icon"><i class="icon-ico_search_lg"></i></button>
+                    </span>
+                </div>
+                <div class="typeahead typeahead-faceted dropdown-menu pull-right">
+                    <ul class="list-unstyled">
+                        <li class="facet">
+                            <div class="facet-name">Top Result</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">States</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                                <li><a href="#"><strong>Ma</strong>ryland</a></li>
+                                <li><a href="#"><strong>Ma</strong>ssachusetts</a></li>
+                                <li><a href="#">Alaba<strong>ma</strong></a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">Cities</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>bleton, GA</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedon, NY</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedonia, OH</a></li>
+                                <li><a href="#"><strong>Ma</strong>chesney Park, IL</a></li>
+                                <li><a href="#"><strong>Ma</strong>comb, IL</a></li>
+                            </ul>
+                        </li>
+                        <li class="last"><a href="#">View All Results</a></li>
+                    </ul>
+                </div>
+            </form>
+
+        
+        
+
+        
+    
+
+    </div>
+    </div>
+
+    <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+
+                
+
+                    
+
+                        
+
+                                      <li><a href="#promotional">Promotional</a></li>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#sidebar">Right Rail</a></li>
+          <li><a href="#dynamic">Dynamic Content</a></li>
+          <li><a href="#headers">Page Headers</a></li>
+          <li><a href="#images">Images</a></li>
+                        
+
+                    
+
+                
+
+            </ul>
+        </div>
+    </div>
+</nav><!-- /navbar -->
+
+<div class="container doco">
+  <div class="page-header voice voice-brand">
+    <h1>Content Components</h1>
+  </div>
+  <div class="row anchor">
+    <div class="col-md-12 mds-wrapper">
+      <h2 id="promotional" class="voice voice-brand">Promotional Modules</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Call to Action Module</h4>
+      <p>Accommodates messaging to highlight specific content or destination</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>"Call to action" headline</li>
+        <li>Supporting text</li>
+        <li>Button link to associated page, with label</li>
+      </ul>
+      <p><strong>Associated Templates:</strong> Home Page</p>
+
+    </div>
+    <div class="col-md-4">
+      <div class="block feature">
+        <h3 class="title voice-brand">Follow Us on Colab</h3>
+        <br />
+        <p>Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab. Sed ut perspiciatis unde omnis iste natus.</p>
+        <p><a class="btn btn-primary" href="#">Visit Our Canvas</a></p>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block feature"&gt;
+  &lt;h3 class="title voice-brand"&gt;Follow Us on Colab&lt;/h3&gt;
+  &lt;br /&gt;
+  &lt;p&gt;Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab. Sed ut perspiciatis unde omnis iste natus.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="btn" href="#"&gt;Visit Our Canvas &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Subscription Module</h4>
+      <p>Accommodates sign up for newsletter or other content delivered via email subscription</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>"Call to action" headline</li>
+        <li>Supporting text</li>
+        <li>Input form</li>
+        <li>Submit button with label</li>
+      </ul>
+      <p><strong>Associated Templates:</strong> Home Page</p>
+    </div>
+    <div class="col-md-4">
+      <div class="block feature">
+        <h3 class="title voice-brand">Get the full download</h3>
+        <p>Sign up to receive the latest news and information from our team.</p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Your email address">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Sign Up</button>
+            </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+<p>Markup:</p><pre class="prettyprint linenums lang-html">
+&lt;div class="input-group"&gt;
+    &lt;input type="text" class="form-control" placeholder="Your email address"&gt;
+    &lt;span class="input-group-btn"&gt;
+        &lt;button class="btn btn-primary" type="button"&gt;Sign Up&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div>
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Poll Module</h4>
+      <p>Presents multiple choice question with input options</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Question</li>
+        <li>Answer Options</li>
+        <li>Input form</li>
+        <li>Submit button with label</li>
+      </ul>
+      <p><strong>Associated Templates:</strong> Home Page</p>
+    </div>
+    <div class="col-md-4">
+      <div class="block feature">
+        <h3 class="title voice-brand">Where should we prioritize our innovation&nbsp;efforts?</h3>
+        <form>
+          <fieldset>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="radio" id="" value="" checked>
+                      Aviation
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="radio" id="" value="">
+                      Healthcare
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="radio" id="" value="">
+                      Transportation
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="radio" id="" value="">
+                      Energy
+                  </label>
+              </div>
+          </fieldset>
+          <button class="btn btn-primary">Vote</button>
+        </form>
+        <br />
+        <p><a class="btn btn-link" href="#">View results without voting <i class="icon-ico_arrowright_lg"></i></a></p>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block feature"&gt;
+  &lt;h3 class="title voice-brand"&gt;Where should we prioritize our innovation&nbsp;efforts?&lt;/h3&gt;
+  &lt;form&gt;
+      &lt;fieldset&gt;
+          &lt;div class="radio"&gt;
+              &lt;label&gt;
+                  &lt;input type="radio" name="radio" id="" value="" checked&gt;
+                  Aviation
+              &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="radio"&gt;
+              &lt;label&gt;
+                  &lt;input type="radio" name="radio" id="" value=""&gt;
+                  Healthcare
+              &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="radio"&gt;
+              &lt;label&gt;
+                  &lt;input type="radio" name="radio" id="" value=""&gt;
+                  Transportation
+              &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="radio"&gt;
+              &lt;label&gt;
+                  &lt;input type="radio" name="radio" id="" value=""&gt;
+                  Energy
+              &lt;/label&gt;
+          &lt;/div&gt;
+      &lt;/fieldset&gt;
+      &lt;button class="btn btn-primary"&gt;Vote&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;br /&gt;
+  &lt;p&gt;&lt;a class="btn btn-link" href="#"&gt;View results without voting &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row anchor">
+    <div class="col-md-12 mds-wrapper">
+      <h2 id="content" class="voice voice-brand">Content Modules</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Dynamic Content Module</h4>
+      <p>Used on the home page to feature a selection of varied content from deeper within the site</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>May feature news, event, or story</li>
+        <li>Image is optional</li>
+        <li>Text elements can include headline, date, location, introductory statement, etc.</li>
+        <li>"Read more" links to content page for given item</li>
+        <li>Associated tags are displayed at bottom of module</li>
+        <li>Tags link to topic pages featuring a selection of content related to given tag</li>
+        <li>Height adjusts to fit display content</li>
+        <li>Several modules may feature on a home page. 6-9 recommended.</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div class="block feature home">
+        <div class="media">
+          <img class="img-responsive" src="../assets/images/fpo-4to3.png"/>
+        </div>
+        <h3 class="title voice-brand">News Lorem Ipsum</h3>
+        <br />
+        <p><span class="timestamp">October 14, 2013</span>Odignis aliciam sum faccat qui nisquunt, sed ullaboreiur. Pa de sam velendellab int volentior audae. Wporum voluptae. Itae et dita conserionese laboratium vernam.</p>
+        <p><a class="btn btn-link" href="#">Read More <i class="icon-ico_arrowright_lg"></i></a></p>
+        <p><a class="label tag" href="#">Tools</a> <a class="label tag" href="#">Innovation</a></p>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block feature home"&gt;
+  &lt;div class="media"&gt;
+    &lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"/&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;p class="timestamp"&gt;October 14, 2013&lt;/p&gt;
+  &lt;h3 class="title voice-brand"&gt;News Lorem Ipsum&lt;/h3&gt;
+  &lt;p&gt;
+    Odignis aliciam sum faccat qui nisquunt, sed ullaboreiur. Pa de sam velendellab int volentior audae.
+    Wporum voluptae. Itae et dita conserionese laboratium vernam.
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a class="btn btn-link" href="#"&gt;Read More &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a class="label" href="#"&gt;Tools&lt;/a&gt; &lt;a class="label" href="#"&gt;Innovation&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Dynamic Content Module, no image</h4>
+      <p>(Variation on Dynamic Content Module)</p>
+    </div>
+    <div class="col-md-4">
+      <div class="block feature home">
+        <h3 class="title voice-brand">News Lorem Ipsum</h3>
+        <br />
+        <p><span class="timestamp">October 14, 2013</span>Odignis aliciam sum faccat qui nisquunt, sed ullaboreiur. Pa de sam velendellab int volentior audae. Wporum voluptae. Itae et dita conserionese laboratium vernam.</p>
+        <p><a class="btn btn-link" href="#">Read More <i class="icon-ico_arrowright_lg"></i></a></p>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block feature home"&gt;
+  &lt;br /&gt;
+  &lt;p class="timestamp"&gt;October 14, 2013&lt;/p&gt;
+  &lt;h3 class="title voice-brand"&gt;News Lorem Ipsum&lt;/h3&gt;
+  &lt;p&gt;
+    Odignis aliciam sum faccat qui nisquunt, sed ullaboreiur. Pa de sam velendellab int volentior audae.
+    Wporum voluptae. Itae et dita conserionese laboratium vernam.
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a class="btn btn-link" href="#"&gt;Read More &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Video Link Module</h4>
+      <p><strong>Templates:</strong> Home Page</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Featured video asset</li>
+        <li>"Play" button launches video player on click</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div class="block feature">
+        <div class="media player-small">
+          <img class="img-responsive" src="../assets/images/fpo-2to1.png"/>
+          <i class="icon-ico_play_rnd_lg"></i>
+        </div>
+        <h3 class="title voice-brand">Video Title Lorem Ipsum Dolor Sit Amet</h3>
+        <br />
+        <p><span class="timestamp">October 14, 2013</span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+        <p><a class="label tag" href="#">People</a></p>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block feature"&gt;
+  &lt;div class="media"&gt;
+    &lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"/&gt;
+    &lt;i class="icon-ico_play_rnd_lg"&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;p class="timestamp"&gt;October 14, 2013&lt;/p&gt;
+  &lt;h3 class="title voice-brand"&gt;Video Title Lorem Ipsum Dolor Sit Amet&lt;/h3&gt;
+  &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="label" href="#"&gt;People&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4 id="idx-link">Index Link Module</h4>
+      <p>Provides thumbnail view of page within site, utilizing title, image, description, and link elements</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Used on Content Index pages</li>
+        <li>When more than one of this module appears on a page, the <code>uniform</code> class on the top-level <code>content</code> div ensures that they will be all be the same height, determined by the module containing the most text.</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Home Page</li>
+        <li>Content Index Page</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div class="block feature">
+        <div class="media">
+          <img class="img-responsive" src="../assets/images/fpo-4to3.png"/>
+        </div>
+        <h3 class="title voice-brand">Competitor Assessment</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem unum accusantium doloremque.</p>
+        <p><a class="btn btn-link" href="#">Read More <i class="icon-ico_arrowright_lg"></i></a></p>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block feature"&gt;
+  &lt;div class="media"&gt;
+    &lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"/&gt;
+  &lt;/div&gt;
+  &lt;h3 class="title voice-brand"&gt;Competitor Assessment&lt;/h3&gt;
+  &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem unum accusantium doloremque.&lt;/p&gt;
+  &lt;p&gt;&lt;a class="btn btn-link" href="#"&gt;Read More &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>View Link Module</h4>
+      <p>Provides thumbnail view of a larger image viewable in lightbox, utilizing title, image, description, and link elements</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Second link launches the lightbox</li>
+        <li>As with the <a href="#idx-link">Index Link Module</a>, the <code>uniform</code> class on the top-level <code>content</code> div ensures that they will be all be the same height, determined by the module containing the most text.</li>
+        <li>When lightbox launches, it displays the module's thumbnail image, with others accessible through next/previous controls</li>
+        <li>Default behavior: the lightbox contains a carousel that displays the images from the other index link modules on the view index page</li>
+        <li>Alternate behavior: the lightbox contains a carousel displaying a set of images specific to just given the index link module</li>
+      </ul>
+
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Views Index</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div class="block feature">
+        <div class="media">
+          <img class="img-responsive" src="../assets/images/fpo-4to3.png"/>
+        </div>
+        <h3 class="title voice-brand">News</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem unum accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+        <p><a class="btn btn-link" href="#">Visit Site <i class="icon-ico_externallink_sm"></i></a>&nbsp;&nbsp;&nbsp;<a data-toggle="modal" class="btn btn-link" href="#lightbox">View Larger <i class="icon-ico_fullscreen_lg"></i></a></p>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block feature"&gt;
+  &lt;div class="media"&gt;
+    &lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"/&gt;
+  &lt;/div&gt;
+  &lt;h3 class="title voice-brand"&gt;News&lt;/h3&gt;
+  &lt;p&gt;
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem unum accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;a class="btn btn-link" href="#"&gt;Visit Site &lt;i class="icon-ico_externallink_sm"&gt;&lt;/i&gt;&lt;/a&gt;
+    &amp;nbsp;&amp;nbsp;
+    &lt;a data-toggle="modal" class="btn btn-link" href="#lightbox"&gt;View Larger &lt;i class="icon-ico_fullscreen_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Person Thumbnail</h4>
+      <p>Thumbnail of a person at GE, including information about their title, division, and location. Also a short description and a link to their Colab profile</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>This component <strong>requires</strong> the dimensions of the image to be 86x86 px, in order to enforce correct wrapping of the descriptive text</li>
+        <li>Use in a People section on a content page or individually</li>
+        <li>In a list, use this component by dropping each into a list item <code>&lt;li&gt;...&lt;/li&gt;</code> in an unordered list <code>&lt;ul&gt;&lt;/ul&gt;</code></li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Content Index Page with Jump Navigation</li>
+        <li>Full Width Content (not shown)</li>
+        <li>Blog Post: Main Content with Right Rail (not shown)</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <div class="block">
+        <div class="thumbnail body person clearfix">
+          <img src="../assets/images/fpo-person-thumbnail.png">
+          <p class="stats"><a href="#" class="name">Andrew Crow</a> Director Visual Design, GE Software, San Ramon, CA</p>
+          <p class="desc">Nemo enim ipsam voluptatem quia voluptas. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. <a class="btn btn-link" href="#">View Colab Profile <i class="icon-ico_arrowright_lg"></i></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="span8"&gt;
+  &lt;div class="block"&gt;
+    &lt;div class="person"&gt;
+      &lt;img src="../assets/images/fpo-person-thumbnail.png"&gt;
+      &lt;p class="name"&gt;Andrew Crow&lt;/p&gt;
+      &lt;p class="stats"&gt;Director Visual Design, GE Software, San Ramon, CA&lt;/p&gt;
+      &lt;p class="desc"&gt;
+        Nemo enim ipsam voluptatem quia voluptas. Sed ut perspiciatis unde omnis iste natus
+        error sit voluptatem accusantium doloremque laudantium.
+        &lt;a class="colab" href="#"&gt;View Colab Profile &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Author Thumbnail</h4>
+      <p>Thumbnail image of an article or post's author, includes description and a link to that person's Colab profile.</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>This component <strong>requires</strong> the dimensions of the image to be 86x86 px, in order to enforce correct wrapping of the descriptive text</li>
+        <li>Use at the bottom of a blog post or article</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <div class="block">
+        <div class="thumbnail body bio clearfix">
+          <img src="../assets/images/fpo-person-thumbnail.png">
+          <div class="caption">
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae. <a href="#" class="btn btn-link">View Colab Profile <i class="icon-ico_arrowright_lg"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block"&gt;
+  &lt;div class="thumbnail body bio clearfix"&gt;
+    &lt;img src="../assets/images/fpo-person-thumbnail.png"&gt;
+    &lt;div class="caption"&gt;
+      &lt;p&gt;
+        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+        quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
+        omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
+        aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.
+        &lt;a href="#"&gt;View Colab Profile &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row anchor">
+    <div class="col-md-12 mds-wrapper">
+      <h2 id="sidebar" class="voice voice-brand">Right Rail Modules</h2>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-4 annotation">
+        <h4>Navigation module</h4>
+        <p>Serves as supplemental navigation, displaying parent page and sibling pages to the page on view</p>
+        <p><strong>Usage Notes:</strong></p>
+        <ul>
+          <li>Optional. Use to draw attention to sibling pages</li>
+          <li>May not be appropriate for items like blog posts where there are a large number of sibling items</li>
+        </ul>
+        <p><strong>Templates:</strong></p>
+        <ul>
+          <li>Blog Post: Main Content with Right Rail</li>
+          <li>Lightbox View Page</li>
+        </ul>
+      </div>
+    <div class="col-md-3">
+      <div class="block sidebar">
+        <div class="rail-module sidenav">
+          <h4>Related Items</h4>
+          <h6 class="title">Industrial Internet</h6>
+          <ul class="list-unstyled">
+            <li><i class="inverse icon-ico_user_male_lg"></i> <a href="#">Article Name Lorem Ipsum</a></li>
+            <li><i class="inverse icon-ico_edit_lg"></i> <a href="#">Another Article Name Lorem</a></li>
+            <li><i class="inverse icon-ico_cross_rnd_lg"></i> <a href="#">One More Article Name Sit</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+
+&lt;div class="rail-module sidenav"&gt;
+  &lt;h4&gt;Related Items&lt;/h4&gt;
+  &lt;h6 class="title"&gt;Industrial Internet&lt;/h6&gt;
+  &lt;ul class="list-unstyled"&gt;
+    &lt;li&gt;&lt;i class="inverse icon-ico_user_male_lg"&gt;&lt;/i&gt; &lt;a href="#"&gt;Article Name Lorem Ipsum&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;i class="inverse icon-ico_edit_lg"&gt;&lt;/i&gt; &lt;a href="#"&gt;Another Article Name Lorem&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;i class="inverse icon-ico_cross_rnd_lg"&gt;&lt;/i&gt; &lt;a href="#"&gt;One More Article Name Sit&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+  </pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Related Items module</h4>
+      <p>Displays links to related content for the page on view</p>
+      <p><strong>Usage</strong></p>
+      <ul>
+        <li>Optional. Use to draw attention to related content</li>
+        <li>Fewer than five links recommended</li>
+      </ul>
+
+      <p><strong>Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+        <li>Lightbox View Page</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="block sidebar">
+        <div class="rail-module items">
+          <h6 class="title">Related Items</h6>
+          <ul class="list-unstyled">
+            <li><a class="inverse" href="#">Lorem Ipsum Dolor <i class="icon-ico_arrowright_lg"></i></a></li>
+            <li><a class="inverse" href="#">Sit Amet <i class="icon-ico_arrowright_lg"></i></a></li>
+            <li><a class="inverse" href="#">Unum Consequeteur Comet <i class="icon-ico_arrowright_lg"></i></a></li>
+            <li><a class="inverse" href="#">Felsar e Pluribus <i class="icon-ico_arrowright_lg"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="rail-module items"&gt;
+  &lt;h6 class="title"&gt;Related Items&lt;/h6&gt;
+  &lt;ul class="list-unstyled"&gt;
+    &lt;li&gt;&lt;a class="inverse" href="#"&gt;Lorem Ipsum Dolor &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="inverse" href="#"&gt;Sit Amet &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="inverse" href="#"&gt;Unum Consequeteur Comet &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="inverse" href="#"&gt;Felsar e Pluribus &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Graphic Links module</h4>
+      <p>Displays links to related content for the page on view, utilizes image</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Optional. Use to draw attention to related content</li>
+        <li>Use only when compelling image is available</li>
+        <li>Fewer than three links recommended</li>
+      </ul>
+      <p><strong>Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+        <li>Lightbox View Page</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="block sidebar">
+        <div class="rail-module graphic-links">
+          <h6 class="title">Related Graphic Links</h6>
+          <ul class="structured">
+            <li>
+              <div class="thumbnail">
+                <img src="../assets/images/fpo-2to1.png"/>
+                <div class="caption"><p><strong>Lorem Ipsum Dolor Sit</strong> Amet felsar e pluribus unum comet.</p></div>
+              </div>
+            </li>
+            <li>
+              <div class="thumbnail">
+                <img src="../assets/images/fpo-2to1.png"/>
+                <div class="caption"><p><strong>Lorem Ipsum</strong> Amet felsar e pluribus unum comet sed turpis consectat dolor e.</p></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="rail-module graphic-links"&gt;
+  &lt;h6 class="title"&gt;Related Graphic Links&lt;/h6&gt;
+  &lt;ul class="structured"&gt;
+    &lt;li&gt;
+      &lt;div class="thumbnail"&gt;
+        &lt;img src="../assets/images/fpo-2to1.png"&gt;
+        &lt;div class="caption"&gt;&lt;p&gt;&lt;strong&gt;Lorem Ipsum Dolor Sit&lt;/strong&gt; Amet felsar e pluribus unum comet.&lt;/p&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="thumbnail"&gt;
+        &lt;img src="../assets/images/fpo-2to1.png"&gt;
+        &lt;div class="caption"&gt;&lt;p&gt;&lt;strong&gt;Lorem Ipsum&lt;/strong&gt; Amet felsar e pluribus unum comet sed turpis consectat dolor e.&lt;/p&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Info Banner module</h4>
+      <p>Displays links to related content for the page on view, utilizes image</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Optional. Use to draw attention to related content</li>
+        <li>Use only when compelling image is available</li>
+      </ul>
+      <p><strong>Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+        <li>Lightbox View Page</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="block sidebar">
+        <div class="rail-module banner">
+          <h6 class="title">Info Banners</h6>
+          <ul class="structured">
+            <li>
+              <div class="thumbnail clearfix">
+                <img src="../assets/images/fpo-2to1.png"/>
+                <div class="caption">
+                  <a class="">Article Name Lorem Ipsum Dolor Sit Amet Felsar <i class="icon-ico_arrowright_lg"></i></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumbnail clearfix">
+                <img src="../assets/images/fpo-2to1.png"/>
+                <div class="caption">
+                  <a class="">Article Name Lorem Ipsum Dolor Sit Amet Felsar <i class="icon-ico_arrowright_lg"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="rail-module banner"&gt;
+  &lt;h6 class="title"&gt;Info Banners&lt;/h6&gt;
+  &lt;ul class="structured"&gt;
+    &lt;li&gt;
+      &lt;div class="thumbnail clearfix"&gt;
+        &lt;img src="../assets/images/fpo-2to1.png"&gt;
+        &lt;div class="caption"&gt;
+          &lt;a class=""&gt;Article Name Lorem Ipsum Dolor Sit Amet Felsar &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="thumbnail clearfix"&gt;
+        &lt;img src="../assets/images/fpo-2to1.png"&gt;
+        &lt;div class="caption"&gt;
+          &lt;a class=""&gt;Article Name Lorem Ipsum Dolor Sit Amet Felsar &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Tags module</h4>
+      <p>Displays tags pertaining to page on view</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Optional. Use if tags are available</li>
+        <li>If number of tags is too large to be displayed, a &quot;show more&quot; link may be implemented</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+        <li>Lightbox View Page</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="block sidebar">
+        <div class="rail-module">
+          <h6 class="title">Tags</h6>
+          <p>
+            <span class="label tag">Validation Research</span>
+            <span class="label tag">Marketing</span>
+            <span class="label tag">Design Research</span>
+            <span class="label tag">Prototype</span>
+            <span class="label tag">Differentiation</span>
+            <span class="label tag">Pilot</span>
+            <span class="label tag">User Interface</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="rail-module"&gt;
+  &lt;h6 class="title"&gt;Tags&lt;/h6&gt;
+  &lt;p&gt;
+    &lt;span class="label tag"&gt;Validation Research&lt;/span&gt;
+    &lt;span class="label tag"&gt;Marketing&lt;/span&gt;
+    &lt;span class="label tag"&gt;Design Research&lt;/span&gt;
+    &lt;span class="label tag"&gt;Prototype&lt;/span&gt;
+    &lt;span class="label tag"&gt;Differentiation&lt;/span&gt;
+    &lt;span class="label tag"&gt;Pilot&lt;/span&gt;
+    &lt;span class="label tag"&gt;User Interface&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Download links module</h4>
+      <p>Displays downloads associated with page on view</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Optional. Used if downloads offered</li>
+        <li>Use informative explanatory titles for items, rather than exact file names, to indicate download content clearly</li>
+      </ul>
+      <p><strong>Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+        <li>Lightbox View Page</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="block sidebar">
+        <div class="rail-module downloads">
+          <h6 class="title">Downloads</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a class="inverse" href="#">Goal Setting Workshop Materials
+              <small>PDF 2.7MB</small> <i class="icon-ico_download_lg"></i></a>
+            </li>
+            <li>
+              <a class="inverse" href="#">Research Plan
+              <small>DOC 1.6MB</small> <i class="icon-ico_download_lg"></i></a>
+            </li>
+            <li>
+              <a class="inverse" href="#">Initial Prototype
+              <small>PNG 800KB</small> <i class="icon-ico_download_lg"></i></a>
+            </li>
+            <li>
+              <a class="inverse" href="#">Findings with Design Recommendations
+              <small>PPT 10.4 MB</small> <i class="icon-ico_download_lg"></i></a>
+            </li>
+            <li>
+              <a class="inverse" href="#">Release 1
+              <small>PPT 6.8 MB</small> <i class="icon-ico_download_lg"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="rail-module downloads"&gt;
+  &lt;h6 class="title"&gt;Downloads&lt;/h6&gt;
+  &lt;ul class="list-unstyled"&gt;
+    &lt;li&gt;
+      &lt;a class="inverse" href="#"&gt;Goal Setting Workshop Materials
+      &lt;small&gt;PDF 2.7MB&lt;/small&gt; &lt;i class="icon-ico_download_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="inverse" href="#"&gt;Research Plan
+      &lt;small&gt;DOC 1.6MB&lt;/small&gt; &lt;i class="icon-ico_download_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="inverse" href="#"&gt;Initial Prototype
+      &lt;small&gt;PNG 800KB&lt;/small&gt; &lt;i class="icon-ico_download_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="inverse" href="#"&gt;Findings with Design Recommendations
+      &lt;small&gt;PPT 10.4 MB&lt;/small&gt; &lt;i class="icon-ico_download_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="inverse" href="#"&gt;Release 1
+      &lt;small&gt;PPT 6.8 MB&lt;/small&gt; &lt;i class="icon-ico_download_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row anchor">
+    <div class="col-md-12 mds-wrapper">
+      <h2 id="dynamic" class="voice voice-brand">Dynamic Content Components</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Hero Carousel</h4>
+      <p>Used on the home page to feature key statements or content</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>May be populated with compelling introductory statements or headlines and descriptive text for highlight stories</li>
+        <li>Fewer than five carousel items recommended</li>
+      </ul>
+      <p><strong>Templates:</strong></p>
+      <ul>
+        <li>Home Page</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <a target="_new" href="../examples/carousels/hero-carousel.html">Launch Example</a>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div id="heroCarousel" class="carousel hero slide" data-interval="3000" data-navigation-position="right"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="item active" data-background="../../../img/ph_carousel-item-transparent.jpg"&gt;
+      &lt;div class="container"&gt;
+        &lt;h2 class="title voice-brand"&gt;Test Headline&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="item" data-background="../../../img/ph_carousel-item-2.jpg"&gt;
+      &lt;div class="container"&gt;
+        &lt;h2 class="title voice-brand"&gt;Test Headline 2&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="item" data-background="../../../img/ph_carousel-item-3.jpg"&gt;
+      &lt;div class="container"&gt;
+        &lt;h2 class="title voice-brand"&gt;Test Headline 3&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a class="carousel-control left" href="#heroCarousel" data-slide="prev"&gt;&lt;i class="icon-ico_arrowleft_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class="carousel-control right" href="#heroCarousel" data-slide="next"&gt;&lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Teaser Module</h4>
+      <p>Introduces key site section via compelling headline "teaser", appears in teaser carousel </p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Headline styled in brand voice</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Home Page</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <a target="_new" href="../examples/carousels/teaser-module.html">Launch Example</a>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;nav class="fill-container full-width teasers"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="teaser image-icon span4"&gt;
+        &lt;div class="icon"&gt;
+          &lt;img src="../../assets/images/fpo-4to3.png"&gt;
+        &lt;/div&gt;
+        &lt;div class="text"&gt;
+          &lt;h4&gt;Who we are&lt;/h4&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet felsar e pluribus unum consectat.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="teaser image-icon span4"&gt;
+        &lt;div class="icon"&gt;
+          &lt;img src="../../assets/images/fpo-4to3.png"&gt;
+        &lt;/div&gt;
+        &lt;div class="text"&gt;
+          &lt;h4&gt;Service&lt;/h4&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet felsar e pluribus unum consectat.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="teaser image-icon span4"&gt;
+        &lt;div class="icon"&gt;
+          &lt;img src="../../assets/images/fpo-4to3.png"&gt;
+        &lt;/div&gt;
+        &lt;div class="text"&gt;
+          &lt;h4&gt;Platforms&lt;/h4&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet felsar e pluribus unum consectat.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Card Carousel</h4>
+      <p>Features card modules</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>If number of card is three or fewer, viewing controls are disabled</li>
+        <li>Optional. Recommended to help display alert items.</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Customer Web Center</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <a target="_new" href="../examples/carousels/card-carousel.html">Launch Example</a>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;section class="mds-container card-carousel notifications"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="span12 module collapsible"&gt;
+      &lt;header class="row"&gt;
+        &lt;div class="span12"&gt;
+          &lt;div class="module-header block clearfix"&gt;&lt;i class="module-arrow icon-ico_chevron_down_lg"&gt;&lt;/i&gt;
+            &lt;h3&gt;8 New Customer Notifications&lt;/h3&gt;
+            &lt;a href="#" class="btn btn-link pull-right"&gt;View All &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      &lt;div class="carousel module-body slide in collapse" id="carousel-8225" style="height: auto;"&gt;
+        &lt;div class="carousel-inner"&gt;
+          &lt;!-- this is an item --&gt;
+          &lt;div class="item"&gt;
+            &lt;!-- this is a card --&gt;
+            &lt;table class="card table"&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;ESN 123456&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;span class="label label-important"&gt;Urgent&lt;/span&gt; &lt;h4&gt;Missing 9th Stage OGC Seal&lt;/h4&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6 class="inline"&gt;Date&lt;/h6&gt;
+                    &lt;time datetime="2011-08-27"&gt;27 Aug 2012&lt;/time&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Observation&lt;/h6&gt;
+                    &lt;p&gt;The take off EGT Sector divergence data has shifted barometric pressure.&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Analysis&lt;/h6&gt;
+                    &lt;p&gt;According to the GEAE Diagnostics knowledge base, shifts observed on this engine may be...&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;button class="btn btn-primary"&gt;Acknowledge&lt;/button&gt;
+                    &lt;button class="btn"&gt;View Plots&lt;/button&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;!-- this is a card --&gt;
+            &lt;table class="card table"&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;ESN 987654&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;span class="label label-important"&gt;Urgent&lt;/span&gt; &lt;h4&gt;Core Vibration Alert&lt;/h4&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6 class="inline"&gt;Date&lt;/h6&gt;
+                    &lt;time datetime="2011-08-27"&gt;27 Aug 2012&lt;/time&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Observation&lt;/h6&gt;
+                    &lt;p&gt;The take off EGT Sector divergence data has shifted barometric pressure.&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Analysis&lt;/h6&gt;
+                    &lt;p&gt;According to the GEAE Diagnostics knowledge base, shifts observed on this engine may be...&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;button class="btn btn-primary"&gt;Acknowledge&lt;/button&gt;
+                    &lt;button class="btn"&gt;View Plots&lt;/button&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;!-- this is a card --&gt;
+            &lt;table class="card table"&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;ESN 123456&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h4&gt;Spinner Support for Fan Imbalance&lt;/h4&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6 class="inline"&gt;Date&lt;/h6&gt;
+                    &lt;time datetime="2011-08-27"&gt;27 Aug 2012&lt;/time&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Observation&lt;/h6&gt;
+                    &lt;p&gt;The take off EGT Sector divergence data has shifted barometric pressure.&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Analysis&lt;/h6&gt;
+                    &lt;p&gt;According to the GEAE Diagnostics knowledge base, shifts observed on this engine may be...&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;button class="btn btn-primary"&gt;Acknowledge&lt;/button&gt;
+                    &lt;button class="btn"&gt;View Plots&lt;/button&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+          &lt;!-- this is an item --&gt;
+          &lt;div class="item active"&gt;
+            &lt;!-- this is a card --&gt;
+            &lt;table class="card table"&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;ESN 234571&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;span class="label label-important"&gt;Urgent&lt;/span&gt; &lt;h4&gt;Missing 9th Stage OGC Seal&lt;/h4&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6 class="inline"&gt;Date&lt;/h6&gt;
+                    &lt;time datetime="2011-08-27"&gt;27 Aug 2012&lt;/time&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Observation&lt;/h6&gt;
+                    &lt;p&gt;The take off EGT Sector divergence data has shifted barometric pressure.&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Analysis&lt;/h6&gt;
+                    &lt;p&gt;According to the GEAE Diagnostics knowledge base, shifts observed on this engine may be...&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;button class="btn btn-primary"&gt;Acknowledge&lt;/button&gt;
+                    &lt;button class="btn"&gt;View Plots&lt;/button&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;!-- this is a card --&gt;
+            &lt;table class="card table"&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;ESN 42525672&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;span class="label label-important"&gt;Urgent&lt;/span&gt; &lt;h4&gt;Core Vibration Alert&lt;/h4&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6 class="inline"&gt;Date&lt;/h6&gt;
+                    &lt;time datetime="2011-08-27"&gt;27 Aug 2012&lt;/time&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Observation&lt;/h6&gt;
+                    &lt;p&gt;The take off EGT Sector divergence data has shifted barometric pressure.&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Analysis&lt;/h6&gt;
+                    &lt;p&gt;According to the GEAE Diagnostics knowledge base, shifts observed on this engine may be...&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;button class="btn btn-primary"&gt;Acknowledge&lt;/button&gt;
+                    &lt;button class="btn"&gt;View Plots&lt;/button&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;!-- this is a card --&gt;
+            &lt;table class="card table"&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;ESN 757572&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h4&gt;Spinner Support for Fan Imbalance&lt;/h4&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6 class="inline"&gt;Date&lt;/h6&gt;
+                    &lt;time datetime="2011-08-27"&gt;27 Aug 2012&lt;/time&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Observation&lt;/h6&gt;
+                    &lt;p&gt;The take off EGT Sector divergence data has shifted barometric pressure.&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;h6&gt;Analysis&lt;/h6&gt;
+                    &lt;p&gt;According to the GEAE Diagnostics knowledge base, shifts observed on this engine may be...&lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;button class="btn btn-primary"&gt;Acknowledge&lt;/button&gt;
+                    &lt;button class="btn"&gt;View Plots&lt;/button&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;ul class="carousel-navigation" style="margin-left: -12px;"&gt;&lt;li&gt;&lt;a class="" href="#carousel-8225" data-to="0"&gt;0&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#carousel-8225" data-to="1" class="active"&gt;1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Lightbox Carousel</h4>
+      <p>Launched from View Link Module, displays large images and captions in carousel format</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>When lightbox launched, it displays the module's thumbnail image, with others accessible through next/previous controls</li>
+        <li>Default behavior: lightbox carousel includes the images from the other index link modules on the view index page</li>
+        <li>Alternate behavior: lightbox carousel includes set of images specific to the index link module (rather than images from the other index link modules) </li>
+      </ul>
+      <p><strong>Templates:</strong></p>
+      <ul>
+        <li>Views Index</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <a data-toggle="modal" href="#lightbox">Launch Example</a>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="modal lightbox hide fade" id="lightbox"&gt;
+  &lt;div class="modal-header"&gt;
+      &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
+      &lt;p&gt;Image title&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;
+      &lt;div id="lb-carousel" class="carousel slide"&gt;
+      &lt;div class="carousel-inner"&gt;
+        &lt;div class="item active"&gt;
+          &lt;div class="container"&gt;
+            &lt;div class="media"&gt;&lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;div class="container"&gt;
+            &lt;div class="media"&gt;&lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;div class="container"&gt;
+            &lt;div class="media"&gt;&lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;div class="container"&gt;
+            &lt;div class="media"&gt;&lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;a class="carousel-control left" href="#lb-carousel" data-slide="prev"&gt;&lt;i class="icon-ico_arrowleft_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a class="carousel-control right" href="#lb-carousel" data-slide="next"&gt;&lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-footer"&gt;
+    &lt;h3 class="voice-brand"&gt;Slide Title&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+    &lt;button class="btn btn-inverse"&gt;Read More &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row anchor">
+    <div class="col-md-12 mds-wrapper">
+      <h2 id="headers" class="voice voice-brand">Page Headers</h2>
+      <p>Page headers, comprised of brand and navigation elements, appear at the top of pages throughout the site.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Large Header</h4>
+      <p>Large brand, primary navigation.</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>To be used on landing pages.</li>
+        <li>Not to be used on internal or secondary pages.</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Home Page</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <a target="_new" href="../examples/navigation/large-header.html">Launch Example</a>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="navbar navbar-static-top"&gt;
+  &lt;div class="navbar navbar-static-top"&gt;
+    &lt;div class="navbar-inner"&gt;
+      &lt;div class="container"&gt;
+        &lt;a class="brand" href="#"&gt;&lt;span class="ge-logo"&gt;&lt;/span&gt; &lt;span class="primary-brand"&gt;GE Software&lt;/span&gt; &lt;span class="secondary-brand"&gt;Solution&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="toolbar-container pull-right"&gt;
+          &lt;div class="btn-toolbar pull-left"&gt;
+            &lt;button class="btn btn-primary"&gt;Get in Touch&lt;/button&gt;
+          &lt;/div&gt;
+            &lt;form class="navbar-search inverse pull-left"&gt;
+              &lt;div class="input-append"&gt;
+                &lt;input type="search" placeholder="Search" class="input-medium search-query" data-toggle="dropdown" data-target=".navbar-search"&gt;&lt;button type="submit" class="btn btn-icon"&gt;&lt;i class="icon-ico_search_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="typeahead typeahead-faceted dropdown-menu pull-right"&gt;
+                &lt;ul class="unstyled"&gt;
+                  &lt;li class="facet"&gt;
+                    &lt;div class="facet-name"&gt;Top Result&lt;/div&gt;
+                    &lt;ul class="facet-results unstyled"&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ine&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li class="facet"&gt;
+                    &lt;div class="facet-name"&gt;States&lt;/div&gt;
+                    &lt;ul class="facet-results unstyled"&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ine&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ryland&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ssachusetts&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;Alaba&lt;strong&gt;ma&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li class="facet"&gt;
+                    &lt;div class="facet-name"&gt;Cities&lt;/div&gt;
+                    &lt;ul class="facet-results unstyled"&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;bleton, GA&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;cedon, NY&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;cedonia, OH&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;chesney Park, IL&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;comb, IL&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;View All Results&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          
+          &lt;a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"&gt;
+            &lt;i class="icon-ico_menu_lg"&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;!-- end new IIDS refactor --&gt;
+    &lt;div class="primary-navbar nav-collapse collapse"&gt;
+      &lt;div class="container"&gt;
+        &lt;ul class="nav"&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 1&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 2&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 3&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 4&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="open"&gt;
+              &lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;
+              &lt;ul class="unstyled"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 5&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 6&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li class="open"&gt;
+              &lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;
+              &lt;ul class="unstyled"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="open"&gt;
+              &lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;
+              &lt;ul class="unstyled"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Header, Small</h4>
+      <p>Small brand, primary navigation and toolbar.</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Use on all internal and secondary pages.</li>
+        <li> Use the same page header for pages at same level of site. For example, use small header on all content index pages--do not use large on one and small on another.</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Customer Web Center</li>
+        <li>Country Detail</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <a target="_new" href="../examples/content-headers/small-header.html">Launch Example</a>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="navbar navbar-small navbar-static-top"&gt;
+  &lt;div class="navbar navbar-static-top"&gt;
+    &lt;div class="navbar-inner"&gt;
+      &lt;div class="container"&gt;
+        &lt;a class="brand" href="#"&gt;&lt;span class="ge-logo"&gt;&lt;/span&gt; &lt;span class="primary-brand"&gt;GE Business&lt;/span&gt; &lt;span class="secondary-brand"&gt;Solution Platform&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="toolbar-container pull-right"&gt;
+          &lt;div class="btn-toolbar pull-left"&gt;
+                &lt;div class="btn-group"&gt;
+                  &lt;button class="btn btn-danger dropdown-toggle" rel="tooltip" data-title="Alerts" data-placement="bottom" data-toggle="dropdown" data-original-title="" title=""&gt;&lt;i class="icon-ico_alert_lg"&gt;&lt;/i&gt; 5&lt;/button&gt;
+                  &lt;ul class="dropdown-menu pull-right message-list"&gt;
+                    &lt;li class="message-item"&gt;
+                      &lt;a href="#"&gt;
+                        &lt;span class="label label-important"&gt;Urgent&lt;/span&gt;
+                        &lt;h6 class="message-title"&gt;Alert Type and Title&lt;/h6&gt;
+                        &lt;p&gt;This is a brief description or summary of the associated event that occured&hellip;&lt;br&gt;&lt;time datetime="MM:DD:YYTHH:MM:SS" class="message-time"&gt;MM/DD/YY 12:05&lt;/time&gt;&lt;/p&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="message-item"&gt;
+                      &lt;a href="#"&gt;
+                        &lt;span class="label label-warning"&gt;Moderate&lt;/span&gt;
+                        &lt;h6 class="message-title"&gt;Alert Type and Title&lt;/h6&gt;
+                        &lt;p&gt;This is a brief description or summary of the associated event that occured&hellip;&lt;br&gt;&lt;time datetime="MM:DD:YYTHH:MM:SS" class="message-time"&gt;MM/DD/YY 12:05&lt;/time&gt;&lt;/p&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="message-item"&gt;&lt;a href="#"&gt;View all alerts&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="btn-group"&gt;
+                  &lt;button class="btn dropdown-toggle" rel="tooltip" data-title="Messages" data-placement="bottom" data-toggle="dropdown" data-original-title="" title=""&gt;&lt;i class="icon-ico_mail_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+                  &lt;ul class="dropdown-menu pull-right message-list"&gt;
+                    &lt;li class="message-item empty"&gt;No unread messages&lt;/li&gt;
+                    &lt;li class="message-item"&gt;&lt;a href="#"&gt;View all messages&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="btn-group"&gt;
+                  &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;&lt;i class="icon-ico_user_male_lg"&gt;&lt;/i&gt;&lt;span class="user-name"&gt;S. Smith &lt;/span&gt; &lt;i class="icon-ico_chevron_down_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+                  &lt;ul class="dropdown-menu pull-right"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="divider"&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;form class="navbar-search inverse pull-left"&gt;
+            &lt;div class="input-append"&gt;
+              &lt;input type="search" placeholder="Search" class="input-medium search-query" data-toggle="dropdown" data-target=".navbar-search"&gt;&lt;button type="submit" class="btn btn-icon"&gt;&lt;i class="icon-ico_search_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="typeahead typeahead-faceted dropdown-menu pull-right"&gt;
+              &lt;ul class="unstyled"&gt;
+                &lt;li class="facet"&gt;
+                  &lt;div class="facet-name"&gt;Top Result&lt;/div&gt;
+                  &lt;ul class="facet-results unstyled"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ine&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class="facet"&gt;
+                  &lt;div class="facet-name"&gt;States&lt;/div&gt;
+                  &lt;ul class="facet-results unstyled"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ine&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ryland&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;ssachusetts&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Alaba&lt;strong&gt;ma&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class="facet"&gt;
+                  &lt;div class="facet-name"&gt;Cities&lt;/div&gt;
+                  &lt;ul class="facet-results unstyled"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;bleton, GA&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;cedon, NY&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;cedonia, OH&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;chesney Park, IL&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Ma&lt;/strong&gt;comb, IL&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class="last"&gt;&lt;a href="#"&gt;View All Results&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+          &lt;a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"&gt;
+            &lt;i class="icon-ico_menu_lg"&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;!-- end new IIDS refactor --&gt;
+    &lt;div class="primary-navbar nav-collapse collapse"&gt;
+      &lt;div class="container"&gt;
+        &lt;ul class="nav"&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 1&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 2&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 3&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 4&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 4&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="open"&gt;
+              &lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;
+              &lt;ul class="unstyled"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 5&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Secondary Nav 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Primary Nav 6&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li class="open"&gt;
+              &lt;a href="#"&gt;Secondary Nav 1&lt;/a&gt;
+              &lt;ul class="unstyled"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="open"&gt;
+              &lt;a href="#"&gt;Secondary Nav 2&lt;/a&gt;
+              &lt;ul class="unstyled"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Tertiary Nav 3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row anchor">
+    <div class="col-md-12 mds-wrapper">
+      <h2 id="images" class="voice voice-brand">Images</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 annotation">
+      <h4>Extra Large Image</h4>
+      <ul>
+        <li>Stretches the full width of a 3 column content module (no margins)</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Full Width Content</li>
+      </ul>
+    </div>
+    <div class="col-md-12 pagecontent">
+      <div class="block">
+        <div class="pagemedia">
+          <img class="img-responsive" src="../assets/images/fpo-2to1.png">
+        </div>
+          <div class="media-caption">
+          <p><strong>Sed Turpis</strong> Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p style="margin-top: 20px !important;">Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="pagecontent"&gt;
+  &lt;div class="block"&gt;
+    &lt;div class="pagemedia"&gt;
+      &lt;img class="img-responsive" src="../assets/images/fpo-2to1.png"&gt;
+    &lt;/div&gt;
+      &lt;div class="media-caption"&gt;
+      &lt;p&gt;&lt;strong&gt;Sed Turpis&lt;/strong&gt; Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.&lt;/p&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Large Image</h4>
+      <ul>
+        <li>Covers 2 columns of a 3 column layout</li>
+        <li>Stretches the full width of the content module (no margins)</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+      </ul>
+    </div>
+    <div class="col-md-8 pagecontent">
+      <div class="block">
+        <div class="pagemedia">
+          <img class="img-responsive" src="../assets/images/fpo-4to3.png">
+        </div>
+          <div class="media-caption">
+          <p><strong>Sed Turpis</strong> Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p style="margin-top: 20px !important;">Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="pagecontent"&gt;
+  &lt;div class="block"&gt;
+    &lt;div class="pagemedia"&gt;
+      &lt;img class="img-responsive" src="../assets/images/fpo-4to3.png"&gt;
+    &lt;/div&gt;
+      &lt;div class="media-caption"&gt;
+      &lt;p&gt;&lt;strong&gt;Sed Turpis&lt;/strong&gt; Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.&lt;/p&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Medium Image</h4>
+    </div>
+    <div class="col-md-8">
+      <div class="block">
+        <div class="thumbnail body medium clearfix">
+          <img src="../assets/images/fpo-4to3.png">
+          <div class="caption">
+            <p><strong>Sed Turpis</strong> Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p style="margin-top: 20px !important;">Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block"&gt;
+  &lt;div class="thumbnail body medium clearfix"&gt;
+    &lt;img src="../assets/images/fpo-4to3.png"&gt;
+    &lt;div class="caption"&gt;
+      &lt;p&gt;&lt;strong&gt;Sed Turpis&lt;/strong&gt; Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Small Image</h4>
+    </div>
+    <div class="col-md-8">
+      <div class="block">
+        <div class="thumbnail body small clearfix">
+          <img src="../assets/images/fpo-4to3.png">
+          <div class="caption">
+            <p><strong>Sed Turpis</strong> Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block"&gt;
+  &lt;div class="thumbnail body small clearfix"&gt;
+    &lt;img src="../assets/images/fpo-4to3.png"&gt;
+    &lt;div class="caption"&gt;
+      &lt;p&gt;&lt;strong&gt;Sed Turpis&lt;/strong&gt; Lorem ipsum dolor sit amet felsar e pluribus unum comet sed turpis consequeteur sed turpis.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 annotation">
+      <h4>Article Signature</h4>
+      <p>Small image or logo that appears at the bottom of an article or blog post to reinforce the brand.</p>
+      <p><strong>Usage Notes:</strong></p>
+      <ul>
+        <li>Use at the bottom of a blog post or article</li>
+      </ul>
+      <p><strong>Associated Templates:</strong></p>
+      <ul>
+        <li>Blog Post: Main Content with Right Rail</li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <div class="block">
+        <img class="brandmark" src="../assets/images/fpo-4to3.png">
+      </div>
+    </div>
+    <div class="col-md-12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class="block"&gt;
+  &lt;img class="brandmark" src="../assets/images/fpo-4to3.png"&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+</div>
+<div class="modal lightbox fade" id="lightbox">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class=" icon-ico_cross_rnd_lg"></i></button>
+            </div>
+            <div class="modal-body">
+              <div id="lb-carousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="item active">
+                    <div class="media"><img class="img-responsive" src="../assets/images/fpo-4to3.png"></div>
+                </div>
+                <div class="item">
+                    <div class="media"><img class="img-responsive" src="../assets/images/fpo-4to3.png"></div>
+                </div>
+                <div class="item">
+                    <div class="media"><img class="img-responsive" src="../assets/images/fpo-4to3.png"></div>
+                </div>
+                <div class="item">
+                    <div class="media"><img class="img-responsive" src="../assets/images/fpo-4to3.png"></div>
+                </div>
+              </div>
+              <a class="carousel-control left" href="#lb-carousel" data-slide="prev"><i class="icon-ico_arrowleft_lg"></i></a>
+              <a class="carousel-control right" href="#lb-carousel" data-slide="next"><i class="icon-ico_arrowright_lg"></i></a>
+            </div>
+            <div class="modal-footer">
+                <h3 class="voice-brand">Slide Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button class="btn btn-link">Read More <i class="icon-ico_arrowright_lg"></i></button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+    <script src="../../components/respond/respond.min.js"></script>
+
+    <script src="../../components/requirejs/require.js"></script>
+    <script src="../../js/require.config.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: '../../',
+        waitSeconds: 30
+      });
+
+      // Preload JS libraries and exec page scripts
+      require([
+        'jquery',
+        'ge-bootstrap',
+        'spinner',
+        'components/prettify/prettify',
+        'mds'
+      ], function($) {
+        $(function() {
+          // -------------------
+          // DOCUMENTATION SETUP
+          // -------------------
+
+          // Create a global function that can be called from inside iframes
+          // to resize the frame to fit the content window.
+          /*window.resizeFrame = function( src, h ) {
+            $( 'iframe[src="' + src + '"]').css( { height: h + 'px' } );
+          }*/
+
+          // Make code lovely using Google Prettify.
+          window.prettyPrint && prettyPrint();
+
+          // Enable ScrollSpy for dynamic navigation highlighting.
+          // We provide our own version of the "activate" function because
+          // the default Bootstrap lib doesn't handle dropdowns very well.
+          $.fn.scrollspy.Constructor.prototype.activate = function( target ) {
+            var active,
+                selector;
+
+            this.activeTarget = target;
+
+            $( this.selector )
+              .parent('.active')
+              .removeClass('active');
+
+            selector = this.selector
+                     + '[data-target="' + target + '"],'
+                     + this.selector + '[href="' + target + '"]';
+
+            active = $( selector )
+              .parent('li')
+              .addClass('active');
+
+            if ( active.parents('.dropdown-menu') ) {
+              active = active.parents('.btn-group').addClass('active');
+            }
+
+            active.trigger('activate');
+          }
+          // And now we initialize ScrollSpy on the body.
+          // DO NOT use data attributes on this, as it will init before our
+          // new constructor activate function is applied; this would be bad.
+          $('body').scrollspy({
+            offset: 120,
+            target: '.primary-navbar'
+          });
+          // Extend jQuery with a better easing function, so we can make
+          // some pretty scrolling animations.
+          // This easing function is from:
+          // jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+          // Open source under the BSD License.
+          // Copyright © 2008 George McGinley Smith
+          // All rights reserved.
+          $.extend($.easing, {
+            def: 'easeInOutCubic', easeInOutCubic: function (x, t, b, c, d) {
+              if ((t/=d/2) < 1) return c/2*t*t*t + b;
+              return c/2*((t-=2)*t*t + 2) + b;
+            }
+          });
+
+          // Finally, add some smooth scrolling to our body when one of the
+          // primary-navbar links are clicked (even though this isn't in
+          // Bootstrap, which everyone said it was... we'll rebuild anyway).
+          // $('.primary-navbar a').click(function( event ) {
+          //   event.preventDefault();
+          //   var offset = $( $(this).attr('href') ).offset();
+          //   $( 'html, body' ).animate( { scrollTop: offset.top - 120 }, 1000, 'easeInOutCubic' );
+          // });
+
+          $('.primary-navbar a').click(
+            function( event ) {
+              event.preventDefault();
+              var offset = $( $(this).attr('href') ).offset();
+              if (typeof offset !== 'undefined') {
+                $( 'html, body' ).animate( { scrollTop: offset.top - 120 }, 1000, 'easeInOutCubic' );
+              }
+            }
+          );
+
+            // Conditionally load D3/Declarative Viz if SVG is supported.
+            // This should prevent errors from being thrown in IE8
+            if (Modernizr.svg) {
+
+                require(['declarative-visualizations'], function(visualizations) {
+
+                    var components = [];
+
+                    $('div[data-visualization]').each(function(i, element) {
+                        var viz = $(element).attr('data-visualization');
+                        components.push( visualizations[viz](element) );
+                    });
+
+                });
+                // If SVG isn't supported alert the user that some elements won't be loaded
+            } else {
+                alert('Your browser does not support SVG.\nAny element using D3.js will be omitted.');
+            }
+
+          // ONE LAST THING! If this happens to be an iframe window we're
+          // loading then we will essentially create a listener that checks
+          // the body height, so that if the contents of this frame change
+          // then it will call back to the parent to continually resize the
+          // frame to always fit the content window.
+          // if ( parent != top ) {
+          //   var $el = $('body'),
+          //       h   = $el.height(),
+          //       key = 'body-height',
+          //       src = document.location.pathname;
+          //   $.data( this, key, h );
+          //   parent.resizeFrame( src, h );
+          //   function listen() {
+          //     var timeout = setTimeout(function() {
+          //       var h   = $el.height(),
+          //           old = $.data( this, key );
+          //           if ( h !== old ) {
+          //             $.data( this, key, h );
+          //             parent.resizeFrame( src, h );
+          //           }
+          //       listen();
+          //     }, 250);
+          //   }
+          //   listen();
+          // }
+
+          // Now, on to...
+
+          // ---------------------------
+          // DOCUMENTATION FUNCTIONALITY
+          // ---------------------------
+
+          // Enable stateful buttons
+          $('[rel=stateful]').click(function() {
+            var $self = $(this);
+            $self.button('loading');
+            setTimeout(function() {
+              $self.button('reset');
+            }, 3000);
+          });
+
+          // Enable spinners
+         $('[rel=spinner]').spin();
+
+         $('.spinner').spin();
+
+          // Enable tooltips
+          $('[rel=tooltip]').tooltip();
+
+          // Enable popovers
+          $('[rel=popover]').popover();
+
+          // Enable tabs (with dropdowns, mainly)
+          $('.nav-tabs > li > a').click(function(event) {
+            event.preventDefault();
+            $(this).tab('show');
+          });
+
+          // Make accordion carets animate!
+          $('.accordion .collapse')
+            .on('show', function() {
+              $(this).prev('.accordion-heading').find('.accordion-toggle').addClass('in');
+            })
+            .on('hide', function() {
+              $(this).prev('.accordion-heading').find('.accordion-toggle').removeClass('in');
+            });
+
+            // $('.modal').on('shown', function () {
+            //   var modalHeight = $(window).innerHeight() - 60;
+            //   var bodyHeight = modalHeight - $(this).find('.modal-header').outerHeight() - $(this).find('.modal-footer').outerHeight();
+            //   $(this).css({ 'max-height': modalHeight });
+            //   $(this).find('.modal-body').css({ 'max-height': bodyHeight });
+            // });
+        });
+      });
+    </script>
+
+</body>
+</html>
+
+

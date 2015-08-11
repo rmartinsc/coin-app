@@ -1,0 +1,1736 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MDS Documentation: EDE Components</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../components/brandkit/favicon/favicon-144px.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../components/brandkit/favicon/favicon-114px.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../components/brandkit/favicon/favicon-72px.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../../components/brandkit/favicon/favicon.png">
+
+    <link rel="icon" href="../../components/brandkit/favicon/favicon.ico">
+
+    <link href="../assets/css/documentation.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="../../css/mds.css" rel="stylesheet" type="text/css">
+    
+
+    <link href="../../css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <script src="../../components/requirejs/require.js"></script>
+    <script src="../../js/require.config.js"></script>
+    <script type="text/javascript">
+      require.config({ baseUrl: '../../' });
+    </script>
+
+    
+
+    <script src="../../components/modernizr/modernizr.js"></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<nav class="navbar
+             navbar-small 
+            
+                navbar-fixed-top
+            
+            navbar-default">
+
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="ge-logo"></span>
+                <span class="primary-brand"></span>
+                <span class="secondary-brand">GE Software</span>
+            </a>
+        </div>
+
+        
+        <div class="toolbar-container pull-right">
+            
+                <div class="btn-toolbar pull-left">
+                    <button class="btn btn-primary">Get in Touch</button>
+                </div>
+            
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <!-- search form -->
+            <form class="navbar-search inverse pull-right">
+                <div class="input-group input-prepend" style="width: 210px;">
+                    <input type="search" placeholder="Search" class="form-control search-query" data-toggle="dropdown" data-target=".navbar-search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-icon"><i class="icon-ico_search_lg"></i></button>
+                    </span>
+                </div>
+                <div class="typeahead typeahead-faceted dropdown-menu pull-right">
+                    <ul class="list-unstyled">
+                        <li class="facet">
+                            <div class="facet-name">Top Result</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">States</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>ine</a></li>
+                                <li><a href="#"><strong>Ma</strong>ryland</a></li>
+                                <li><a href="#"><strong>Ma</strong>ssachusetts</a></li>
+                                <li><a href="#">Alaba<strong>ma</strong></a></li>
+                            </ul>
+                        </li>
+                        <li class="facet">
+                            <div class="facet-name">Cities</div>
+                            <ul class="facet-results list-unstyled">
+                                <li><a href="#"><strong>Ma</strong>bleton, GA</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedon, NY</a></li>
+                                <li><a href="#"><strong>Ma</strong>cedonia, OH</a></li>
+                                <li><a href="#"><strong>Ma</strong>chesney Park, IL</a></li>
+                                <li><a href="#"><strong>Ma</strong>comb, IL</a></li>
+                            </ul>
+                        </li>
+                        <li class="last"><a href="#">View All Results</a></li>
+                    </ul>
+                </div>
+            </form>
+
+        
+        
+
+        
+    
+
+    </div>
+    </div>
+
+    <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+
+                
+
+                    
+
+                        
+
+                                      <li><a href="#contactList">Contact List</a></li>
+          <li><a href="#eventList">Event List</a></li>
+          <li><a href="#feedback">Feedback Button</a></li>
+          <li><a href="#multiLevel">Multi-Level Nav</a></li>
+          <li><a href="#orgChart">Org Chart</a></li>
+          <li><a href="#sharing">Sharing</a></li>
+                        
+
+                    
+
+                
+
+            </ul>
+        </div>
+    </div>
+</nav><!-- /navbar -->
+
+<div class="container doco">
+  <div class="page-header voice voice-brand">
+    <h1>EDE Components</h1>
+  </div>
+  <div class="row">
+    <div id="contactList" class="span4 annotation">
+      <h4>Contact List Module</h4>
+      <p>Accommodates an IM style list combined with presence information</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Module Header</li>
+        <li>Sort and Search</li>
+        <li>List of Contacts containing: Thumbnail, Name, Title, and Presence Indicator</li>
+      </ul>
+      <p><strong>Associated Reference Design:</strong> <a href="../examples/reference-screens/ede-employee-dashboard.html"> EDE Employee Dashboard</a></p>
+      <p><strong>Example:</strong> <a href="../examples/components/contacts.html"> Contact List</a></p>
+    </div>
+    <div class="span12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;section class=&quot;module contacts draggable scrollable with-toolbar double span4&quot;&gt;
+  &lt;header class=&quot;module-header&quot;&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+      &lt;h3 class=&quot;voice voice-brand pull-left&quot;&gt;Contacts&lt;/h3&gt;
+      &lt;div class=&quot;btn-group pull-right&quot;&gt;
+        &lt;button class=&quot;btn btn-small dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;toolbar&quot;&gt;
+      &lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons-radio&quot;&gt;
+        &lt;button class=&quot;btn active&quot;&gt;Recent&lt;/button&gt;
+        &lt;button class=&quot;btn&quot;&gt;Favorites&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;form class=&quot;form-search pull-right&quot;&gt;
+        &lt;div class=&quot;input-append&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;input-small search-query&quot; placeholder=&quot;Search&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;btn btn-icon&quot;&gt;&lt;i class=&quot;icon-ico_search_lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;module-body&quot;&gt;
+    &lt;ul class=&quot;contact-list unstyled&quot;&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-05.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Alice Andrews&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-04.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Robert French&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-03.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Diane Haight&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Not Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-01.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Julie Jackson&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-02.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Roger Samson&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Not Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;ie-hide&quot;&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-01.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Teresa Turner&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;ie-hide&quot;&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-02.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Stewart Vernon&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;ie-hide&quot;&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-05.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Alice Andrews&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;ie-hide&quot;&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-05.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Alice Andrews&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;ie-hide&quot;&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-05.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Alice Andrews&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;ie-hide&quot;&gt;
+        &lt;div class=&quot;contact&quot;&gt;
+          &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;img src=&quot;../../assets/images/ede-contact-thumb-05.png&quot;&gt;
+            &lt;div class=&quot;info&quot;&gt;
+              &lt;h6&gt;Alice Andrews&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;p class=&quot;hide&quot;&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM PST&lt;/time&gt;&lt;/p&gt;
+              &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_contrast_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;view-all&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot; nowrap&gt;View all Contacts &lt;i class=&quot;icon-ico_arrowright_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;footer class=&quot;module-footer&quot;&gt;&lt;/footer&gt;
+&lt;/section&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="eventList" class="span4 annotation">
+      <h4>Event List Module</h4>
+      <p>Contains a list of upcoming events</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Module Header</li>
+        <li>Date</li>
+        <li>Event containing: Thumbnail, Title, Location, and Timestamp</li>
+      </ul>
+      <p><strong>Associated Reference Design:</strong> <a href="../examples/reference-screens/ede-employee-dashboard.html"> EDE Employee Dashboard</a></p>
+      <p><strong>Example:</strong> <a href="../examples/components/events.html"> Event List</a></p>
+    </div>
+    <div class="span12 usage">
+<p>Markup:</p><pre class="prettyprint linenums lang-html">
+&lt;section class=&quot;module events double scrollable span4 draggable&quot;&gt;
+  &lt;header class=&quot;module-header&quot;&gt;
+    &lt;h3 class=&quot;voice voice-brand pull-left&quot;&gt;Events&lt;/h3&gt;
+    &lt;div class=&quot;btn-group pull-right&quot;&gt;
+      &lt;button class=&quot;btn btn-small dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;module-body&quot;&gt;
+    &lt;ul class=&quot;events-list unstyled&quot;&gt;
+      &lt;li class=&quot;heading&quot;&gt;&lt;h4&gt;&lt;strong&gt;Today&lt;/strong&gt; November 13, 2013&lt;/h4&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../assets/images/ede-event-thumb-01.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt;
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 6:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../assets/images/ede-event-thumb-02.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 7:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;heading&quot;&gt;&lt;h4&gt;November 2013&lt;/h4&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../assets/images/ede-event-thumb-03.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 6:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../../img/icon-large-calendar.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 7:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../assets/images/ede-event-thumb-04.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 8:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;heading&quot;&gt;&lt;h4&gt;December 2013&lt;/h4&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../../img/icon-large-calendar.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 6:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../../img/icon-large-calendar.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 7:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../../img/icon-large-calendar.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 8:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;event&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;clearfix&quot;&gt;
+            &lt;div class=&quot;media pull-left&quot;&gt;
+              &lt;img src=&quot;../../../img/icon-large-calendar.png&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-left&quot;&gt;
+              &lt;h6&gt;Event Title&lt;/h6&gt;
+              &lt;p&gt;Organizer Information&lt;/p&gt;
+              &lt;p&gt;City, State, Country&lt;/p&gt; 
+              &lt;time datetime=&quot;2013-01-12&quot;&gt;November 21, 2013 9:00pm&lt;/time&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;div class=&quot;actions&quot;&gt;
+           &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_calendar_sm&quot;&gt;&lt;/i&gt; Add to Calendar&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Event&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Forward to Colleague&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;view-all&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot; nowrap&gt;View all Events &lt;i class=&quot;icon-ico_arrowright_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;footer class=&quot;module-footer&quot;&gt;&lt;/footer&gt;
+&lt;/section&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="feedback" class="span4 annotation">
+      <h4>Feedback Button</h4>
+      <p>Fixed popover container that allows a user input feedback.</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Title</li>
+        <li>Feedback Options</li>
+        <li>Input form</li>
+        <li>Submit button with label</li>
+        <li>Help Link</li>
+      </ul>
+      <p><strong>Associated Reference Design:</strong> <a href="../examples/reference-screens/ede-employee-dashboard.html">EDE Employee Dashboard</a></p>
+      <p><strong>Example:</strong> <a href="../examples/components/feedback.html"> Feedback</a></p>
+    </div>
+    <div class="span12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class=&quot;feedback-action&quot;&gt;
+  &lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;.feedback&quot;&gt;Share Feedback&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback modal hide fade&quot;&gt;
+  &lt;div class=&quot;modal-body block&quot;&gt;
+    &lt;h3&gt;Let us know what you think&lt;/h3&gt;
+    &lt;p&gt;How useful do you find the information on this page?&lt;/p&gt;
+
+    &lt;div class=&quot;radio-container visible-phone&quot;&gt;
+      &lt;label class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rank&quot; value=&quot;0&quot;&gt; Not at all Useful
+      &lt;/label&gt;
+      &lt;label class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rank&quot; value=&quot;1&quot;&gt; Somewhat Useful
+      &lt;/label&gt;
+      &lt;label class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rank&quot; value=&quot;2&quot; checked=&quot;checked&quot;&gt; Neutral
+      &lt;/label&gt;
+      &lt;label class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rank&quot; value=&quot;3&quot;&gt; Useful
+      &lt;/label&gt;
+      &lt;label class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rank&quot; value=&quot;4&quot;&gt; Very Useful
+      &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;slider-container hidden-phone&quot;&gt;
+      &lt;div&gt;
+        &lt;label&gt;
+          &lt;input class=&quot;slider&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;4&quot; value=&quot;2&quot; /&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;scale&quot;&gt;
+        &lt;span&gt;Not at all&lt;br/&gt;Useful&lt;/span&gt;
+        &lt;span&gt;Somewhat&lt;br/&gt;Useful&lt;/span&gt;
+        &lt;span&gt;Neutral&lt;/span&gt;
+        &lt;span&gt;Useful&lt;/span&gt;
+        &lt;span&gt;Very&lt;br/&gt;Useful&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;label for=&quot;comments&quot;&gt;Please share your comments or suggestions.&lt;/label&gt;
+    &lt;textarea name=&quot;comments&quot;&gt;&lt;/textarea&gt;
+    &lt;br/&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+      &lt;div class=&quot;actions pull-left&quot;&gt;
+        &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot;&gt;Cancel&lt;/button&gt;&lt;button class=&quot;btn btn-primary&quot;&gt;Send&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;links pull-right&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link pull-right&quot;&gt;Need help?&lt;/a&gt;&lt;br/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn close&quot; data-dismiss=&quot;modal&quot;&gt;&lt;i class=&quot;icon-ico_remove_lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="multiLevel" class="span4 annotation">
+      <h4>Multi-Level Navigation</h4>
+      <p>Fixed Sidebar intended to be used for on-page navigation.</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Relative Module that converted to fixed upon scroll</li>
+        <li>Primary on-page navigation that is collapsible</li>
+        <li>Secondary navigation that is also collapsible</li>
+        <li>Optional teriary nav allowed that is NOT collapsible</li>
+        <li>Will scroll to target when given on-page anchors</li>
+        <li>Highlights current page location</li>
+        <li>Adjusts to stacked navigation on mobile</li>
+      </ul>
+      <p><strong>Associated Reference Design:</strong><br>
+        <a href="../examples/reference-screens/ede-employee-profile.html"> EDE Employee Profile</a><br>
+        <a href="../examples/reference-screens/ede-employee-settings.html"> EDE Employee Settings</a>
+      </p>
+      <p><strong>Example:</strong> <a href="../examples/components/multi-level-nav.html"> Multi-Level-Navigation</a></p>
+    </div>
+    <div class="span12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class=&quot;block multi-level-nav jumpnav&quot;&gt;
+  &lt;ul class=&quot;collapsible-list&quot;&gt;
+    
+    &lt;li class=&quot;collapsible-list-subnav open&quot;&gt;
+      &lt;a class=&quot;collapsible-list-parent&quot; href=&quot;#summary&quot;&gt;&lt;strong class=&quot;selected-nav&quot;&gt;Summary&lt;/strong&gt;&lt;/a&gt;
+
+      &lt;ul class=&quot;collapsible-list secondary&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#skillsExpertise&quot;&gt;&lt;strong&gt;Skills &amp;amp; Expertise&lt;/strong&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#currentAssignment&quot;&gt;&lt;strong&gt;Current Assignment&lt;/strong&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+    &lt;/li&gt;
+    &lt;li class=&quot;collapsible-list-subnav open&quot;&gt;
+      &lt;a class=&quot;collapsible-list-parent&quot; href=&quot;#contactInfo&quot;&gt;&lt;strong&gt;Contact Information&lt;/strong&gt;&lt;/a&gt;
+
+      &lt;ul class=&quot;collapsible-list secondary&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#workContact&quot;&gt;&lt;strong&gt;Work&lt;/strong&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#homeContact&quot;&gt;&lt;strong&gt;Home&lt;/strong&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#emergencyContact&quot;&gt;&lt;strong&gt;Emergency Contact&lt;/strong&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#experience&quot;&gt;&lt;strong&gt;Experience&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#networkAffiliations&quot;&gt;&lt;strong&gt;Network &amp;amp; Affiliations&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#orgChart&quot;&gt;&lt;strong&gt;Organization&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="orgChart" class="span4 annotation">
+      <h4>Organization Chart</h4>
+      <p>Condensed organization chart view for viewing direct superior and reports.</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Module Header</li>
+        <li>Manager module with thumbnail, tame, and title</li>
+        <li>Employee profile module with thumbnail, name, and title</li>
+        <li>This profile's direct reports list with name and titles</li>
+        <li>This profile's support staff with name and title</li>
+      </ul>
+      <p><strong>Associated Reference Design:</strong>
+        <a href="../examples/reference-screens/ede-employee-profile.html"> EDE Employee Profile</a>
+      </p>
+      <p><strong>Example:</strong> <a href="../examples/components/org-chart.html"> Organization Chart</a></p>
+    </div>
+    <div class="span12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class=&quot;container&quot;&gt;&lt;!-- start Bootstrap container --&gt;
+  &lt;div class=&quot;row&quot;&gt;
+
+    &lt;!-- start component markup --&gt;
+    &lt;section class=&quot;organization-chart span9&quot;&gt;
+      &lt;div class=&quot;block horizontal&quot;&gt;
+
+        &lt;header class=&quot;block vertical&quot;&gt;
+          &lt;h3&gt;Organization&lt;/h3&gt;
+        &lt;/header&gt;&lt;!-- /header --&gt;
+        &lt;div class=&quot;resource-info row-fluid&quot;&gt;
+          &lt;div class=&quot;manager span4&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+              &lt;h4&gt;Jaeyon's Manager&lt;/h4&gt;
+              &lt;img src=&quot;../../assets/images/ede-orgshart-alice.png&quot;&gt;
+              &lt;h6 rel=&quot;profile-popover&quot;&gt;Alice Andrews&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;resource span4&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+              &lt;div class=&quot;block&quot;&gt;
+                &lt;img src=&quot;../../assets/images/ede-orgchart-kim.png&quot;&gt;
+                &lt;h6 rel=&quot;profile-popover&quot;&gt;Jaeyon Kim&lt;/h6&gt;
+                &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;reports span4&quot;&gt;
+            &lt;header id=&quot;header&quot; class=&quot;&quot;&gt;
+              &lt;h4&gt;Jayeon's Reports&lt;/h4&gt;&lt;span class=&quot;badge badge-small badge-inverse&quot;&gt;15&lt;/span&gt;
+            &lt;/header&gt;
+            &lt;ul class=&quot;reports-list unstyled&quot;&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;George Murray&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Tiffany Coleman&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Joanna van der Meer&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;ie-hide&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;
+                  &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;view-all&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot; nowrap&gt;View all Reports &lt;i class=&quot;icon-ico_arrowright_lg&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;detail&quot;&gt;
+          &lt;div&gt;
+            &lt;a href=&quot;#&quot;&gt;
+              &lt;h4&gt;Jayeon's Personal Assistant&lt;/h4&gt;
+              &lt;h6 rel=&quot;profile-popover&quot;&gt;Julie Jackson&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;a href=&quot;#&quot;&gt;
+              &lt;h4&gt;Jayeon's HR Manager&lt;/h4&gt;
+              &lt;h6 rel=&quot;profile-popover&quot;&gt;Jesse Mills&lt;/h6&gt;
+              &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- end component markup --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class=&quot;profile-card&quot; style=&quot;display: none;&quot;&gt;
+  &lt;div class=&quot;contact&quot;&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;img src=&quot;../../assets/images/ede-contact-thumb-05.png&quot;&gt;
+      &lt;div class=&quot;info&quot;&gt;
+        &lt;h6&gt;Alice Andrews&lt;/h6&gt;
+        &lt;p&gt;&lt;strong&gt;Contractor&lt;/strong&gt; Job Title, GE Business&lt;/p&gt;
+        &lt;p&gt;San Ramon, CA, USA &lt;time datetime=&quot;HH:MM&quot; class=&quot;message-time&quot;&gt;5:29 PM&lt;/time&gt;&lt;/p&gt;
+        &lt;p class=&quot;availability available&quot;&gt;&lt;i class=&quot;icon-availability&quot;&gt;&lt;/i&gt;Available&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;actions&quot;&gt;
+      &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Message&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mail_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Share&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_webex icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Cell&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_mobile icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;#&quot; rel=&quot;tooltip&quot; data-original-title=&quot;Phone&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-ico_phone_sm icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_user_male_lg icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_chevron_down_lg icon-black&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn close&quot;&gt;&lt;i class=&quot;icon-ico_remove_lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="sharing" class="span4 annotation">
+      <h4>Share Button</h4>
+      <p>Flexible element for sharing various types of content.</p>
+      <p><strong>Elements:</strong></p>
+      <ul>
+        <li>Button with Share Icon</li>
+        <li>Sharing Tooltip</li>
+        <li>Dropdown list created on click</li>
+        <li>Modal triggered when share is selected from dropdown</li>
+      </ul>
+      <p><strong>Associated Reference Design:</strong>
+        <a href="../examples/reference-screens/ede-employee-dashboard.html"> EDE Employee Dashboard</a>
+      </p>
+      <p><strong>Example:</strong> <a href="../examples/components/sharing.html"> Sharing</a></p>
+    </div>
+    
+    <div class="span12 usage">
+      <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;span4&quot;&gt;
+      &lt;!-- start component markup --&gt;
+      &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button class=&quot;btn dropdown-toggle&quot; rel=&quot;tooltip&quot; data-title=&quot;Share&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;i class=&quot;icon-ico_share_lg icon-black&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;modal&quot; data-target=&quot;#share&quot;&gt;&lt;i class=&quot;icon-ico_share_lg icon-black&quot;&gt;&lt;/i&gt; Share with a Colleague&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_comments_lg icon-black&quot;&gt;&lt;/i&gt; Post to Colab&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-ico_print_lg icon-black&quot;&gt;&lt;/i&gt; Print this Screen&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;!-- end component markup --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;share&quot; class=&quot;modal share hide fade&quot;&gt;
+  &lt;div class=&quot;modal-body block&quot;&gt;
+    &lt;h3&gt;Share with a colleague&lt;/h3&gt;
+    &lt;div class=&quot;item-description&quot;&gt;
+      &lt;div class=&quot;media&quot;&gt;
+        &lt;img src=&quot;../../assets/images/fpo-4to3-small.png&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;info&quot;&gt;
+        &lt;h6&gt;Title of info or view to be shared&lt;/h6&gt;
+        &lt;p&gt;Description or extract lorem ipsum dolor 
+        sit amet, consectetur adipisicing elit&#8230;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;form class=&quot;&quot;&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Recipient(s)&quot;&gt;
+      &lt;textarea placeholder=&quot;Message (Optional)&quot; style=&quot;height: 60px;&quot;&gt;&lt;/textarea&gt;
+    &lt;/form&gt;
+    &lt;div&gt;
+      &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot;&gt;Cancel&lt;/button&gt;
+      &lt;button class=&quot;btn btn-primary&quot;&gt;Send&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;btn close&quot; data-dismiss=&quot;modal&quot;&gt;&lt;i class=&quot;icon-ico_remove_lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+  </div>
+
+
+  <div class="row">
+      <div id="sharing" class="span4 annotation">
+          <h4>Rich Popover</h4>
+          <p>Rich Popover layout for profiles</p>
+          <p><strong>Associated Reference Designs:</strong>
+              <a href="../examples/components/org-chart.html"> EDE Employee Dashboard</a>
+          </p>
+      </div>
+
+      <div class="span12 usage">
+          <p>Markup:</p>
+<pre class="prettyprint linenums lang-html">
+    &lt;div class="container"&gt;&lt;!-- start Bootstrap container --&gt;
+    &lt;div class="row"&gt;
+
+      &lt;!-- start component markup --&gt;
+      &lt;section class="organization-chart span9"&gt;
+        &lt;div class="block horizontal"&gt;
+
+          &lt;header class="block vertical"&gt;
+            &lt;h3&gt;Organization&lt;/h3&gt;
+          &lt;/header&gt;&lt;!-- /header --&gt;
+          &lt;div class="resource-info row-fluid"&gt;
+            &lt;div class="manager span4"&gt;
+              &lt;a href="#"&gt;
+                &lt;h4&gt;Jaeyon's Manager&lt;/h4&gt;
+                &lt;img src="../../assets/images/ede-orgshart-alice.png"&gt;
+                &lt;h6 rel="profile-popover"&gt;Alice Andrews&lt;/h6&gt;
+                &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="resource span4"&gt;
+              &lt;a href="#"&gt;
+                &lt;div class="block"&gt;
+                  &lt;img src="../../assets/images/ede-orgchart-kim.png"&gt;
+                  &lt;h6 rel="profile-popover"&gt;Jaeyon Kim&lt;/h6&gt;
+                  &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="reports span4"&gt;
+              &lt;header id="header" class=""&gt;
+                &lt;h4&gt;Jayeon's Reports&lt;/h4&gt;&lt;span class="badge badge-small badge-inverse"&gt;15&lt;/span&gt;
+              &lt;/header&gt;
+              &lt;ul class="reports-list unstyled"&gt;
+                &lt;li&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;George Murray&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Tiffany Coleman&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Joanna van der Meer&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="ie-hide"&gt;
+                  &lt;a href="#"&gt;
+                    &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                    &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="view-all"&gt;
+                  &lt;a href="#" class="btn btn-link" nowrap&gt;View all Reports &lt;i class="icon-ico_arrowright_lg"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="detail"&gt;
+            &lt;div&gt;
+              &lt;a href="#"&gt;
+                &lt;h4&gt;Jayeon's Personal Assistant&lt;/h4&gt;
+                &lt;h6 rel="profile-popover"&gt;Julie Jackson&lt;/h6&gt;
+                &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;a href="#"&gt;
+                &lt;h4&gt;Jayeon's HR Manager&lt;/h4&gt;
+                &lt;h6 rel="profile-popover"&gt;Jesse Mills&lt;/h6&gt;
+                &lt;p&gt;Job Title, GE Business&lt;/p&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;!-- end component markup --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;&lt;/p&gt;
+
+  &lt;div class="profile-card" style="display: none;"&gt;
+    &lt;div class="contact"&gt;
+      &lt;div class="wrapper"&gt;
+        &lt;img src="../../assets/images/ede-contact-thumb-05.png"&gt;
+        &lt;div class="info"&gt;
+          &lt;h6&gt;Alice Andrews&lt;/h6&gt;
+          &lt;p&gt;&lt;strong&gt;Contractor&lt;/strong&gt; Job Title, GE Business&lt;/p&gt;
+          &lt;p&gt;San Ramon, CA, USA &lt;time datetime="HH:MM" class="message-time"&gt;5:29 PM&lt;/time&gt;&lt;/p&gt;
+          &lt;p class="availability available"&gt;&lt;i class="icon-availability"&gt;&lt;/i&gt;Available&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="actions"&gt;
+        &lt;div class="btn-group"&gt;
+          &lt;a href="#" rel="tooltip" data-original-title="Message" class="btn"&gt;&lt;i class="icon-ico_mail_sm icon-black"&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href="#" rel="tooltip" data-original-title="Share" class="btn"&gt;&lt;i class="icon-ico_webex icon-black"&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href="#" rel="tooltip" data-original-title="Cell" class="btn"&gt;&lt;i class="icon-ico_mobile icon-black"&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href="#" rel="tooltip" data-original-title="Phone" class="btn"&gt;&lt;i class="icon-ico_phone_sm icon-black"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="btn-group"&gt;
+          &lt;a class="btn" href="#"&gt;&lt;i class="icon-ico_user_male_lg icon-black"&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;&lt;i class="icon-ico_chevron_down_lg icon-black"&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;View Profile&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;View Organization&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Follow on Colab&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Add to Favorites&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Share Profile&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="btn close"&gt;&lt;i class="icon-ico_remove_lg"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+    &lt;script src="../../../components/respond/respond.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../../../components/requirejs/require.js"&gt;&lt;/script&gt;
+    &lt;script src="../../../js/require.config.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+      requirejs.config({
+        baseUrl: '../../../'
+      });
+      require(['mds', 'jquery']);
+    &lt;/script&gt;
+  &lt;script&gt;
+      requirejs.config({
+        baseUrl: '../../../'
+      });
+      require(['mds', 'jquery'], function() {
+
+        $('a').on('click tap', function (event) {
+          if($(event.target).attr("rel") !== 'profile-popover') {
+            event.preventDefault();
+          }
+        });
+
+        $('[rel="profile-popover"]').popover({
+          html: true,
+          content: function() {
+            return $('.profile-card').html();
+          },
+          placement: 'top',
+          container: 'body'
+        }).on('shown', function() {
+          $('[rel=tooltip]').tooltip({ container: 'body' });
+        });
+
+        $('[rel="profile-popover"]').on('click tap', function (event) {
+          // prevent the follow of the href in the parent anchor
+          event.preventDefault();
+          $('[rel="profile-popover"]').not(this).popover('hide');
+        });
+
+        $(document).on('click tap', function (event) {
+          if( ( $(event.target).parents('.popover').length === 0 &&
+              $(event.target).attr('rel') !== 'profile-popover') ||
+              $(event.target).parents('.close').length &gt; 0 ||
+              $(event.target).hasClass('close')) {
+            // close the popover
+            $('[rel="profile-popover"]').popover('hide');
+          }
+        });
+
+        $(window).on('resize', function (event) {
+          $('[rel="profile-popover"]').popover('hide');
+        });
+
+
+      });
+  &lt;/script&gt;
+    </pre>
+      </div>
+  </div>
+
+
+      <script src="../../components/respond/respond.min.js"></script>
+
+    <script src="../../components/requirejs/require.js"></script>
+    <script src="../../js/require.config.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: '../../',
+        waitSeconds: 30
+      });
+
+      // Preload JS libraries and exec page scripts
+      require([
+        'jquery',
+        'ge-bootstrap',
+        'spinner',
+        'components/prettify/prettify',
+        'mds'
+      ], function($) {
+        $(function() {
+          // -------------------
+          // DOCUMENTATION SETUP
+          // -------------------
+
+          // Create a global function that can be called from inside iframes
+          // to resize the frame to fit the content window.
+          /*window.resizeFrame = function( src, h ) {
+            $( 'iframe[src="' + src + '"]').css( { height: h + 'px' } );
+          }*/
+
+          // Make code lovely using Google Prettify.
+          window.prettyPrint && prettyPrint();
+
+          // Enable ScrollSpy for dynamic navigation highlighting.
+          // We provide our own version of the "activate" function because
+          // the default Bootstrap lib doesn't handle dropdowns very well.
+          $.fn.scrollspy.Constructor.prototype.activate = function( target ) {
+            var active,
+                selector;
+
+            this.activeTarget = target;
+
+            $( this.selector )
+              .parent('.active')
+              .removeClass('active');
+
+            selector = this.selector
+                     + '[data-target="' + target + '"],'
+                     + this.selector + '[href="' + target + '"]';
+
+            active = $( selector )
+              .parent('li')
+              .addClass('active');
+
+            if ( active.parents('.dropdown-menu') ) {
+              active = active.parents('.btn-group').addClass('active');
+            }
+
+            active.trigger('activate');
+          }
+          // And now we initialize ScrollSpy on the body.
+          // DO NOT use data attributes on this, as it will init before our
+          // new constructor activate function is applied; this would be bad.
+          $('body').scrollspy({
+            offset: 120,
+            target: '.primary-navbar'
+          });
+          // Extend jQuery with a better easing function, so we can make
+          // some pretty scrolling animations.
+          // This easing function is from:
+          // jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+          // Open source under the BSD License.
+          // Copyright © 2008 George McGinley Smith
+          // All rights reserved.
+          $.extend($.easing, {
+            def: 'easeInOutCubic', easeInOutCubic: function (x, t, b, c, d) {
+              if ((t/=d/2) < 1) return c/2*t*t*t + b;
+              return c/2*((t-=2)*t*t + 2) + b;
+            }
+          });
+
+          // Finally, add some smooth scrolling to our body when one of the
+          // primary-navbar links are clicked (even though this isn't in
+          // Bootstrap, which everyone said it was... we'll rebuild anyway).
+          // $('.primary-navbar a').click(function( event ) {
+          //   event.preventDefault();
+          //   var offset = $( $(this).attr('href') ).offset();
+          //   $( 'html, body' ).animate( { scrollTop: offset.top - 120 }, 1000, 'easeInOutCubic' );
+          // });
+
+          $('.primary-navbar a').click(
+            function( event ) {
+              event.preventDefault();
+              var offset = $( $(this).attr('href') ).offset();
+              if (typeof offset !== 'undefined') {
+                $( 'html, body' ).animate( { scrollTop: offset.top - 120 }, 1000, 'easeInOutCubic' );
+              }
+            }
+          );
+
+            // Conditionally load D3/Declarative Viz if SVG is supported.
+            // This should prevent errors from being thrown in IE8
+            if (Modernizr.svg) {
+
+                require(['declarative-visualizations'], function(visualizations) {
+
+                    var components = [];
+
+                    $('div[data-visualization]').each(function(i, element) {
+                        var viz = $(element).attr('data-visualization');
+                        components.push( visualizations[viz](element) );
+                    });
+
+                });
+                // If SVG isn't supported alert the user that some elements won't be loaded
+            } else {
+                alert('Your browser does not support SVG.\nAny element using D3.js will be omitted.');
+            }
+
+          // ONE LAST THING! If this happens to be an iframe window we're
+          // loading then we will essentially create a listener that checks
+          // the body height, so that if the contents of this frame change
+          // then it will call back to the parent to continually resize the
+          // frame to always fit the content window.
+          // if ( parent != top ) {
+          //   var $el = $('body'),
+          //       h   = $el.height(),
+          //       key = 'body-height',
+          //       src = document.location.pathname;
+          //   $.data( this, key, h );
+          //   parent.resizeFrame( src, h );
+          //   function listen() {
+          //     var timeout = setTimeout(function() {
+          //       var h   = $el.height(),
+          //           old = $.data( this, key );
+          //           if ( h !== old ) {
+          //             $.data( this, key, h );
+          //             parent.resizeFrame( src, h );
+          //           }
+          //       listen();
+          //     }, 250);
+          //   }
+          //   listen();
+          // }
+
+          // Now, on to...
+
+          // ---------------------------
+          // DOCUMENTATION FUNCTIONALITY
+          // ---------------------------
+
+          // Enable stateful buttons
+          $('[rel=stateful]').click(function() {
+            var $self = $(this);
+            $self.button('loading');
+            setTimeout(function() {
+              $self.button('reset');
+            }, 3000);
+          });
+
+          // Enable spinners
+         $('[rel=spinner]').spin();
+
+         $('.spinner').spin();
+
+          // Enable tooltips
+          $('[rel=tooltip]').tooltip();
+
+          // Enable popovers
+          $('[rel=popover]').popover();
+
+          // Enable tabs (with dropdowns, mainly)
+          $('.nav-tabs > li > a').click(function(event) {
+            event.preventDefault();
+            $(this).tab('show');
+          });
+
+          // Make accordion carets animate!
+          $('.accordion .collapse')
+            .on('show', function() {
+              $(this).prev('.accordion-heading').find('.accordion-toggle').addClass('in');
+            })
+            .on('hide', function() {
+              $(this).prev('.accordion-heading').find('.accordion-toggle').removeClass('in');
+            });
+
+            // $('.modal').on('shown', function () {
+            //   var modalHeight = $(window).innerHeight() - 60;
+            //   var bodyHeight = modalHeight - $(this).find('.modal-header').outerHeight() - $(this).find('.modal-footer').outerHeight();
+            //   $(this).css({ 'max-height': modalHeight });
+            //   $(this).find('.modal-body').css({ 'max-height': bodyHeight });
+            // });
+        });
+      });
+    </script>
+
+</body>
+</html>
+
+

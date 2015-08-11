@@ -1,0 +1,124 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+@media (max-width: 767px) {
+
+
+  // -- Start Blog Content Modules Overrides
+
+  .block {
+    &.inner-right {
+      padding: @gridGutterWidth1200;
+    }
+    &.inner-left {
+      padding: @gridGutterWidth1200;
+    }
+  }
+
+
+  // -- GENERAL
+
+  article > p {
+    padding: 0;
+  }
+
+  blockquote {
+    margin-left: 0;
+    p {
+      padding: 0 1em 0 1em;
+    }
+  }
+
+  // -- HERO
+  // break hero into stacked elements
+  .hero {
+    background-color: @contentContainerBackground;
+    border-bottom: 1px solid @grayLighter;
+    .title {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 26px;
+      margin-top: 10px;
+    }
+    .text {
+      position: relative;
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: @black;
+      }
+    }
+  }
+
+  // -- TEASERS
+  // remove padding and inherit
+
+  // Teaser image fix for small source images (tradeoff of size vs aspect ratio)
+  .feature img {
+    width: 100%;
+  }
+
+
+  .fill-container.teasers {
+    .container {
+      padding: @paddingContainerMobile;
+    }
+    .teaser {
+      .text {
+        width: 70%;
+      }
+    }
+  }
+
+  // video play button
+
+  .media {
+  position: relative;
+  [class*="ico_play"] {
+    color: @white;
+    font-size: 70px;
+    height: 70px;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding: 15px 0;
+    position: absolute;
+    left: 38px;
+    bottom: 5px;
+    width: 70px;
+    text-align: center;
+    text-indent: 3px;
+    opacity: .9;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+  // set text-image-story text element height to auto, for stacking
+
+  .text-image-story .align-wrapper {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+
+  ////////////////////////////
+
+  .modal.lightbox {
+    bottom: 20px;
+    min-width: 1px;
+  }
+  .modal.lightbox,
+  .modal.lightbox.fade.in {
+    top: 20px;
+  }
+  .modal.lightbox .container {
+    padding: 0;
+  }
+}
+

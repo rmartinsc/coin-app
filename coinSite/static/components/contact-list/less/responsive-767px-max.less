@@ -1,0 +1,29 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+@media (max-width: 767px) {
+  .contact-list {
+    > li {
+      display: none;
+      .contact {
+        .wrapper {
+          img {
+            margin-right: 0;
+          }
+        }
+        width: 250px;
+        .info {
+          width: 170px;
+        }
+      }
+      .actions {
+        width: 230px;
+      }
+    }
+    > li:nth-child(-n+5),
+    > li.view-all {
+      display: table;
+    }
+  }
+}

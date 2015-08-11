@@ -1,0 +1,31 @@
+{
+  "name": "carousel",
+  "description": "Component for cycling through elements like a carousel",
+  "version": "0.8.1",
+  "author": "General Electric",
+  "main": [
+    "js/carousel.js",
+    "less/carousel.less",
+    "less/responsive.less"
+  ],
+  "ignore": [
+    "components",
+    "css",
+    "node_modules",
+    ".*",
+    "Gruntfile.js",
+    "js/require.config.js"
+  ],
+  "dependencies": {
+    "requirejs": "https://github.com/jrburke/requirejs-bower.git#~2.1.11",
+    "jquery": "https://github.com/components/jquery.git#~1.10.2",
+    "jquery-backstretch": "git://github.sw.ge.com/DXC/jquery-backstretch.git#~2.0",
+    "blog-content": "git://github.sw.ge.com/DXC/blog-content.git#~0.7.0",
+    "ge-bootstrap": "git://github.sw.ge.com/DXC/ge-bootstrap.git#master"
+  },
+  "resolutions": {
+    "brandkit": "master",
+    "bootstrap": "~3.2.0",
+    "ge-bootstrap": "master"
+  }
+}

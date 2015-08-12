@@ -4,7 +4,10 @@ from django.utils import timezone
 
 class Story(models.Model):
     coinGiver = models.ForeignKey('auth.User')
-    coinReceiverName = models.CharField(max_length=20)
+    coinReceiverSSO = models.CharField(max_length=9)
+    coinReceiverFirstName = models.CharField(max_length=20)
+    coinReceiverLastName = models.CharField(max_length=20)
+    coinReceiverEmail = models.CharField(max_length=50)
     receiverBusiness = models.CharField(max_length=20)
     storyTitle = models.CharField(max_length=200)
     storyText = models.TextField()

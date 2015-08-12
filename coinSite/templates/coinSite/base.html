@@ -52,26 +52,91 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'coinSite.views.home_page' %}">
                 <span class="ge-logo"></span>
-                <span class="primary-brand">ITLP</span>
-                <span class="secondary-brand">Beliefs Coin</span>
+                <span class="primary-brand">GE ITLP</span>
+                <span class="secondary-brand">Beliefs' Coin</span>
             </a>
         </div>
 
         
         <div class="toolbar-container pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- search form -->
+              <form class="navbar-search inverse pull-right">
+                <div class="input-group input-prepend" style="width: 210px;">
+                  <input type="search" placeholder="Search" class="form-control search-query" data-toggle="dropdown" data-target=".navbar-search">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-icon">
+                      <i class="icon-ico_search_lg"></i>
+                    </button>
+                  </span>
+                </div>
+                <div class="typeahead typeahead-faceted dropdown-menu pull-right">
+                  <ul class="list-unstyled">
+                    <li class="facet">
+                      <div class="facet-name">Top Result</div>
+                      <ul class="facet-results list-unstyled">
+                        <li>
+                          <a href="#"><strong>Ma</strong>ine</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="facet">
+                      <div class="facet-name">States</div>
+                      <ul class="facet-results list-unstyled">
+                        <li>
+                          <a href="#"><strong>Ma</strong>ine</a>
+                        </li>
+                        <li>
+                          <a href="#"><strong>Ma</strong>ryland</a>
+                        </li>
+                        <li>
+                          <a href="#"><strong>Ma</strong>ssachusetts</a>
+                        </li>
+                        <li>
+                          <a href="#">Alaba<strong>ma</strong></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="facet">
+                      <div class="facet-name">Cities</div>
+                      <ul class="facet-results list-unstyled">
+                        <li>
+                          <a href="#"><strong>Ma</strong>bleton, GA</a>
+                        </li>
+                        <li>
+                          <a href="#"><strong>Ma</strong>cedon, NY</a>
+                        </li>
+                        <li>
+                          <a href="#"><strong>Ma</strong>cedonia, OH</a>
+                        </li>
+                        <li>
+                          <a href="#"><strong>Ma</strong>chesney Park, IL</a>
+                        </li>
+                        <li>
+                          <a href="#"><strong>Ma</strong>comb, IL</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="last">
+                      <a href="#">View All Results</a>
+                    </li>
+                  </ul>
+                </div>
+              </form>
             
-                <div class="btn-toolbar pull-left">
+                <div class="btn-toolbar pull-right">
                 {% if user.is_authenticated %}
+                        <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
                     {% if user.is_superuser %}
-                        <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
-                        <a href="{% url 'post_new' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">New Story</button></div></a>
                         <a href="{% url 'post_draft_list' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Approve Stories</button></div></a>
-                    {% else %}
-                        <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
-                        <a href="{% url 'post_new' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">New Story</button></div></a>
                     {% endif %}
                 {% else %}
-                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Login</button></div></a>
+                    <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Login</button></div></a>
                 {% endif %}
                 </div>
             
@@ -88,99 +153,57 @@
     </div>
     </div>
 
-    <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
-        <div class="container">
-            <ul class="nav navbar-nav">
-
+          <div class="primary-navbar collapse navbar-collapse" id="primary-navbar">
+            <div class="container">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="{% url 'coinSite.views.home_page' %}">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="{% url 'ge_beliefs' %}">ITLP Beliefs</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Read Stories</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="{% url 'post_list' %}">Aviation</a>
+                    </li>
+                    <li>
+                      <a href="file:///C:/Users/white_000/Desktop/cdx/docs/examples/common-layouts/xRead_stories_Corporate.html">Corporate</a>
+                    </li>
+                    <li>
+                      <a href="#">Energy Management</a>
+                    </li>
+                    <li>
+                      <a href="#">GGO</a>
+                    </li>
+                    <li>
+                      <a href="#">Healthcare</a>
+                    </li>
+                    <li>
+                      <a href="#">Lighting</a>
+                    </li>
+                    <li>
+                      <a href="#">Power &amp; Water</a>
+                    </li>
+                    <li>
+                      <a href="#">Oil &amp; Gas</a>
+                    </li>
+                    <li>
+                      <a href="#">Transportation</a>
+                    </li>
+                  </ul>
+                </li>
                 
-
-                    
-
-                        
-
-                                    <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 1</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Secondary Nav 1</a></li>
-            <li><a href="#">Secondary Nav 2</a></li>
-            <li><a href="#">Secondary Nav 3</a></li>
-            <li><a href="#">Secondary Nav 4</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 2</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Secondary Nav 1</a></li>
-            <li><a href="#">Secondary Nav 2</a></li>
-            <li><a href="#">Secondary Nav 3</a></li>
-            <li><a href="#">Secondary Nav 4</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 3</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Secondary Nav 1</a></li>
-            <li><a href="#">Secondary Nav 2</a></li>
-            <li><a href="#">Secondary Nav 3</a></li>
-            <li><a href="#">Secondary Nav 4</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 4</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Secondary Nav 1</a></li>
-            <li class="open">
-              <a href="#">Secondary Nav 2</a>
-              <ul class="list-unstyled">
-                <li><a href="#">Tertiary Nav 1</a></li>
-                <li><a href="#">Tertiary Nav 2</a></li>
-                <li><a href="#">Tertiary Nav 3</a></li>
+                {% if user.is_authenticated %}
+                    <li class="dropdown">
+                        <a href="{% url 'post_new' %}">Submit Stories</a>
+                    </li>
+                {% endif %}    
               </ul>
-            </li>
-            <li><a href="#">Secondary Nav 3</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 5</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Secondary Nav 1</a></li>
-            <li><a href="#">Secondary Nav 2</a></li>
-            <li><a href="#">Secondary Nav 3</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Nav 6</a>
-          <ul class="dropdown-menu">
-            <li class="open">
-              <a href="#">Secondary Nav 1</a>
-              <ul class="list-unstyled">
-                <li><a href="#">Tertiary Nav 1</a></li>
-                <li><a href="#">Tertiary Nav 2</a></li>
-                <li><a href="#">Tertiary Nav 3</a></li>
-              </ul>
-            </li>
-            <li class="open">
-              <a href="#">Secondary Nav 2</a>
-              <ul class="list-unstyled">
-                <li><a href="#">Tertiary Nav 1</a></li>
-                <li><a href="#">Tertiary Nav 2</a></li>
-                <li><a href="#">Tertiary Nav 3</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-
-                        
-
-                    
-
-                
-
-            </ul>
-        </div>
-    </div>
-</nav><!-- /navbar -->
+            </div>
+          </div>
+        </nav><!-- /navbar -->
 
       </header>
       <div class="fill-wrapper content">

@@ -22,10 +22,36 @@
                 <form method="POST" class="post-form">{% csrf_token %}
                     {{ form.non_field_errors }}
                     <div class="fieldWrapper">
-                        {{ form.coinReeceiverName.errors }}
-                            <label for="{{ form.coinReceiverName.id_for_label }}" class="input-label">Name of the ITLP:</label><br>
+                        {{ form.coinReceiverSSO.errors }}
+                            <label for="{{ form.coinReceiverSSO.id_for_label }}" class="input-label">ITLP's SSO:</label><br>
                             <div class="input-field">
-                            {{ form.coinReceiverName }}
+                            {{ form.coinReceiverSSO }}                            
+                            </div>
+                    </div>
+                    <br>
+                    <div class="fieldWrapper">
+                        {{ form.coinReceiverFirstName.errors }}
+                            <table>
+                            <td>
+                            <label for="{{ form.coinReceiverFirstName.id_for_label }}" class="input-label">First Name of the ITLP:</label><br>
+                            <div class="input-field">
+                            {{ form.coinReceiverFirstName }}
+                            </div>
+                            </td>
+                            <td>
+                            <label for="{{ form.coinReceiverLastName.id_for_label }}" class="input-label">Last Name of the ITLP:</label><br>
+                            <div class="input-field">
+                            {{ form.coinReceiverLastName }}
+                            </div>
+                            </td>
+                            </table>
+                    </div>
+                    <br>
+                    <div class="fieldWrapper">
+                        {{ form.coinReceiverEmail.errors }}
+                            <label for="{{ form.coinReceiverEmail.id_for_label }}" class="input-label">ITLP's Email:</label><br>
+                            <div class="input-field">
+                            {{ form.coinReceiverEmail }}                            
                             </div>
                     </div>
                     <br>

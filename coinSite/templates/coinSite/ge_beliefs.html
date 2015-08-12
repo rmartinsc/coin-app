@@ -1,0 +1,93 @@
+{% extends "coinSite/base.html" %}
+{% load staticfiles%}
+
+
+
+{% block content %}
+
+<div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <section class="block">
+              <h1>GE Beliefs</h1>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section text-left" style="float:right">
+      <div class="container">
+        <div class="row text-left">
+          <div class="col-md-2">
+            <img src="{% static "img/customers.png" %}" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-2">
+            <img src="{% static "img/lean.png" %}" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-2">
+            <img src="{% static "img/learn.png" %}" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-2">
+            <img src="{% static "img/empower.png" %}" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-2">
+            <img src="{% static "img/deliver.png" %}" class="img-circle img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sticky-footer">
+      <header class="header">
+        <!-- /navbar -->
+      </header>
+      <div class="content">
+        <div class="content-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 jumpcontent">
+                <section class="block">
+                  <div id="overview">
+                    <h3>Overview</h3>
+                    <p>The GE Beliefs are defining new ways for us to act and lead in our dynamic
+                      environment. The term GE Beliefs represents what GE believes we need
+                      to do to be successful as a team. They are a guide to help us focus on
+                      the things that matter the most. The GE Beliefs will help us work together
+                      to change GEs culture and deliver on simplification. As an ITLP, and a
+                      leader at GE, the company counts on you to uphold these GE beliefs and
+                      be the best you you can be.</p>
+                  </div>
+                  <div id="competencies">
+                    <h3 class="jumpnav-margin text-center">Customers Determine Our Success</h3>
+                    <img src="{% static "img/customers_long.png" %}"
+                    class="center-block">
+                    <div id="latest">
+                      <h3 class="jumpnav-margin text-center">Stay Lean To Go Fast</h3>
+                      <img src="{% static "img/lean_long.png" %}"
+                      class="center-block">
+                    </div>
+                    <div id="people" class="jumpnav-people">
+                      <h3 class="jumpnav-margin text-center">Learn and Adapt To Win</h3>
+                      <img src="{% static "img/learn_long.png" %}"
+                      class="center-block">
+                    </div>
+                    <div id="projects">
+                      <h3 class="text-center">Empower and Inspire Each Other</h3>
+                      <img src="{% static "img/empower_long.png" %}"
+                      class="center-block">
+                    </div>
+                    <div id="tools">
+                      <h3 class="jumpnav-margin text-center">Deliver Results In an Uncertain World</h3>
+                      <img src="{% static "img/deliver_long.png" %}"
+                      class="center-block">
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- /container -->
+        </div>
+      </div>
+
+{% endblock %}

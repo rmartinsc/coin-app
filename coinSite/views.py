@@ -46,6 +46,10 @@ def post_remove(request, pk):
     
 def home_page(request):
     return render(request, 'coinSite/home.html')
+
+def ge_beliefs(request):
+    return render(request, 'coinSite/ge_beliefs.html')
+    
     
 def thanks_submit(request):
     return(request, 'coinSite/post_thanks.html')

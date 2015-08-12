@@ -25,9 +25,9 @@ class SubmitForm(forms.ModelForm):
                     ]
         
         model = Story
-        fields = ('coinReceiverName', 'receiverBusiness', 'storyTitle', 'storyText',)
-        widgets = {
-                   'storyText' : forms.Textarea(attrs={'cols': 80, 'rows': 20}),
+        fields = ('coinReceiverSSO','coinReceiverFirstName', 'coinReceiverLastName', 'coinReceiverEmail','receiverBusiness', 'storyTitle', 'storyText',)
+        widgets = {'storyTitle' : forms.Textarea(attrs={'cols': 50, 'rows': 1}),
+                   'storyText' : forms.Textarea(attrs={'cols': 50, 'rows': 5}),
                    'receiverBusiness' : forms.RadioSelect(choices = BUSINESS,
                                                           renderer=MyCustomRenderer,
                                                           ),

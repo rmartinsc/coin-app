@@ -2,21 +2,76 @@
 {% load staticfiles%}
 
 {% block content %}
-    {% if posts %}
-        {% for post in posts %}
-            <div class="post">
-                <p class="date">created: {{ post.created_date|date:'d-m-Y' }}</p>
-                <h1><a href="{% url 'coinSite.views.post_detail' pk=post.pk %}">{{ post.storyTitle }}</a></h1>
-                <p>{{ post.storyText|truncatechars:200 }}</p>
+    <section id="hero" class="fill-container full hero">
+          <div class="media">
+            <img src="{% static "docs/assets/images/cwc_hero.jpg" %}">
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="text middle container">
+                <h2>Stories to Review<h2>
+              </div>
             </div>
-        {% endfor %}
+          </div>
+        </section>       
+    
+    
+    {% if posts %}
+
+    <div class="fill-wrapper content">
+        <section class="mds-container top-margin discussions">
+          <header>
+            <div class="row filter-tray">
+              <div class="col-md-12">
+                <div class="block clearfix">
+
+                  <ul class="list-inline pull-left">
+                    <li class="active">
+                      <div class="btn-group">
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </div>
+              </div>
+            </div>
+
+          </header>
+
+    <div class="row">
+
+            <ul class="discussion-list col-md-12">
+                {% for post in posts %}
+            <li class="discussion-item">
+                <div class="row">
+                  <div class="block col-md-8">
+                    <div class="thumbnail body person clearfix">
+                        <p class="stats"><a href="#" class="name"><small>Submited by {{ post.coinGiver }} for </small>{{post.coinReceiverName}}</a> <small>from {{ post.receiverBusiness }} on </small></p>
+                        <div class="responses">
+                            <time class="message-time" datetime="MM:DD:YYTHH:MM:SS">{{ post.created_date }}</time>
+                      <h6><a href="{% url "post_detail" pk=post.pk %}">{{ post.storyTitle }}</a></h6>
+                      <p class="body">{{ post.storyText|linebreaks }}</p>
+                      <a class="btn btn-primary" href="{% url 'coinSite.views.post_publish' pk=post.pk %}">Approve</a>
+                      <a class="btn btn-primary" href="{% url 'post_remove' pk=post.pk %}"></span>Reject</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+                {% endfor %}
+            </ul>
+        </div>
     {% else %}
         <section class="mds-container last">
           <div class="row">
             <div class="col-md-12">
               <div class="block">
-                <h1 class="title voice-brand">No stories to approve at this moment.</h1>
-                <p class="lead voice-brand">You approved all available stories, when a new on is submited, you will receive a notfication.</p>
+                <h1 class="title voice-brand">No stories to review at this moment.</h1>
+                <p class="lead voice-brand">You reviewed all available stories, when a new on is submited, you will receive a notfication.</p>
               </div>
             </div>
           </div>

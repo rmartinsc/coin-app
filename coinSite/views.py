@@ -22,7 +22,7 @@ def post_new(request):
             post = form.save(commit=False)
             post.coinGiver = request.user
             post.save()
-            return redirect('coinSite.views.post_detail', pk=post.pk)
+            return redirect('coinSite.views.post_list')
     else:
         form = SubmitForm()
     return render(request, 'coinSite/post_edit.html', {'form': form})
@@ -36,13 +36,16 @@ def post_draft_list(request):
 def post_publish(request, pk):
     post = get_object_or_404(Story, pk=pk)
     post.publish()
-    return redirect('coinSite.views.post_detail', pk=pk)
+    return redirect('coinSite.views.post_draft_list')
 
 @login_required   
 def post_remove(request, pk):
     post = get_object_or_404(Story, pk=pk)
     post.delete()
-    return redirect('coinSite.views.post_list')
+    return redirect('coinSite.views.post_draft_list')
     
 def home_page(request):
     return render(request, 'coinSite/home.html')
+    
+def thanks_submit(request):
+    return(request, 'coinSite/post_thanks.html')

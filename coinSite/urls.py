@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^unapproved/$', views.post_draft_list, name='post_draft_list'),
     url(r'^post/(?P<pk>[0-9]+)/approve/$', views.post_publish, name='post_publish'),
     url(r'^post/(?P<pk>[0-9]+)/reject/$', views.post_remove, name='post_remove'),
+    url(r'^thanks_submit/$', views.thanks_submit, name='thanks_submit'),
 ]

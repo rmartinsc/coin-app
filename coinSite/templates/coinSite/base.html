@@ -62,9 +62,14 @@
             
                 <div class="btn-toolbar pull-left">
                 {% if user.is_authenticated %}
-                <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
-                <a href="{% url 'post_new' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">New Story</button></div></a>
-                <a href="{% url 'post_draft_list' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Approve Stories</button></div></a>
+                    {% if user.is_superuser %}
+                        <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
+                        <a href="{% url 'post_new' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">New Story</button></div></a>
+                        <a href="{% url 'post_draft_list' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Approve Stories</button></div></a>
+                    {% else %}
+                        <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
+                        <a href="{% url 'post_new' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">New Story</button></div></a>
+                    {% endif %}
                 {% else %}
                 <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Login</button></div></a>
                 {% endif %}

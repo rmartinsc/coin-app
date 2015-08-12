@@ -1,26 +1,50 @@
 {% extends "coinSite/base.html" %}
+{% load staticfiles%}
+
+
 
 {% block content %}
+    <link href="{% static "css/coinStory.css" %}" rel="stylesheet" >
 
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
+    <div class="fill-wrapper content">
 
-<form method="post" action="{% url 'django.contrib.auth.views.login' %}">
-{% csrf_token %}
-<table>
-<tr>
-    <td>{{ form.username.label_tag }}</td>
-    <td>{{ form.username }}</td>
-</tr>
-<tr>
-    <td>{{ form.password.label_tag }}</td>
-    <td>{{ form.password }}</td>
-</tr>
-</table>
+        <section class="mds-container last">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block">
+                <h1 class="title voice-brand">User Login</h1>
+                <p class="lead voice-brand">Login with your crendentials.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+            {% if form.errors %}
+                <p>Your username and password didn't match. Please try again.</p>
+            {% endif %}
 
-<input type="submit" value="login" />
-<input type="hidden" name="next" value="{{ next }}" />
-</form>
+            <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>{{ form.username.label_tag }}</td>      
+                    <td>{{ form.username }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form.password.label_tag }}</td>
+                    <td>{{ form.password }}</td>
+                </tr>
+            </table>
+            <br>
+
+            <div class="btn-pad">    
+                <button type="submit" class="save btn btn-default">Login</button>
+                <input type="hidden" name="next" value="{{ next }}" />
+            </div>
+            <br>
+            <br>
+            </form>
+            </div>
+          </div>
 
 {% endblock %}

@@ -1,9 +1,12 @@
 {% extends "coinSite/base.html" %}
 {% load staticfiles%}
 
+
+
 {% block content %}
+    <link href="{% static "css/coinStory.css" %}" rel="stylesheet" >
     
-          <div class="fill-wrapper content">
+    <div class="fill-wrapper content">
 
         <section class="mds-container last">
           <div class="row">
@@ -16,30 +19,46 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-    <form method="POST" class="post-form">{% csrf_token %}
-    {{ form.non_field_errors }}
-        <div class="fieldWrapper">
-    {{ form.coinReeceiverName.errors }}
-            <label for="{{ form.coinReceiverName.id_for_label }}">Name of the ITLP:</label>
-    {{ form.coinReceiverName }}
-        </div>
-        <div class="fieldWrapper">
-    {{ form.receiverBusiness.errors }}
-            <label for="{{ form.receiverBusiness.id_for_label }}">Choose the business:</label>
-    {{ form.receiverBusiness }}
-        </div>
-        <div class="fieldWrapper">
-    {{ form.storyTitle.errors }}
-            <label for="{{ form.storyTitle.id_for_label }}">Give your story a Title:</label>
-    {{ form.storyTitle }}
-        </div>
-        <div class="fieldWrapper">
-    {{ form.storyText.errors }}
-            <label for="{{ form.storyText.id_for_label }}">Write your story here:</label>
-    {{ form.storyText}}
-        </div>
-        <button type="submit" class="save btn btn-default">Submit</button>
-    </form>
+                <form method="POST" class="post-form">{% csrf_token %}
+                    {{ form.non_field_errors }}
+                    <div class="fieldWrapper">
+                        {{ form.coinReeceiverName.errors }}
+                            <label for="{{ form.coinReceiverName.id_for_label }}" class="input-label">Name of the ITLP:</label><br>
+                            <div class="input-field">
+                            {{ form.coinReceiverName }}
+                            </div>
+                    </div>
+                    <br>
+                    <div class="fieldWrapper">
+                        {{ form.receiverBusiness.errors }}
+                            <label for="{{ form.receiverBusiness.id_for_label }}" class="input-label">Choose the business:</label><br>
+                            <div class="input-field">
+                            {{ form.receiverBusiness }}
+                            </div>
+                    </div>
+                    <br>
+                    <div class="fieldWrapper">
+                        {{ form.storyTitle.errors }}
+                            <label for="{{ form.storyTitle.id_for_label }}" class="input-label">Give your story a Title:</label><br>
+                            <div class="input-field">
+                            {{ form.storyTitle }}
+                            </div>
+                    </div>
+                    <br>
+                    <div class="fieldWrapper">
+                        {{ form.storyText.errors }}
+                            <label for="{{ form.storyText.id_for_label }}" class="input-label">Write your story here:<br></label><br>
+                            <div class="input-field">
+                            {{ form.storyText}}
+                            </div>
+                    </div>
+                    <br>
+                    <div class="btn-pad">
+                        <button type="submit" class="save btn btn-default">Submit</button>
+                    </div>
+                    <br>
+                    <br>
+                </form>
             </div>
           </div>
 

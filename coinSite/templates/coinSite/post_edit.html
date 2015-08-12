@@ -2,9 +2,46 @@
 {% load staticfiles%}
 
 {% block content %}
-    <h1>New Story</h1>
+    
+          <div class="fill-wrapper content">
+
+        <section class="mds-container last">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block">
+                <h1 class="title voice-brand">Tell us your story!</h1>
+                <p class="lead voice-brand">Use this page to submit a valued story about an ITLP. Once the story is approved, you and the ITLP will be notified.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
     <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
+    {{ form.non_field_errors }}
+        <div class="fieldWrapper">
+    {{ form.coinReeceiverName.errors }}
+            <label for="{{ form.coinReceiverName.id_for_label }}">Name of the ITLP:</label>
+    {{ form.coinReceiverName }}
+        </div>
+        <div class="fieldWrapper">
+    {{ form.receiverBusiness.errors }}
+            <label for="{{ form.receiverBusiness.id_for_label }}">Choose the business:</label>
+    {{ form.receiverBusiness }}
+        </div>
+        <div class="fieldWrapper">
+    {{ form.storyTitle.errors }}
+            <label for="{{ form.storyTitle.id_for_label }}">Give your story a Title:</label>
+    {{ form.storyTitle }}
+        </div>
+        <div class="fieldWrapper">
+    {{ form.storyText.errors }}
+            <label for="{{ form.storyText.id_for_label }}">Write your story here:</label>
+    {{ form.storyText}}
+        </div>
         <button type="submit" class="save btn btn-default">Submit</button>
     </form>
+            </div>
+          </div>
+
+    
 {% endblock %}

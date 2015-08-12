@@ -2,11 +2,24 @@
 {% load staticfiles%}
 
 {% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <p class="date">created: {{ post.created_date|date:'d-m-Y' }}</p>
-            <h1><a href="{% url 'coinSite.views.post_detail' pk=post.pk %}">{{ post.storyTitle }}</a></h1>
-            <p>{{ post.storyText|truncatechars:200 }}</p>
-        </div>
-    {% endfor %}
+    {% if posts %}
+        {% for post in posts %}
+            <div class="post">
+                <p class="date">created: {{ post.created_date|date:'d-m-Y' }}</p>
+                <h1><a href="{% url 'coinSite.views.post_detail' pk=post.pk %}">{{ post.storyTitle }}</a></h1>
+                <p>{{ post.storyText|truncatechars:200 }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <section class="mds-container last">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block">
+                <h1 class="title voice-brand">No stories to approve at this moment.</h1>
+                <p class="lead voice-brand">You approved all available stories, when a new on is submited, you will receive a notfication.</p>
+              </div>
+            </div>
+          </div>
+    {% endif %}
+    
 {% endblock %}

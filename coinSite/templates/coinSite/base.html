@@ -24,7 +24,7 @@
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="../../../components/brandkit/favicon/favicon.png">
     
-    <link href="{% static "css/coinStory.css" %}" rel="stylesheet" >
+   <!-- <link href="{% static "css/coinStory.css" %}" rel="stylesheet" > -->
     <link href="{% static "css/mds.css" %}" rel="stylesheet" type="text/css">
     <link href="{% static "css/responsive.css" %}" rel="stylesheet" type="text/css">
     <link href="{% static "docs/assets/css/cwc.css" %}" rel="stylesheet" type="text/css">
@@ -62,12 +62,11 @@
             
                 <div class="btn-toolbar pull-left">
                 {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
                 <p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
+                <a href="{% url 'post_new' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">New Story</button></div></a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Approve Stories</button></div></a>
                 {% else %}
-                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Login</button>
-                </div></span></a>
+                <a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><div class="btn-toolbar pull-left"><button class="btn btn-primary">Login</button></div></a>
                 {% endif %}
                 </div>
             

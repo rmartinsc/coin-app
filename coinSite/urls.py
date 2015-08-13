@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^ge_beliefs/$', views.ge_beliefs, name='ge_beliefs'),
     url(r'^aviation/$', views.aviation, name='aviation'),
     url(r'^corporate/$', views.corporate, name='corporate'),
+    url(r'^about/$', views.about, name='about'),
 ]

@@ -1,0 +1,75 @@
+{% extends "coinSite/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    
+   <div class="fill-wrapper content">
+
+  		  <section class="mds-container item-category ie-last-child">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="text block inner-left no-border">
+                  <div class="align-wrapper">
+                    <div class="align-bottom">
+                      <h2>Metrics Dashboard</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media col-md-8">
+                <img src="{% static "img/zoomPicture.PNG" %}">
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div> <!-- End fill-wrapper -->
+
+  		<div class="content">
+  			<div class="content-inner">
+
+  				<div class="container">
+
+  					<div class="row">
+
+  						<div class="col-md-4">
+
+  							<div class="block feature">
+  								<div class="media">
+  									<img src="{% static "img/overview.PNG" %}"/>
+  								</div>
+  							</div>
+
+  						</div>
+
+  						<div class="col-md-4">
+
+  							<div class="block feature">
+  								<div class="media">
+  									<img src="{% static "img/CoinDistribution.PNG" %}"/>
+  								</div>
+  							</div>
+
+  						</div>
+
+  						<div class="col-md-4">
+
+  							<div class="block feature">
+  								<div class="media">
+  									<img src="{% static "img/approveDenyRatio.PNG" %}"/>
+  								</div>
+  							</div>
+
+  						</div>
+
+  					</div>
+
+  				</div><!-- /container -->
+
+  			</div>
+  		</div>
+            
+            
+{% endblock %}
+

@@ -53,9 +53,9 @@ def ge_beliefs(request):
 def about(request):
     return render(request, 'coinSite/about.html')
     
-    
+@login_required    
 def thanks_submit(request):
-    return(request, 'coinSite/post_thanks.html')
+    return render(request, 'coinSite/post_thanks.html')
     
 def aviation(request):
     posts = Story.objects.filter(published_date__lte=timezone.now())
@@ -64,6 +64,10 @@ def aviation(request):
 def corporate(request):
     posts = Story.objects.filter(published_date__lte=timezone.now())
     return render(request, 'coinSite/corporate.html', {'posts': posts})
+
+@login_required    
+def ge_dashboard(request):
+    return render(request, 'coinSite/ge_dashboard.html',)
     
     
     

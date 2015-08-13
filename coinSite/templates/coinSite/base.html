@@ -202,7 +202,12 @@
                     <li class="dropdown">
                         <a href="{% url 'post_new' %}">Submit Stories</a>
                     </li>
-                {% endif %}    
+                {% endif %}
+                {% ifequal user.username "Chris" %}
+                <li class="dropdown">
+                  <a href="{% url 'ge_dashboard' %}">Dashboard</a>
+                </li>
+                {% endifequal %}
               </ul>
             </div>
           </div>

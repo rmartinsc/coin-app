@@ -11,4 +11,6 @@ urlpatterns = [
     url(r'^post/(?P<pk>[0-9]+)/reject/$', views.post_remove, name='post_remove'),
     url(r'^thanks_submit/$', views.thanks_submit, name='thanks_submit'),
     url(r'^ge_beliefs/$', views.ge_beliefs, name='ge_beliefs'),
+    url(r'^aviation/$', views.aviation, name='aviation'),
+    url(r'^corporate/$', views.corporate, name='corporate'),
 ]

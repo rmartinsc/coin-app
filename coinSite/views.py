@@ -53,3 +53,11 @@ def ge_beliefs(request):
     
 def thanks_submit(request):
     return(request, 'coinSite/post_thanks.html')
+    
+def aviation(request):
+    posts = Story.objects.filter(published_date__lte=timezone.now())
+    return render(request, 'coinSite/aviation.html', {'posts': posts})
+    
+def corporate(request):
+    posts = Story.objects.filter(published_date__lte=timezone.now())
+    return render(request, 'coinSite/corporate.html', {'posts': posts})

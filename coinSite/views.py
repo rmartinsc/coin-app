@@ -22,7 +22,7 @@ def post_new(request):
             post = form.save(commit=False)
             post.coinGiver = request.user
             post.save()
-            return redirect('coinSite.views.post_list')
+            return render(request, 'coinSite/post_thanks.html')
     else:
         form = SubmitForm()
     return render(request, 'coinSite/post_edit.html', {'form': form})
